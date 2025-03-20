@@ -1,1 +1,1 @@
-# icons
+# @willykit-ui/icons
