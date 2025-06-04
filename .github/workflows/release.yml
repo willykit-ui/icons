@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: "lts/*"
       - run: npm ci
-      - run: npm run build
+      - run: npm run build:prod
       - run: npm audit signatures
       - name: Create Release Pull Request or Publish
         env:
