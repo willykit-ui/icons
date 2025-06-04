@@ -2,17 +2,36 @@
   "name": "@willykit-ui/icons",
   "version": "0.1.0",
   "private": false,
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*.js",
+      "require": "./dist/*.cjs",
+      "types": "./dist/*.d.ts"
+    }
+  },
   "scripts": {
     "prepare": "husky install",
-    "build": "tsc -b && vite build",
+    "start": "vite",
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
-    "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
+    "lint": "eslint . --ext .ts,.tsx --fix",
     "test": "vitest run --passWithNoTests",
     "test-watch": "vitest",
-    "preview": "vite preview",
+    "generate-icons": "tsx scripts/generate-icons.ts ./src/assets/icons --out-dir src/components --typescript && prettier --write src/components/**/*.tsx",
+    "generate-index": "tsc && node dist/scripts/generate-index.js",
+    "build:prod": "npm run generate-icons && npm run generate-index && tsup --dts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "release": "semantic-release"
@@ -32,6 +51,7 @@
     "directory": "dist"
   },
   "dependencies": {
+    "globals": "^16.0.0",
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -46,31 +66,33 @@
     "@storybook/react": "^8.6.7",
     "@storybook/react-vite": "^8.6.7",
     "@storybook/test": "^8.6.7",
+    "@svgr/rollup": "^8.1.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
+    "@types/commander": "^2.12.5",
+    "@types/node": "^22.15.3",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/browser": "^3.0.9",
     "@vitest/coverage-v8": "^3.0.9",
+    "commander": "^13.1.0",
     "eslint": "^9.21.0",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
     "eslint-plugin-storybook": "^0.11.6",
-    "globals": "^15.15.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "playwright": "^1.51.1",
     "prettier": "^3.5.3",
     "semantic-release": "^24.2.3",
     "storybook": "^8.6.7",
+    "svgo": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.4",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0",
-    "vite-plugin-dts": "^4.5.3",
-    "vite-plugin-svgr": "^4.3.0",
     "vitest": "^3.0.9"
   },
   "eslintConfig": {

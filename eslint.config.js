@@ -1,43 +1,50 @@
-import js from '@eslint/js'
-import globals from 'globals'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactRefresh from 'eslint-plugin-react-refresh'
-import react from "eslint-plugin-react";
-import tseslint from 'typescript-eslint'
-import prettier from "eslint-plugin-prettier";
+import js from "@eslint/js";
+import reactPlugin from "eslint-plugin-react";
+import tseslint from "typescript-eslint";
+import globals from "globals";
+import prettierPlugin from "eslint-plugin-prettier";
 
 export default tseslint.config(
-  { ignores: ['dist', "src/vite-env.d.ts"],  },
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-      ...tseslint.configs.recommendedTypeChecked, // Используем проверку типов
-      ...tseslint.configs.stylisticTypeChecked, // Добавляем стилистические проверки
-      ],
-    files: ["src/**/*.{ts,tsx}"],
+    ignores: ["dist", "**/*.d.ts", "coverage", "eslint.config.js"],
+  },
+  js.configs.recommended,
+  ...tseslint.configs.recommended, // только базовые правила TS
+  {
+    files: ["src/**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
+      globals: {
+        ...globals.browser,
+        ...globals.es2021,
+      },
       parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    settings: {
+      react: {
+        version: "detect",
       },
     },
     plugins: {
-      'react-hooks': reactHooks,
-      'react-refresh': reactRefresh,
-      react,
-      prettier,
+      react: reactPlugin,
     },
     rules: {
-      ...reactHooks.configs.recommended.rules,
-      ...react.configs.recommended.rules,
-      ...react.configs["jsx-runtime"].rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+      ...reactPlugin.configs.recommended.rules,
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
     },
   },
-)
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    plugins: {
+      prettier: prettierPlugin,
+    },
+    rules: {
+      "prettier/prettier": ["warn", {}, { usePrettierrc: true }],
+    },
+  }
+);

@@ -1,0 +1,119 @@
+import { useState } from "react";
+import { icons, iconGroups } from "../../assets/icons/icons";
+import { getBaseIconName } from "../../utils/utils";
+
+export default {
+  title: "Icons/All Icons",
+};
+
+const groupNames = Object.keys(iconGroups);
+
+export const AllIcons = () => {
+  const [selectedGroup, setSelectedGroup] = useState(groupNames[0]);
+  const [search, setSearch] = useState("");
+
+  const filteredIconKeys = iconGroups[selectedGroup as keyof typeof iconGroups];
+
+  const matchingIcons = filteredIconKeys.filter((key) =>
+    getBaseIconName(key).toLowerCase().includes(search.toLowerCase()),
+  );
+
+  return (
+    <div
+      style={{
+        padding: "20px",
+        backgroundColor: "#fff",
+        color: "#000",
+        fontFamily: "sans-serif",
+        borderRadius: "12px",
+        border: "1px solid #ddd",
+        display: "flex",
+        maxHeight: "95vh",
+      }}
+    >
+      {/* Sidebar */}
+      <div style={{ width: "180px", marginRight: "20px" }}>
+        <h3 style={{ fontSize: "16px", marginBottom: "10px" }}>Фильтр стиля</h3>
+        {groupNames.map((group) => (
+          <div key={group} style={{ marginBottom: "10px" }}>
+            <label style={{ cursor: "pointer" }}>
+              <input
+                type="radio"
+                value={group}
+                checked={selectedGroup === group}
+                onChange={(e) => setSelectedGroup(e.target.value)}
+                style={{ marginRight: "8px" }}
+              />
+              {group.charAt(0).toUpperCase() + group.slice(1)}
+            </label>
+          </div>
+        ))}
+      </div>
+
+      {/* Main Content */}
+      <div style={{ flexGrow: 1 }}>
+        <div
+          style={{
+            padding: "12px 16px",
+            border: "1px solid #ccc",
+            borderRadius: "8px",
+            marginBottom: "16px",
+            display: "flex",
+            alignItems: "center",
+            backgroundColor: "#f9f9f9",
+          }}
+        >
+          <span role="img" aria-label="search" style={{ marginRight: "8px" }}>
+            🔍
+          </span>
+          <input
+            type="text"
+            placeholder="Поиск..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            style={{
+              flex: 1,
+              border: "none",
+              outline: "none",
+              background: "transparent",
+              fontSize: "14px",
+            }}
+          />
+        </div>
+
+        <p style={{ fontSize: "14px", marginBottom: "12px", color: "#555" }}>
+          найдено {matchingIcons.length}
+        </p>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(80px, 1fr))",
+            gap: "20px",
+          }}
+        >
+          {matchingIcons.map((iconKey) => {
+            const Icon = icons[iconKey];
+            if (!Icon) return null;
+            return (
+              <div key={iconKey} style={{ textAlign: "center" }}>
+                <Icon width={32} height={32} fill="#000" />
+                <div
+                  style={{
+                    fontSize: "12px",
+                    marginTop: "8px",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {getBaseIconName(iconKey)}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
