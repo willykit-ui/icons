@@ -1,14 +1,14 @@
 import * as React from "react";
 import type { SVGProps } from "react";
 
-const DownloadFilled = (
+const DownloadFilledIcon = (
   props: SVGProps<SVGSVGElement> & { size?: string | number; color?: string },
 ) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     {...(props.size
       ? { width: props.size, height: props.size }
-      : { width: "1em", height: "1em" })}
+      : { width: "24", height: "24" })}
     viewBox="0 0 16 16"
     {...props}
     fill={props.color ?? "currentColor"}
@@ -23,4 +23,4 @@ const DownloadFilled = (
   </svg>
 );
 
-export default DownloadFilled;
+export default DownloadFilledIcon;
