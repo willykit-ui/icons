@@ -1,0 +1,61 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "automerge": false,
+    "commitMessageAction": "Bump",
+    "commitMessageExtra": "to {{newValue}}",
+    "commitMessageTopic": "{{depName}}",
+    "dependencyDashboard": true,
+    "rebaseWhen": "conflicted",
+    "ignoreDeps": [],
+    "labels": ["dependencies"],
+    "lockFileMaintenance": {
+      "enabled": true,
+      "schedule": "before 10:00am on the first day of the month"
+    },
+    "packageRules": [
+      {
+        "matchDepTypes": ["peerDependencies"],
+        "rangeStrategy": "widen"
+      },
+      {
+        "groupName": "eslint",
+        "matchPackagePatterns": ["eslint", "eslint-*", "@typescript-eslint/*"],
+        "automerge": true
+      },
+      {
+        "automerge": true,
+        "matchPackageNames": ["@types/**"]
+      },
+      {
+        "groupName": "React",
+        "matchPackageNames": [
+          "react",
+          "react-dom",
+          "@types/react",
+          "@types/react-dom"
+        ]
+      },
+      {
+        "groupName": "Node.js",
+        "matchPackageNames": ["node", "@types/node"],
+        "allowedVersions": "< 20.0.0"
+      },
+      {
+        "groupName": "Vitest",
+        "matchPackagePatterns": ["^vitest$", "^@vitest/"]
+      },
+      {
+        "matchDepTypes": ["action"],
+        "pinDigests": true
+      },
+      {
+        "groupName": "GitHub Actions",
+        "matchManagers": ["github-actions"]
+      }
+    ],
+    "prConcurrentLimit": 30,
+    "prHourlyLimit": 0,
+    "rangeStrategy": "bump",
+    "schedule": "on the first day of the month before 4:00am",
+    "timezone": "UTC"
+}
