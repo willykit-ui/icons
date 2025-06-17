@@ -12,6 +12,7 @@ const HistoryFilledIcon = (
     viewBox="0 0 16 16"
     {...props}
     fill={props.color ?? "currentColor"}
+    strokeWidth="2"
   >
     <path
       stroke="currentColor"

@@ -45,7 +45,7 @@ export async function generateIcons(inputDir: string, options: Options) {
     const ext = options.typescript ? "tsx" : "jsx";
     const outPath = path.join(options.outDir, `${componentName}.${ext}`);
 
-    const code = buildComponentCode({
+    const code = await buildComponentCode({
       svg: optimized.data,
       componentName,
       typescript: options.typescript,

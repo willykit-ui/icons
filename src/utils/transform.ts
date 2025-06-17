@@ -1,3 +1,10 @@
+import prettier from "prettier";
+
+/**
+ * Преобразует все атрибуты SVG из kebab-case в camelCase.
+ * @param {string} svg - SVG-строка
+ * @returns {string} SVG-строка с camelCase-атрибутами
+ */
 export function convertSvgAttributesToCamelCase(svg: string): string {
   return svg.replace(/([a-zA-Z-]+)=/g, (match) => {
     const attr = match.slice(0, -1); // remove '='
@@ -8,7 +15,18 @@ export function convertSvgAttributesToCamelCase(svg: string): string {
   });
 }
 
-export function buildComponentCode({
+/**
+ * Генерирует код React-компонента для иконки на основе SVG.
+ * @param {object} params - Параметры генерации
+ * @param {string} params.svg - SVG-строка
+ * @param {string} params.componentName - Имя компонента
+ * @param {boolean} params.typescript - Использовать типизацию TypeScript
+ * @param {boolean} params.memo - Оборачивать в React.memo
+ * @param {boolean} params.ref - Использовать forwardRef
+ * @param {string|number} params.iconSize - Размер иконки по умолчанию
+ * @returns {string} Код React-компонента
+ */
+export async function buildComponentCode({
   svg,
   componentName,
   typescript,
@@ -22,24 +40,18 @@ export function buildComponentCode({
   memo: boolean;
   ref: boolean;
   iconSize: string | number;
-}): string {
+}): Promise<string> {
   const propsType = typescript
     ? "SVGProps<SVGSVGElement> & { size?: string | number; color?: string }"
     : "any";
 
-  const sizeLogic = `{...(props.size ? { width: props.size, height: props.size } : { width: "${iconSize}", height: "${iconSize}" })}`;
+  const sizeLogic = `{...(props.size ? { width: props.size, height: props.size } : { width: '${iconSize}', height: '${iconSize}' })}`;
 
   const processedSvg = convertSvgAttributesToCamelCase(svg);
 
   const svgWithProps = processedSvg
     .replace(/<svg([^>]*)>/, () => {
-      return `<svg\n
-  xmlns="http://www.w3.org/2000/svg"\n
-  ${sizeLogic}\n
-  viewBox="0 0 16 16"\n
-  {...props}\n
-  fill={props.color ?? "currentColor"}\n
->`;
+      return `<svg xmlns="http://www.w3.org/2000/svg" ${sizeLogic} viewBox="0 0 16 16" {...props} fill={props.color ?? 'currentColor'} strokeWidth="2">`;
     })
     .replace(/\s{2,}/g, " ");
 
@@ -55,13 +67,18 @@ export function buildComponentCode({
     ? 'import * as React from "react";\nimport type { SVGProps } from "react";'
     : 'import * as React from "react";';
 
-  const result = `
-${typesImport}
+  const code = `${typesImport}\n\n${memoWrapper}\n\nexport default ${componentName};`;
 
-${memoWrapper}
-
-export default ${componentName};
-`;
-
-  return result.trim();
+  try {
+    return await prettier.format(code, {
+      parser: "typescript",
+      semi: true,
+      singleQuote: true,
+      trailingComma: "es5",
+      printWidth: 100,
+    });
+  } catch (error) {
+    console.error("Error formatting code:", error);
+    return code;
+  }
 }
