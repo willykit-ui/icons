@@ -1,25 +1,35 @@
 import { defineConfig } from "tsup";
+import { readdirSync } from "fs";
+import { join } from "path";
+
+// Получаем все .tsx файлы из src/
+const srcDir = join(__dirname, "src");
+const files = readdirSync(srcDir);
+const iconFiles = files.filter(
+  (file) => file.endsWith(".tsx") && file !== "index.tsx",
+);
+
+// Создаём entry для каждой иконки + index
+const entry = iconFiles.reduce(
+  (acc, file) => {
+    const name = file.replace(".tsx", "");
+    acc[name] = `src/${file}`;
+    return acc;
+  },
+  { index: "src/index.ts" } as Record<string, string>,
+);
 
 export default defineConfig({
-  entry: ["src/index.ts"], // Основная точка входа
-  splitting: false, // Отключаем для библиотек, лучше для tree-shaking
-  sourcemap: false, // Можно отключить для production
-  clean: true,
+  entry,
+  format: ["esm", "cjs"],
   dts: true,
-  format: ["esm", "cjs"], // ESM первым для лучшего tree-shaking
+  clean: true,
   minify: true,
-  bundle: true,
+  external: ["react"],
+  treeshake: true,
+  splitting: true,
+  sourcemap: false,
   outDir: "dist",
-  external: ["react", "react-dom"],
-  noExternal: [], // Убедитесь, что нет лишних зависимостей
-  target: "es2020", // Современный таргет для меньшего размера
-  treeshake: true, // Агрессивное tree-shaking
-  skipNodeModulesBundle: true, // Не бандлить node_modules
-  esbuildOptions(options) {
-    // Дополнительные оптимизации
-    options.drop = ["console", "debugger"];
-    options.minifyWhitespace = true;
-    options.minifyIdentifiers = true;
-    options.minifySyntax = true;
-  },
+  target: "es2020",
+  bundle: false, // Важно! Не бандлим, чтобы сохранить структуру файлов
 });

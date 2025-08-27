@@ -4,19 +4,25 @@
     "module": "ESNext",
     "jsx": "react-jsx",
     "declaration": true,
+    "declarationMap": true,
     "outDir": "dist",
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "lib": ["ESNext", "DOM"]
   },
-  "include": ["src/**/*", "scripts/*"],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "dist",
-    ".storybook",
     "src/**/__docs__",
-    "src/**/__test__"
+    "src/**/__test__",
+    "scripts",
+    "**/*.test.ts",
+    "**/*.test.tsx"
   ]
 }

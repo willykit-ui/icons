@@ -1,20 +1,29 @@
 import { readdirSync, writeFileSync } from "fs";
-import { resolve, join, basename } from "path";
+import { join } from "path";
 
-const iconsDir = resolve("src/components");
-const indexPath = join(resolve(), "src/index.ts");
+const srcDir = join(process.cwd(), "src");
+const files = readdirSync(srcDir);
 
-const files = readdirSync(iconsDir)
-  .filter((file) => file.endsWith(".tsx"))
-  .filter((file) => !file.includes("__docs__"));
+const iconFiles = files
+  .filter(
+    (file) =>
+      file.endsWith(".tsx") &&
+      !file.startsWith("index.") &&
+      file !== "types.tsx",
+  )
+  .sort();
 
-const exportStatements = files
-  .map((file) => {
-    const componentName = basename(file, ".tsx").replace("Icon", "");
-    return `export { default as ${componentName} } from "./components/${componentName}Icon";`;
-  })
-  .join("\n");
+const exports = iconFiles.map((file) => {
+  const name = file.replace(".tsx", "");
+  return `export { default as ${name} } from "./${name}";`;
+});
 
-writeFileSync(indexPath, exportStatements);
+const indexContent = `
+export type { IconProps } from "./types";
 
-console.log(`✅ Generated index.ts with ${files.length} icon exports.`);
+${exports.join("\n")}
+`;
+
+writeFileSync(join(srcDir, "index.ts"), indexContent, "utf-8");
+
+console.log(`✓ Generated index.ts with ${iconFiles.length} icons`);
