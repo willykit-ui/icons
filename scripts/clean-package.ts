@@ -13,22 +13,27 @@ interface PackageJson {
   files: string[];
   exports: {
     ".": {
-      types: string;
-      import: string;
-      require: string;
+      import: {
+        types: string;
+        default: string;
+      };
+      require: {
+        types: string;
+        default: string;
+      };
     };
     "./package.json": string;
   };
-  scripts: {
-    prepare: string;
-    [key: string]: string;
-  };
+  // scripts: {
+  //   prepare: string;
+  //   [key: string]: string;
+  // };
   author: string;
   license: string;
   description: string;
   keywords: string[];
-  engines: {
-    node: string;
+  engines?: {
+    [key: string]: string;
   };
   publishConfig: {
     access: string;
@@ -56,24 +61,27 @@ const cleanPackage: Partial<PackageJson> = {
   files: packageJson.files,
   exports: {
     ".": {
-      types: "./dist/index.d.ts",
-      import: "./dist/index.js",
-      require: "./dist/index.cjs",
+      import: {
+        types: "./dist/index.d.ts",
+        default: "./dist/index.js",
+      },
+      require: {
+        types: "./dist/index.d.cts",
+        default: "./dist/index.cjs",
+      },
     },
     "./package.json": "./package.json",
   },
-  scripts: {
-    prepare: packageJson.scripts.prepare,
-  },
+  // scripts: {
+  // prepare: packageJson.scripts.prepare,
+  // },
   author: packageJson.author,
   license: packageJson.license,
   description: packageJson.description,
   keywords: packageJson.keywords,
-  engines: {
-    node: ">=18.0.0",
-  },
+  engines: packageJson.engines,
   publishConfig: packageJson.publishConfig,
-  dependencies: packageJson.dependencies,
+  // dependencies: packageJson.dependencies,
   peerDependencies: packageJson.peerDependencies,
   peerDependenciesMeta: packageJson.peerDependenciesMeta,
 };
