@@ -1,0 +1,53 @@
+name: Publish to npm
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "NPM dist-tag (latest/next/rc/...)"
+        required: true
+        default: "latest"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build:prod
+
+      - name: Clean package.json
+        run: npm run clean-package
+
+      - name: Verify version matches last git tag
+        id: verify
+        run: |
+          PKG_VERSION=$(node -p "require('./package.json').version")
+          GIT_TAG=$(git describe --tags --abbrev=0)
+
+          echo "📦 package.json version: $PKG_VERSION"
+          echo "🏷  latest git tag: $GIT_TAG"
+
+          if [ "v$PKG_VERSION" != "$GIT_TAG" ]; then
+            echo "❌ Version mismatch! package.json=$PKG_VERSION vs git tag=$GIT_TAG"
+            exit 1
+          fi
+
+      - name: Publish package to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public --tag ${{ github.event.inputs.tag }}
+

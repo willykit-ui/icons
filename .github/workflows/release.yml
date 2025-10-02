@@ -6,26 +6,24 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
-permissions: {}
 jobs:
   release:
     permissions:
-      contents: write # to create release
-      issues: write # to post issue comments
-      pull-requests: write # to create pull request
-
-    name: Release
+      contents: write
+      issues: write
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
       - run: npm ci
       - run: npm run build:prod
-      - run: npm audit signatures
-      - name: Create Release Pull Request or Publish
+      - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm run release
+        run: npx semantic-release
