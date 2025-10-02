@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/willykit-ui/icons/compare/v1.0.0...v1.0.1) (2025-10-02)
+
+
+### Bug Fixes
+
+* тестовый багфикс для проверки релиза ([fe078c2](https://github.com/willykit-ui/icons/commit/fe078c22d6b585562b608cfe6fa4da920d6c7c93))
+
 # [1.0.0-next.3](https://github.com/willykit-ui/icons/compare/v1.0.0-next.2...v1.0.0-next.3) (2025-10-02)
 
 
