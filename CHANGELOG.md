@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/willykit-ui/icons/compare/v1.0.0...v1.0.1) (2025-10-03)
+
+
+### Bug Fixes
+
+* Убрана ветка develop из пайпа тест при push ([3117bb6](https://github.com/willykit-ui/icons/commit/3117bb66e3c41080bde02fc3ef9bfb545f56ccf1))
+
 ## [1.0.1](https://github.com/willykit-ui/icons/compare/v1.0.0...v1.0.1) (2025-10-02)
 
 
