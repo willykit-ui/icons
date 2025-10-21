@@ -15,11 +15,11 @@ const iconFiles = files
 
 const exports = iconFiles.map((file) => {
   const name = file.replace(".tsx", "");
-  return `export { default as ${name} } from "./${name}";`;
+  return `export { default as ${name} } from "./${name}.js";`;
 });
 
 const indexContent = `
-export type { IconProps } from "./types";
+export type { IconProps } from "./types.js";
 
 ${exports.join("\n")}
 `;
