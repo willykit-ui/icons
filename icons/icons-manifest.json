@@ -1,0 +1,1248 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2025-10-01T15:36:07.792Z",
+  "icons": [
+    {
+      "id": "4178:21809",
+      "name": "Setting_Оutlined_12px",
+      "fileName": "setting-utlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:21.150Z",
+      "hash": "ac7a27445b4832f19286d6decb930e899ad3b80cfea155884cf306090d1d30bc"
+    },
+    {
+      "id": "4178:21811",
+      "name": "Setting_Оutlined_16px",
+      "fileName": "setting-utlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:21.409Z",
+      "hash": "cf31ab3ff3414cb959c7522465ebcaac02fbe2edd8f40e400ca4b9c2f78c3f1d"
+    },
+    {
+      "id": "4178:21813",
+      "name": "Setting_Оutlined_20px",
+      "fileName": "setting-utlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:35:21.713Z",
+      "hash": "82c32f2aadae8834f2124fc657b5c3130523da8446eaecf44400557c5a2ab96c"
+    },
+    {
+      "id": "4178:21816",
+      "name": "Printer_Outlined_12px",
+      "fileName": "printer-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:21.916Z",
+      "hash": "c69e0c366450a14cb6f0cc8c647c6e2764a64aaefb75f8758558df733eac9e7d"
+    },
+    {
+      "id": "4178:21818",
+      "name": "Printer_Outlined_16px",
+      "fileName": "printer-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:22.119Z",
+      "hash": "9742e450504e775dfcf9e4dfcb9f609744af5c0763d25b0907fb52710ec40b98"
+    },
+    {
+      "id": "4178:21820",
+      "name": "Printer_Outlined_20px",
+      "fileName": "printer-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:35:22.420Z",
+      "hash": "e94f2369076181c4cbc3c15dba9ce60ebec4c0e2c5736cf27898a1a3c775f891"
+    },
+    {
+      "id": "4178:21823",
+      "name": "DangerCircle_Outlined_12px",
+      "fileName": "danger-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:22.702Z",
+      "hash": "a48c02fe99a855869bc79b0437d8c1a0b68903292f6bd77517816c332f391e12"
+    },
+    {
+      "id": "4178:21825",
+      "name": "DangerCircle_Outlined_16px",
+      "fileName": "danger-circle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:22.992Z",
+      "hash": "f3af4666d2b0a838f61bf8796c30de1dabb4ff085990084c42d72fbd682c7bae"
+    },
+    {
+      "id": "4178:21827",
+      "name": "DangerCircle_Outlined_20px",
+      "fileName": "danger-circle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:35:23.244Z",
+      "hash": "c18dc5e93df07951f263e26b1a3ee52778613b15b7ca1c745c0192217b37dd9c"
+    },
+    {
+      "id": "4178:21831",
+      "name": "DangerTriangle_Outlined_16px",
+      "fileName": "danger-triangle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:23.445Z",
+      "hash": "8f67eed33de7794bd4934966ae75bed3f8b0234259fe1227b3b6273b2616de9f"
+    },
+    {
+      "id": "4178:21833",
+      "name": "DangerTriangle_Outlined_20px",
+      "fileName": "danger-triangle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:35:24.262Z",
+      "hash": "beed4bff552a6362c93356a6728d2cbb0356c83a2389aaf885ca1f29d0a9418f"
+    },
+    {
+      "id": "4178:21836",
+      "name": "Restart_Outlined_12px",
+      "fileName": "restart-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:24.477Z",
+      "hash": "cf94a3a25c695f3509a98f3db23da1713ae83cbe62096179e1460d76be5f1690"
+    },
+    {
+      "id": "4178:21838",
+      "name": "Restart_Outlined_16px",
+      "fileName": "restart-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:24.778Z",
+      "hash": "38ba1ecff9e52ff0a9e4a7986fd056a4850c7d5f3911a76831553ee10e5fc352"
+    },
+    {
+      "id": "4178:21842",
+      "name": "Pluse_Outlined_12px",
+      "fileName": "pluse-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:25.082Z",
+      "hash": "5464b2a1ebd4a24c2c496273a491d8872aade8908a505df3e942d04301014431"
+    },
+    {
+      "id": "4178:21844",
+      "name": "Pluse_Outlined_16px",
+      "fileName": "pluse-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:25.386Z",
+      "hash": "af5d59914afd9412748caa6cbe405ec5be76bc998e24fe5356feb969b7595040"
+    },
+    {
+      "id": "4178:21848",
+      "name": "Close_Outlined_12px",
+      "fileName": "close-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:25.698Z",
+      "hash": "77c02352803d59bdc16918dbaf10742db19129bf983b4a2999f6f2409269281e"
+    },
+    {
+      "id": "4178:21850",
+      "name": "Close_Outlined_16px",
+      "fileName": "close-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:25.895Z",
+      "hash": "eee03632d7a00eb02a5564dd9c12f1cc6d725f276756e436bf2aac8c3cbfc934"
+    },
+    {
+      "id": "4178:21854",
+      "name": "Search_Outlined_12px",
+      "fileName": "search-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:26.220Z",
+      "hash": "94c03c5f916dc8baf1ef3acd17d5d06db94e6774403cc4ddea701bfe5c28ea82"
+    },
+    {
+      "id": "4178:21856",
+      "name": "Search_Outlined_16px",
+      "fileName": "search-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:26.515Z",
+      "hash": "4a8b6f1fe06fd8e80602658487c09cba173739ea6f90dfaa9fb529e850e85f2b"
+    },
+    {
+      "id": "4178:21860",
+      "name": "Search2_Outlined_12px",
+      "fileName": "search2-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:26.824Z",
+      "hash": "8fdb19f3226ed35ae487982bbe29cf55d851c3ace1fa118914954b60af149025"
+    },
+    {
+      "id": "4178:21865",
+      "name": "ClipboardList_Outlined_12px",
+      "fileName": "clipboard-list-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:27.535Z",
+      "hash": "15b396c92bfa905c074fdbbca2624207e5891b38f50a624f7be30fe910b7a712"
+    },
+    {
+      "id": "4178:21867",
+      "name": "ClipboardList_Outlined_16px",
+      "fileName": "clipboard-list-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:27.849Z",
+      "hash": "1311cfead40d79e95e3814c925c3cca74256efa7d03799205fbbfd9cc9a0e55c"
+    },
+    {
+      "id": "4178:21871",
+      "name": "Tag_Outlined_12px",
+      "fileName": "tag-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:28.151Z",
+      "hash": "53e0ce6e0405d3b935192fa94bee295049495b10ca1e92f397f34f163cd8b653"
+    },
+    {
+      "id": "4178:21873",
+      "name": "Tag_Outlined_16px",
+      "fileName": "tag-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:28.359Z",
+      "hash": "adabeeecb518844107939ed8a0b4554497f9aca750149d206e4dad3251dfc990"
+    },
+    {
+      "id": "4178:21877",
+      "name": "File_Outlined_12px",
+      "fileName": "file-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:28.661Z",
+      "hash": "486be005ecc1b05a6e5bd9b7c86cc2b1e76594a932f3d491a0c08082a3dc2e56"
+    },
+    {
+      "id": "4178:21879",
+      "name": "File_Outlined_16px",
+      "fileName": "file-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:28.970Z",
+      "hash": "70a3d0c5aa166a66b37727795d88b786ffc5017ae665e63fbb53a67834a41f49"
+    },
+    {
+      "id": "4178:21883",
+      "name": "FileText_Outlined_12px",
+      "fileName": "file-text-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:29.281Z",
+      "hash": "5ffcbf233c4487d0f1b6868be9d1af138541ed5e653e5e8c659b561896ee2e3b"
+    },
+    {
+      "id": "4178:21885",
+      "name": "FileText_Outlined_16px",
+      "fileName": "file-text-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:29.485Z",
+      "hash": "33acb5f5ec47b0a7d466f2f8155180ce2a35b45b9afa2e57ab111651753b2d06"
+    },
+    {
+      "id": "4178:21889",
+      "name": "Notebook_Outlined_12px",
+      "fileName": "notebook-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:29.697Z",
+      "hash": "4db843e3544671ba3f199b869ad04c7a85eefe8891a16510dc733cdb0d238d9c"
+    },
+    {
+      "id": "4178:21891",
+      "name": "Notebook_Outlined_16px",
+      "fileName": "notebook-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:29.889Z",
+      "hash": "88fbc5615d04afd1d9071c1e53de9b699ccedebf91add84342b647819b62bdb7"
+    },
+    {
+      "id": "4178:21895",
+      "name": "Calendar_Outlined_12px",
+      "fileName": "calendar-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:30.716Z",
+      "hash": "8e8d5898ad17664026a4001914b290c8690ed38e0eb3f33fd13fc11b498b5561"
+    },
+    {
+      "id": "4178:21897",
+      "name": "Calendar_Outlined_16px",
+      "fileName": "calendar-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:31.019Z",
+      "hash": "6c1d1b4840b11ee2b1acd7b020e4912c724bac5ce6fda9abd8b5df863a30f3e7"
+    },
+    {
+      "id": "4178:21901",
+      "name": "Stopwatch_Outlined_12px",
+      "fileName": "stopwatch-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:31.227Z",
+      "hash": "18a2c42ec9feb5d5911977b6eb525000f138356fc2cff87b2b87c649dec84e09"
+    },
+    {
+      "id": "4178:21903",
+      "name": "Stopwatch_Outlined_16px",
+      "fileName": "stopwatch-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:31.533Z",
+      "hash": "04821a32071bb4f6a8c71d7c4ed57766141cca9d2efe16f9efd6ce784e8f87e7"
+    },
+    {
+      "id": "4178:21907",
+      "name": "DocumentText_Outlined_12px",
+      "fileName": "document-text-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:31.739Z",
+      "hash": "ef8b8051dbb72e8027624c0b5ca9274ab6da39081ede244d8108bb86a6076d2f"
+    },
+    {
+      "id": "4178:21909",
+      "name": "DocumentText_Outlined_16px",
+      "fileName": "document-text-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:32.048Z",
+      "hash": "8a3e6e3e1785dc945b4a274d300377e551bd1412298857557c5a92212ec23171"
+    },
+    {
+      "id": "4178:21913",
+      "name": "MapPoint_Outlined_12px",
+      "fileName": "map-point-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:32.349Z",
+      "hash": "a8d2c4eac5daf758de5c1df061daba27a862079d569ade94f6a659775330a651"
+    },
+    {
+      "id": "4178:21915",
+      "name": "MapPoint_Outlined_16px",
+      "fileName": "map-point-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:32.659Z",
+      "hash": "40f7e6a50a4da944b0d35277e24b989b371846a1d500755bd4b400fc5407f88c"
+    },
+    {
+      "id": "4178:21919",
+      "name": "Clock_Outlined_12px",
+      "fileName": "clock-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:32.970Z",
+      "hash": "e938c1a0e445b383a79154dd6d2f5ed9c22d8cd501d4e629951d3f0f12c01c33"
+    },
+    {
+      "id": "4178:21921",
+      "name": "Clock_Outlined_16px",
+      "fileName": "clock-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:33.189Z",
+      "hash": "44fc3b0a499b09d03fb826f82aa4c7340531b50a1e3ddb01db4c6701ca8c0ada"
+    },
+    {
+      "id": "4178:21925",
+      "name": "Comment_Outlined_12px",
+      "fileName": "comment-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:34.333Z",
+      "hash": "c44873c1ecbd6f84e80ec76cc84abfa534bbf67506649ad69e049cfcc4a34c35"
+    },
+    {
+      "id": "4178:21930",
+      "name": "Comment_Filled_12px",
+      "fileName": "comment-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:34.608Z",
+      "hash": "8a93d3d007cc9e92ed1430b3c74b88b5da96925de9f84ce60f6bc1286491961a"
+    },
+    {
+      "id": "4178:21935",
+      "name": "Delete_Outlined_12px",
+      "fileName": "delete-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:34.925Z",
+      "hash": "340bd2f017a651f860c166deb5bd2f8932f6fea4a24749daf80001092e366993"
+    },
+    {
+      "id": "4178:21937",
+      "name": "Delete_Outlined_16px",
+      "fileName": "delete-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:35.223Z",
+      "hash": "a03bf193837c5eb99e685d84adbc0e62f3532be51e36ccbc52d335a4c54d27ae"
+    },
+    {
+      "id": "4178:21941",
+      "name": "Right_Filled_12px",
+      "fileName": "right-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:35.417Z",
+      "hash": "f1026022793199d453d8bf43bdcd800b42bd8254e80e3d4298c32fefa8390240"
+    },
+    {
+      "id": "4178:21943",
+      "name": "Right_Filled_16px",
+      "fileName": "right-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:35.634Z",
+      "hash": "293021cd5a3a0f5cdb2f53684a3bf5a754e975f406b949fc9f4de278787aec81"
+    },
+    {
+      "id": "4178:21947",
+      "name": "Down_Filled_12px",
+      "fileName": "down-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:35.929Z",
+      "hash": "5919d732b370c456ed45655dbfd0717f36d86a81f2922c324a60bd55330b8e40"
+    },
+    {
+      "id": "4178:21949",
+      "name": "Down_Filled_16px",
+      "fileName": "down-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:36.246Z",
+      "hash": "e984a29d0a2a7af45246094205a0d36741b4ff28383fdafa0b84c19162392771"
+    },
+    {
+      "id": "4178:21953",
+      "name": "DownloadDown_Outlined_12px",
+      "fileName": "download-down-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:36.549Z",
+      "hash": "e5cb42043eaf994e2b884c269c324d759c94016521b326bcd5f0f06c19f8cdda"
+    },
+    {
+      "id": "4178:21955",
+      "name": "DownloadDown_Outlined_16px",
+      "fileName": "download-down-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:36.860Z",
+      "hash": "a5539c1afb1987a3687620795aa48481430dbfc08b440d4955fe89544a6111b4"
+    },
+    {
+      "id": "4178:21959",
+      "name": "DownloadUp_Outlined_12px",
+      "fileName": "download-up-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:38.086Z",
+      "hash": "92b232fd30c415aaf0fc3ffc4babd7c06eb73f089e7fe2256257a74fcb3e7c10"
+    },
+    {
+      "id": "4178:21961",
+      "name": "DownloadUp_Outlined_16px",
+      "fileName": "download-up-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:38.347Z",
+      "hash": "218233082ec7497ce612fd1de0d526114b7bbaffb2ce6aa90d1eaa6d61751ec9"
+    },
+    {
+      "id": "4178:21965",
+      "name": "ArrowUp_Outlined_12px",
+      "fileName": "arrow-up-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:38.570Z",
+      "hash": "4d1f70f95f385ef06d89e3e085110504e30a81e719effd507da26aaa7f246b54"
+    },
+    {
+      "id": "4178:21967",
+      "name": "ArrowUp_Outlined_16px",
+      "fileName": "arrow-up-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:38.822Z",
+      "hash": "45a0fe46bd7fc36a2768ecf97098a9d8d28f37a43b1126b5ff8b91c47afca98b"
+    },
+    {
+      "id": "4178:21971",
+      "name": "ArrowDown_Outlined_12px",
+      "fileName": "arrow-down-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:39.025Z",
+      "hash": "d7f5d3bd6cd5e3a27628bb5092af870f96a77be9cb3df28717a5594e5cb1bb71"
+    },
+    {
+      "id": "4178:21973",
+      "name": "ArrowDown_Outlined_16px",
+      "fileName": "arrow-down-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:39.312Z",
+      "hash": "84d1d7407aa08476e81f53c756499890436ea622f59f6aca37516777f7805c19"
+    },
+    {
+      "id": "4178:21977",
+      "name": "ArrowLeft_Outlined_12px",
+      "fileName": "arrow-left-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:39.618Z",
+      "hash": "d7a01aee7b0989facbf220f5b62fd03208e19552a4696c7fb59e725e2a22844f"
+    },
+    {
+      "id": "4178:21979",
+      "name": "ArrowLeft_Outlined_16px",
+      "fileName": "arrow-left-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:39.927Z",
+      "hash": "e0c1b2dbfaf338238927faf45bb7f5649e944dec7eeafec9e4a17ffc598d5764"
+    },
+    {
+      "id": "4178:21983",
+      "name": "ArrowRight_Outlined_12px",
+      "fileName": "arrow-right-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:40.236Z",
+      "hash": "e65e0fa5c7c01165c19f150ebfb7648370e1fbaa20249719ea48c993b6e3e440"
+    },
+    {
+      "id": "4178:21985",
+      "name": "ArrowRight_Outlined_16px",
+      "fileName": "arrow-right-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:40.541Z",
+      "hash": "35a99fd618d5c0151779ebf5deeb2f077fe3c1e09ecb3135c18f0ffa8b73f64b"
+    },
+    {
+      "id": "4178:21989",
+      "name": "SquareArrowUp_Outlined_12px",
+      "fileName": "square-arrow-up-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:41.273Z",
+      "hash": "eae69cdbec821f99f7c13594a79d3bb70298a1c7fc2dd3040cdf621fedfd800e"
+    },
+    {
+      "id": "4178:21991",
+      "name": "SquareArrowUp_Outlined_16px",
+      "fileName": "square-arrow-up-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:41.578Z",
+      "hash": "91d7e7cb3239f7f81c979a4283a7df251ed1a63c983e28a0c61b863ae3d1c3f1"
+    },
+    {
+      "id": "4178:21995",
+      "name": "SquareArrowDown_Outlined_12px",
+      "fileName": "square-arrow-down-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:41.875Z",
+      "hash": "9f4abf10bb4155fcbcf778ed60f393086160a4da6746a7c61819cb00422eaf6c"
+    },
+    {
+      "id": "4178:21997",
+      "name": "SquareArrowDown_Outlined_16px",
+      "fileName": "square-arrow-down-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:42.188Z",
+      "hash": "5faf0fc7acc38bf4eff21ae79880523633ea66a17442805d1531526947c75172"
+    },
+    {
+      "id": "4178:22001",
+      "name": "ArrowSortHorizontal_Outlined_12px",
+      "fileName": "arrow-sort-horizontal-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:42.487Z",
+      "hash": "324a207a066e303dd21f74b9ddf43c8ddad87fe29a32dc63116aafb50d87c4ae"
+    },
+    {
+      "id": "4178:22003",
+      "name": "ArrowSortHorizontal_Outlined_16px",
+      "fileName": "arrow-sort-horizontal-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:42.797Z",
+      "hash": "2fe80512f30ecbeb831057e98b17be48fab0dad4dc517a3f4aa4271cdf3a2db8"
+    },
+    {
+      "id": "4178:22007",
+      "name": "UpDown_Filled_12px",
+      "fileName": "up-down-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:43.104Z",
+      "hash": "b4c18d18323a1ec06e1e3bb9f740f27f39ae2fb82abea0b51bd1fa7fbdeda4cb"
+    },
+    {
+      "id": "4178:22012",
+      "name": "Calendar_Outlined_12px",
+      "fileName": "calendar-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:43.310Z",
+      "hash": "26f285ffc1d4541610f9951b399820326bd2b15bfdc15e7a615d74673b1273d6"
+    },
+    {
+      "id": "4178:22017",
+      "name": "EyeOpen_Outlined_12px",
+      "fileName": "eye-open-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:43.615Z",
+      "hash": "2e858ae9cff2fa5de6958cdbf54636ef8f44389659d947cb1c791c3ed66c398e"
+    },
+    {
+      "id": "4178:22022",
+      "name": "EyeClosed_Outlined_12px",
+      "fileName": "eye-closed-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:43.924Z",
+      "hash": "35f7e5af53abcfe223adae9c8d36134260c22856f327384014303e71631bae61"
+    },
+    {
+      "id": "4178:22027",
+      "name": "Phone_Outlined_12px",
+      "fileName": "phone-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:44.949Z",
+      "hash": "5e8484c3d8827c187fb7e5b2dd5fdd2f3f9a482c6a6919e5faa569a5442b0f19"
+    },
+    {
+      "id": "4178:22032",
+      "name": "Email_Outlined_12px",
+      "fileName": "email-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:45.252Z",
+      "hash": "d1d23f4f392d814fa61a1331fcc167e8430aa8a9ffcee5d6f7ddb2d9b5189276"
+    },
+    {
+      "id": "4178:22037",
+      "name": "Info_Outlined_12px",
+      "fileName": "info-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:45.566Z",
+      "hash": "a6e03e96efc02a3362fa57615e9760d674fbfea41d05ae3bea23a7a3f17f9405"
+    },
+    {
+      "id": "4178:22042",
+      "name": "Filter_Filled_12px",
+      "fileName": "filter-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:45.762Z",
+      "hash": "71d0f48e0520a97bd248f046548fe5d85422728a890b6e38a29656047a5273bb"
+    },
+    {
+      "id": "4178:22047",
+      "name": "SortingDown_Outlined_12px",
+      "fileName": "sorting-down-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:46.078Z",
+      "hash": "4f8cc1fc75f41a2abcdf2f52039d9167f6f80d5f87ce143e1ec8fd1bcbc9805f"
+    },
+    {
+      "id": "4178:22052",
+      "name": "SortingUp_Outlined_12px",
+      "fileName": "sorting-up-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:46.380Z",
+      "hash": "343ca69572cff846f2e62511622c1ca872211c960f89f6a8fb0481df3fac0f13"
+    },
+    {
+      "id": "4178:22057",
+      "name": "SortingMess_Outlined_12px",
+      "fileName": "sorting-mess-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:46.691Z",
+      "hash": "7b21566a3a577ea360a2d40a086c26bbf48f71abd153c011a42e048ab4b20edd"
+    },
+    {
+      "id": "4178:22062",
+      "name": "Pin_Filled_12px",
+      "fileName": "pin-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:46.891Z",
+      "hash": "82aefcd43916b3b11c26c3a62886abddd60f2985f5e70dc000472e33a7f07fcc"
+    },
+    {
+      "id": "4178:22067",
+      "name": "Pin2_Filled_12px",
+      "fileName": "pin2-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:47.199Z",
+      "hash": "04591975503d840a8c8dca497d24c93fd590eed78d9f0adc6155a0e0860fa416"
+    },
+    {
+      "id": "4178:22072",
+      "name": "TextItalic_Outlined_12px",
+      "fileName": "text-italic-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:47.390Z",
+      "hash": "470e10da7c06ac3ffb14db8abf34567cca6233e7e493f7c5c9cc9eafc7442b14"
+    },
+    {
+      "id": "4178:22077",
+      "name": "SmallCaps_Outlined_12px",
+      "fileName": "caps-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:48.124Z",
+      "hash": "155422b0bdd51d1fd74193ca3a1632a2a0978a12615fbf2695b53ef33337c3f5"
+    },
+    {
+      "id": "4178:22082",
+      "name": "TextBold_Outlined_12px",
+      "fileName": "text-bold-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:48.431Z",
+      "hash": "4147a813e9502759137b87a5b1d7d8a9d1efbd6ec308610f13940ecb8e523019"
+    },
+    {
+      "id": "4178:22087",
+      "name": "TextUnderline_Outlined_12px",
+      "fileName": "text-underline-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:48.739Z",
+      "hash": "c8a3177ff15c1395aa75b7e7d682fb669b9bf1c52b1332ae83c362a135b7451f"
+    },
+    {
+      "id": "4178:22092",
+      "name": "EmptyCircle_Outlined_12px",
+      "fileName": "empty-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:48.963Z",
+      "hash": "f8b7f16a69e2f8e2388ed44ae061230b8abefd64c92667c0fc3000b14c41472c"
+    },
+    {
+      "id": "4178:22097",
+      "name": "CrossCircle_Outlined_12px",
+      "fileName": "cross-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:49.249Z",
+      "hash": "d6599aa6fadd7f0aeaab3bfca27b9a55223790ede65d5f2ddc3520e96a2ed16d"
+    },
+    {
+      "id": "4178:22102",
+      "name": "CrossCircle_Filled_12px",
+      "fileName": "cross-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:49.460Z",
+      "hash": "41446e83b8e544133fd0a16868bc4a8147ec3f28bd0f5fa2b1a77db758f2a087"
+    },
+    {
+      "id": "4178:22107",
+      "name": "TickCircle_Filled_12px",
+      "fileName": "tick-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:49.660Z",
+      "hash": "9826cb2ba5af0cc6fc0fc56dcb279866d7c892a0798f8d1cedbb4779fff930ae"
+    },
+    {
+      "id": "4178:22112",
+      "name": "DangerCircle_Filled_12px",
+      "fileName": "danger-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:49.965Z",
+      "hash": "f6d70eeb99be7822c14bd2bf13f938ef5e63bcfd1787f75583a5a88a944f214e"
+    },
+    {
+      "id": "4178:22117",
+      "name": "MinusCircle_Filled_12px",
+      "fileName": "minus-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:50.273Z",
+      "hash": "3557ab3f7227e58262c24d4c90d3bbb0066964d97291ed08c8775de60a766dcf"
+    },
+    {
+      "id": "4178:22122",
+      "name": "Screen_Outlined_12px",
+      "fileName": "screen-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:50.477Z",
+      "hash": "35e1b7286c76753cb28a8a0dbe2ca443f6eea5e430ea6bcfc22402e29f29306b"
+    },
+    {
+      "id": "4178:22127",
+      "name": "Database_Outlined_12px",
+      "fileName": "database-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:52.120Z",
+      "hash": "d69624091fa3b2b3d7c6e844d743c5bb126e9badc4db7a79f482932bb4e9888d"
+    },
+    {
+      "id": "4178:22132",
+      "name": "Bug_Outlined_12px",
+      "fileName": "bug-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:52.320Z",
+      "hash": "1014604ea769420f70bc108c6dae97b9a2899bbe0d1b396b4fbfec89157dc50e"
+    },
+    {
+      "id": "4178:22137",
+      "name": "Server_Outlined_12px",
+      "fileName": "server-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:52.654Z",
+      "hash": "eba38ad036c8bc472504e0ca8de4856f02ef568e72b2cd553e142117916cce73"
+    },
+    {
+      "id": "4178:22142",
+      "name": "Notebook2_Outlined_12px",
+      "fileName": "notebook2-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:52.860Z",
+      "hash": "d6ceb4feb4b83329ced53c2e5a37ebdee270d6bedfe36085505c4533f1aeebad"
+    },
+    {
+      "id": "4178:22147",
+      "name": "Сube_Outlined_12px",
+      "fileName": "ube-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:53.052Z",
+      "hash": "0acb624ea8ec0ad027819178ccae0d8442a44423a966ebd08a8bfc258c0bcdd2"
+    },
+    {
+      "id": "4178:22152",
+      "name": "Tag_Outlined_12px",
+      "fileName": "tag-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:53.343Z",
+      "hash": "334b33dfdf6033a897def32fe334c98a435251b3b9654c7cf0fb7f5e35a3ccc3"
+    },
+    {
+      "id": "4178:22157",
+      "name": "CPU_Outlined_12px",
+      "fileName": "cpu-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:53.648Z",
+      "hash": "e8ab3524693529f4ba79121d67908764ac4fea7ac347971435f18a208989f683"
+    },
+    {
+      "id": "4178:22162",
+      "name": "Battery_Outlined_12px",
+      "fileName": "battery-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:53.955Z",
+      "hash": "6071ff6258b298b8efa6fcfb7dbb4054e5f99764d4329f7cd9817258ae5a12cf"
+    },
+    {
+      "id": "4178:22167",
+      "name": "Input_Outlined_12px",
+      "fileName": "input-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:54.265Z",
+      "hash": "0a8d75d48bd1c3e68a202c9a6573aab784d13dae076eacbfa6d804df76878a48"
+    },
+    {
+      "id": "4178:22172",
+      "name": "Output_Outlined_12px",
+      "fileName": "output-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:54.537Z",
+      "hash": "76cb16e2416adc7f2487ef993dd960fc38c27c0c390c152ecf7c9873b2ee5d7f"
+    },
+    {
+      "id": "4178:22177",
+      "name": "Consumers_Outlined_12px",
+      "fileName": "consumers-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:55.608Z",
+      "hash": "dc52b98eeb6b691562d587933de8dd970207469c9d664bb10f3deae5e8ff43ce"
+    },
+    {
+      "id": "4178:22182",
+      "name": "Link_Outlined_12px",
+      "fileName": "link-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:55.902Z",
+      "hash": "56ce4942e68682d68736a71257fe9af17b46051501d46e2eddb36aa838e2881f"
+    },
+    {
+      "id": "4178:22187",
+      "name": "Filter_Outlined_12px",
+      "fileName": "filter-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:56.092Z",
+      "hash": "ff169c7dbb0edf20b1f5574c54e96f5648a82d07cd0c2f4a67f4e6374bbe5a78"
+    },
+    {
+      "id": "4178:22193",
+      "name": " Play_Outlined_16px",
+      "fileName": "play-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:56.416Z",
+      "hash": "a18825d34eaafa71c6c1c85926ed34621417fc24e6178180a844abf424db8473"
+    },
+    {
+      "id": "4178:22198",
+      "name": "UndoLeft_Outlined_16px",
+      "fileName": "undo-left-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:56.723Z",
+      "hash": "c300a0f5ca0c65b4e755bc05459f36d05778faaa80a10b367f4bd21f67a1a3f4"
+    },
+    {
+      "id": "4178:22203",
+      "name": "Minus_Outlined_16px",
+      "fileName": "minus-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:57.029Z",
+      "hash": "b0833eb44cc0cec4ee89689009750819c4fbcb7fa6021436996b6cf10251c93d"
+    },
+    {
+      "id": "4178:22208",
+      "name": "ScreenSize_Outlined_16px",
+      "fileName": "screen-size-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:57.337Z",
+      "hash": "6efe437ebb33f630d1e6f8e175649b8debe41b974583d94b33094d2180e612d4"
+    },
+    {
+      "id": "4178:22213",
+      "name": "ScreenFull_Outlined_16px",
+      "fileName": "screen-full-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:57.644Z",
+      "hash": "c3731a2e81eb9982c12c20f3df91c282f383cfb0bc54b4c86e8a1725643bd5ab"
+    },
+    {
+      "id": "4178:22218",
+      "name": "Forward_Outlined_16px",
+      "fileName": "forward-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:57.950Z",
+      "hash": "92fc64bce3cb9e81080d539a0d79a7a375cb8c0691f090be34e03f83c1aff782"
+    },
+    {
+      "id": "4178:22223",
+      "name": "Сheck_Outlined_16px",
+      "fileName": "heck-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:58.263Z",
+      "hash": "565a99a3b1ac0bd30b2ff9184c9cccd08c4ccb2d927a48c77b1165ba5565b442"
+    },
+    {
+      "id": "4178:22228",
+      "name": "Сross_Outlined_16px",
+      "fileName": "ross-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:59.077Z",
+      "hash": "1a830ef5d9723ed9ce146aeb3e49604841b00076d41e4fddb8a7c6b093927354"
+    },
+    {
+      "id": "4178:22233",
+      "name": "Edit_Outlined_16px",
+      "fileName": "edit-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:59.387Z",
+      "hash": "5d76624d63850755b644e46105aeed4403544d2a635257f81778e858b8884b4e"
+    },
+    {
+      "id": "4178:22238",
+      "name": "Files_Outlined_16px",
+      "fileName": "files-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:59.694Z",
+      "hash": "5ade2321a7050413e2c6b1e847f9f061ef8660f69e89a006ca3c94014ff17de7"
+    },
+    {
+      "id": "4178:22243",
+      "name": "TableAdd_Outlined_16px",
+      "fileName": "table-add-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:59.901Z",
+      "hash": "f68e5f2e8a9a0bdf0471b8302c37e2d7c5b094ad89dfb769856ab119160c750c"
+    },
+    {
+      "id": "4178:22248",
+      "name": "Table_Outlined_16px",
+      "fileName": "table-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:00.213Z",
+      "hash": "315d99240f9abc1f69fc3408ce6d393fff87e30b2fa2b35e8a795c81a5ec6fc7"
+    },
+    {
+      "id": "4178:22253",
+      "name": "Export_Outlined_16px",
+      "fileName": "export-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:00.448Z",
+      "hash": "4a4c0fbd2e8b9b6f1994ff3fcdece75e391d64aeb071c67c5f5fa9afc2e2ac10"
+    },
+    {
+      "id": "4178:22258",
+      "name": "Import_Outlined_16px",
+      "fileName": "import-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:00.714Z",
+      "hash": "3d02c0a4a498c200949d4f1b5928b661fed735058755bec6d715ff602df8da10"
+    },
+    {
+      "id": "4178:22263",
+      "name": "Folder_Filled_16px",
+      "fileName": "folder-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:01.024Z",
+      "hash": "a77a694d5a17bb149246b5a0dcc32b6b9e29ec8a7522f90c25a8af4ffa8189e4"
+    },
+    {
+      "id": "4178:22268",
+      "name": "Scanner_Outlined_16px",
+      "fileName": "scanner-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:01.335Z",
+      "hash": "e8162b3922eb5d35d3fc25da28b7f82b185c0d7e76468e129aff89f719de0907"
+    },
+    {
+      "id": "4178:22273",
+      "name": "Chart_Outlined_16px",
+      "fileName": "chart-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:01.540Z",
+      "hash": "dfbe8772b6d8cb123289b84d1fce56fdd1fdea56a47423d4e3693dc73777ce42"
+    },
+    {
+      "id": "4178:22278",
+      "name": "History_Outlined_16px",
+      "fileName": "history-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:02.664Z",
+      "hash": "c5e24faa9023260c54024846f26d55cc646d5f4cf4d8f855b43adac6373d17a6"
+    },
+    {
+      "id": "4178:22283",
+      "name": "Copy_Outlined_16px",
+      "fileName": "copy-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:02.968Z",
+      "hash": "a4443a67de4fe7f87567c117c9533adce54dc1fa128c9c7c92dcf66a91d15f39"
+    },
+    {
+      "id": "4178:22288",
+      "name": "QR-Code_Outlined_16px",
+      "fileName": "qr-code-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:03.300Z",
+      "hash": "3822e8032d2f22457240569ab6e4005ff753b337c163b16c707ac7ee977ae805"
+    },
+    {
+      "id": "4178:22293",
+      "name": "FileRight_Outlined_16px",
+      "fileName": "file-right-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:03.587Z",
+      "hash": "fd0f3fc107b586c8b02bbe5713c98339925d3c4ce8ff54b0f9c35a25de7c6f10"
+    },
+    {
+      "id": "4178:22298",
+      "name": "FileDownload_Outlined_16px",
+      "fileName": "file-download-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:03.896Z",
+      "hash": "c47baa8ac66ff62c5cd6c4cd2fd2f61ba6854f0f26befb3bc39d2c873cbefdb5"
+    },
+    {
+      "id": "4178:22303",
+      "name": "RefreshSquare_Outlined_16px",
+      "fileName": "refresh-square-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:04.101Z",
+      "hash": "c89b58d1af9c71c0e51ffc4568e8c12901deaae1ce9a9ce89a10def31d6c472f"
+    },
+    {
+      "id": "4178:22313",
+      "name": "Refresh_Outlined_16px",
+      "fileName": "refresh-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:04.401Z",
+      "hash": "f0cb28308e22c3cfed08fb60a4e4fcf9905c2cd4809a6e3954c8d92b10b9d0bf"
+    },
+    {
+      "id": "4178:22308",
+      "name": "Comment_Outlined_16px",
+      "fileName": "comment-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:04.712Z",
+      "hash": "16d7d6a6562723cc475d3bb2e77d0d9b126308f8ce7e7b678b0001730a526ebd"
+    },
+    {
+      "id": "4178:22318",
+      "name": "Tree_Outlined_16px",
+      "fileName": "tree-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:05.013Z",
+      "hash": "9a5f1cb39a742e551e09a677cab67f930f5e1eea925c2802adcbcf3e0f9c3522"
+    },
+    {
+      "id": "4178:22323",
+      "name": "Columns_Outlined_16px",
+      "fileName": "columns-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:05.322Z",
+      "hash": "81fbbd971d59415f6bc30d65e3f30abbda9a1e357d052490c46e62c19f3bcbc8"
+    },
+    {
+      "id": "4178:22328",
+      "name": "FolderWithFiles_Outlined_16px",
+      "fileName": "folder-with-files-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:06.041Z",
+      "hash": "f948ca5745bd62f549754f67a566502aca095a72f00839ebd6afb4c9c1e50798"
+    },
+    {
+      "id": "4178:22333",
+      "name": "Documents_Outlined_16px",
+      "fileName": "documents-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:06.351Z",
+      "hash": "e4aa466b906490427c5294eb2e1d3dbd6399cf2cbbfd6fa2de80b95623297479"
+    },
+    {
+      "id": "4178:22338",
+      "name": "CheckCircle_Outlined_16px",
+      "fileName": "check-circle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:06.557Z",
+      "hash": "8cd8ada869a90e6b785579c4303fa851af4c3461910867214c3b66fef2159a93"
+    },
+    {
+      "id": "4178:22343",
+      "name": "User_Outlined_16px",
+      "fileName": "user-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:06.775Z",
+      "hash": "60b84060dcd3da284b4bc0110ab59462216ac02d051cbfb8d8aa4f90b3c92e68"
+    },
+    {
+      "id": "4178:22348",
+      "name": "Verified_Outlined_16px",
+      "fileName": "verified-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:07.064Z",
+      "hash": "7b40b6dcf1dfbe11763db3db04136a3ead3da07fa474ccabd50a536b6b4ca066"
+    },
+    {
+      "id": "4178:22354",
+      "name": "Notification_Outlined_20px",
+      "fileName": "notification-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:36:07.266Z",
+      "hash": "0a144ad33d221c8c6a2ce94457f23a9aaba7218d510d766e747bf08b630d3194"
+    },
+    {
+      "id": "4178:22359",
+      "name": "Legend_Outlined_20px",
+      "fileName": "legend-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:36:07.577Z",
+      "hash": "1a8c0ce7125859cf897696544199c2b8c70cfe79441368d45d8254480fb5fade"
+    },
+    {
+      "id": "4178:22364",
+      "name": "Done_Outlined_20px",
+      "fileName": "done-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:36:07.785Z",
+      "hash": "f370f0159060759ab9efce8a055ecc147ad84acdc35c8bc75d9af469f318fe4b"
+    }
+  ]
+}

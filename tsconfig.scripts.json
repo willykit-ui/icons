@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist/scripts",
+    "allowImportingTsExtensions": false
+  },
+  "include": ["scripts/generate-index.ts"]
+}

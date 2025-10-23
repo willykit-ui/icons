@@ -1,0 +1,93 @@
+<%- typesImport %>
+<% if (typescript) { %>import type { IconProps } from "./types";<% } %>
+
+<%- jsDoc %>
+
+const svgChildren = {
+<% for (const size of sizes) { %>
+  <%
+    const data = processedSvgData[size];
+    const content = data.content ? '`' + data.content + '`' : "''";
+  %>
+  '<%= size %>': { content: { __html: <%- content %> }, viewBox: '<%= data.viewBox %>' },
+<% } %>
+};
+
+const sizeToPixel = {
+<% const entries = Object.entries(sizeToPixel);
+   const formattedEntries = entries.map(([size, pixelValue]) => `  '${size}': ${pixelValue}`).join(',\n'); %>
+<%- formattedEntries %>
+};
+
+<% if (typescript) { %>type SizeKey = keyof typeof svgChildren;<% } %>
+
+function pickClosestSvg(fontSize<% if (typescript) { %>: 'small' | 'medium' | 'large' | number<% } %>) {
+  const available = Object.entries(svgChildren).filter(([, data]) => data && data.content.__html)<% if (typescript) { %> as [SizeKey, typeof svgChildren[SizeKey]][]<% } %>;
+  
+  if (available.length === 0) {
+    return { content: { __html: '' }, viewBox: '0 0 16 16' };
+  }
+  
+  if (typeof fontSize === 'string') {
+    const found = available.find(([key]) => key === fontSize);
+    if (found) return found[1];
+  }
+  
+  if (typeof fontSize === 'number') {
+    return available.reduce((best, curr) => {
+      const [bestKey] = best;
+      const [currKey] = curr;
+      const bestDiff = Math.abs(sizeToPixel[bestKey <% if (typescript) { %>as keyof typeof sizeToPixel<% } %>] - fontSize);
+      const currDiff = Math.abs(sizeToPixel[currKey <% if (typescript) { %>as keyof typeof sizeToPixel<% } %>] - fontSize);
+      return currDiff < bestDiff ? curr : best;
+    })[1];
+  }
+  
+  // Fallback to medium, then first available
+  const medium = available.find(([key]) => key === 'medium');
+  return medium ? medium[1] : available[0][1];
+}
+
+const <%= componentName %> = <% if (ref) { %>React.forwardRef<% if (typescript) { %><SVGSVGElement, IconProps><% } %>(<% } %><% if (!ref) { %><% if (typescript) { %>(props: IconProps) => {<% } else { %>(props) => {<% } %><% } else { %>(props, ref) => {<% } %>
+  const { fontSize = 'medium', color = 'currentColor', style, ...other } = props;
+  
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
+
+  const sizeValue = typeof fontSize === 'number'
+    ? fontSize
+    : sizeToPixel[fontSize <% if (typescript) { %>as keyof typeof sizeToPixel<% } %>] || 16;
+
+  const finalStyle = <% if (typescript) { %>({
+    ...style,
+    color,
+  } as React.CSSProperties)<% } else { %>{
+    ...style,
+    color,
+  }<% } %>;
+
+  return (
+    <svg
+      <% if (ref) { %>ref={ref}<% } %>
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+}<% if (ref) { %>)<% } %>;
+
+<%- displayName %>
+
+<% if (memo) { %>
+export default React.memo(<%= componentName %>);
+<% } else { %>
+export default <%= componentName %>;
+<% } %>
