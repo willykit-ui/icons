@@ -18,8 +18,7 @@ const exports = iconFiles.map((file) => {
   return `export { default as ${name} } from "./${name}.js";`;
 });
 
-const indexContent = `
-export type { IconProps } from "./types.js";
+const indexContent = `export type { IconProps } from "./types.js";
 
 ${exports.join("\n")}
 `;
