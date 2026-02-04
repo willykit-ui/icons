@@ -49,7 +49,7 @@ export interface IconProps extends React.SVGAttributes<SVGElement> {
    */
   children?: never;
   fontSize?: 'small' | 'medium' | 'large' | number;
-  
+
   /**
    * Color of the icon. Supports CSS colors, CSS variables, and 'currentColor'.
    * @default 'currentColor'
@@ -176,6 +176,7 @@ export async function generateIcons(inputDir: string, options: Options) {
         typescript: options.typescript,
         memo: options.memo,
         ref: options.ref,
+        deprecated: groupedIcon.deprecated,
       });
 
       if (options.dryRun) {

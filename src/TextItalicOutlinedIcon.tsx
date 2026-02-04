@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * TextItalicOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M9.438 1a.5.5 0 1 1 0 1H4.812a.5.5 0 0 1 0-1zm-2.25 9a.5.5 0 0 1 0 1H2.563a.5.5 0 1 1 0-1z"/><path fill="currentColor" d="M7.246 1.015a.5.5 0 0 1 .364.606l-2.25 9a.5.5 0 0 1-.97-.242l2.25-9a.5.5 0 0 1 .606-.364"/>`,
+      __html: `<path d="M9.82.5a.5.5 0 1 1 0 1H7.64l-2.25 9h1.93a.5.5 0 0 1 0 1H2.18a.5.5 0 0 1 0-1h2.18l2.25-9H4.68a.5.5 0 0 1 0-1z" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<path d="M12.693.9a.6.6 0 0 1 0 1.2h-2.56L7.08 13.9h3.148a.6.6 0 0 1 0 1.2H3.504a.6.6 0 1 1 0-1.2h2.338L8.894 2.1H5.969a.6.6 0 1 1 0-1.2z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M17.385 1.3a.7.7 0 0 1 0 1.401h-4.407l-4.492 14.6h3.975a.7.7 0 0 1 0 1.4H2.615a.7.7 0 0 1 0-1.4h4.406l4.492-14.6H7.538a.7.7 0 0 1 0-1.4z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

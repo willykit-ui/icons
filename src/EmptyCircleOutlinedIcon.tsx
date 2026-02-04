@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * EmptyCircleOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M10.5 6A4.5 4.5 0 1 0 6 10.5v1a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11v-1A4.5 4.5 0 0 0 10.5 6"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h12v12H0z"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path d="M10.6 6A4.6 4.6 0 1 0 6 10.6v.9a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11v-.9A4.6 4.6 0 0 0 10.6 6" fill="currentColor"/></g><defs><clipPath id="a"><rect width="12" height="12" rx="2" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<path d="M14 8a6 6 0 1 0-6 6v1A7 7 0 1 1 8 1a7 7 0 0 1 0 14v-1a6 6 0 0 0 6-6" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M17.45 9.999a7.45 7.45 0 1 0-14.9 0 7.45 7.45 0 0 0 14.9 0m1.1 0a8.55 8.55 0 0 1-8.55 8.55 8.55 8.55 0 1 1 8.55-8.55" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

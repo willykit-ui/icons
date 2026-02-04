@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * PluseOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,19 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M5.5 9.5v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0v3h3l.1.01a.5.5 0 0 1 0 .98l-.1.01h-3v3a.5.5 0 0 1-1 0"/>`,
+      __html: `<path d="M5.55 10.001v-3.55H2a.45.45 0 0 1 0-.9h3.55V2a.45.45 0 0 1 .9 0v3.55H10a.45.45 0 0 1 0 .9H6.45V10a.45.45 0 0 1-.9 0" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M7.5 13V8.5H3a.5.5 0 0 1 0-1h4.5V3a.5.5 0 0 1 1 0v4.5H13l.1.01a.5.5 0 0 1 0 .98l-.1.01H8.5V13a.5.5 0 0 1-1 0"/>`,
+      __html: `<path d="M7.5 14V8.5H2a.5.5 0 0 1 0-1h5.5V2a.5.5 0 0 1 1 0v5.5H14a.5.5 0 0 1 0 1H8.5V14a.5.5 0 0 1-1 0" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M9.45 16.999v-6.45H3a.55.55 0 1 1 0-1.1h6.45V3a.55.55 0 1 1 1.1 0v6.45H17a.55.55 0 1 1 0 1.1h-6.45V17a.55.55 0 1 1-1.1 0" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

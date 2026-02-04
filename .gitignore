@@ -25,6 +25,9 @@ dist-ssr
 *.sw?
 .cursor/*
 .env
+.beads
+AGENTS.md
+tasks
 
 # IntelliJ IDEA module file
 *.iml

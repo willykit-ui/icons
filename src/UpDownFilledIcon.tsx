@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * UpDownFilledIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="m3 7 3 3 3-3m0-2L6 2 3 5"/>`,
+      __html: `<path d="M1.85 6.9 6 11l4.15-4.1m0-1.8L6 1 1.85 5.1" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<path d="M2.6 9.1 8 14.5l5.4-5.4m0-2.2L8 1.5 2.6 6.9" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="m3.8 11.3 6.2 6.2 6.2-6.2m0-2.6L10 2.5 3.8 8.7" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

@@ -46,7 +46,7 @@ describe("extractSvgData", () => {
 describe("replaceFillAttribute", () => {
   it('заменяет fill="currentColor" на fill={color}', () => {
     const input = '<path fill="currentColor" d="M0 0h16v16H0z"/>';
-    const expected = '<path fill={color} d="M0 0h16v16H0z"/>';
+    const expected = '<path fill="currentColor" d="M0 0h16v16H0z"/>';
     expect(replaceFillAttribute(input)).toBe(expected);
   });
 

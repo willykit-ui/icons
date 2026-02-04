@@ -7,6 +7,7 @@ export interface IconManifestItem {
   height: number;
   baseName: string;
   size: "small" | "medium" | "large";
+  deprecated?: boolean;
 }
 
 export interface IconManifest {
@@ -20,6 +21,7 @@ export interface IconManifest {
 
 export interface GroupedIcon {
   baseName: string;
+  deprecated?: boolean;
   sizes: Record<string, IconManifestItem>;
 }
 
@@ -91,8 +93,11 @@ export function groupIconsByBaseName(manifestPath: string): GroupedIcon[] {
 
       const group = grouped.get(baseName)!;
 
-      // Добавляем иконку в соответствующий размер
-      // Если размер уже существует, выбираем лучший (приоритет по качеству)
+      // Устанавливаем флаг deprecated, если хотя бы одна иконка в группе помечена как deprecated
+      if (icon.deprecated) {
+        group.deprecated = true;
+      }
+
       const currentIcon = group.sizes[size];
       if (!currentIcon || icon.width > currentIcon.width) {
         group.sizes[size] = {

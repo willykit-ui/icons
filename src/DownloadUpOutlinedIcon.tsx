@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * DownloadUpOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,19 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M9.75 10a.5.5 0 0 1 0 1h-7.5a.5.5 0 0 1 0-1zM5.5 7.5V3.408l-1.032.973a.5.5 0 0 1-.686-.728l1.875-1.767.077-.06a.5.5 0 0 1 .609.06l1.875 1.767a.5.5 0 1 1-.686.728L6.5 3.408V7.5a.5.5 0 0 1-1 0"/>`,
+      __html: `<path d="M9.75 10a.5.5 0 0 1 0 1h-7.5a.5.5 0 0 1 0-1zM5.5 7.5V2.658l-1.032.973a.5.5 0 0 1-.686-.728l1.875-1.767.077-.06a.5.5 0 0 1 .609.06l1.875 1.767a.5.5 0 1 1-.686.728L6.5 2.658V7.5a.5.5 0 0 1-1 0" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M13 12a.5.5 0 0 1 0 1H3a.5.5 0 0 1 0-1zm-5.5-2V4.158L5.843 5.72a.5.5 0 0 1-.686-.728l2.5-2.356.077-.06a.5.5 0 0 1 .609.06l2.5 2.356a.5.5 0 1 1-.686.728L8.5 4.158V10a.5.5 0 0 1-1 0"/>`,
+      __html: `<g clipPath="url(#a)"><path d="M14.5 13.95a.55.55 0 1 1 0 1.099h-13a.55.55 0 1 1 0-1.1zm-7.05-2.451V2.915L5.206 5.37a.55.55 0 1 1-.811-.742l3.199-3.5a.55.55 0 0 1 .812 0l3.2 3.5a.55.55 0 0 1-.811.742L8.55 2.915v8.584a.55.55 0 1 1-1.1 0" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h16v16H0z" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M18 16.9a.6.6 0 1 1 0 1.2H2a.6.6 0 1 1 0-1.2zm-8.708-2.4V3.986l-2.86 2.97a.6.6 0 0 1-.864-.834L9.46 2.084l.092-.078a.6.6 0 0 1 .772.078l3.892 4.038a.6.6 0 0 1-.864.833l-2.86-2.968V14.5a.6.6 0 0 1-1.2 0" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

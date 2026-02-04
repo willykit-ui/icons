@@ -1,879 +1,195 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2025-10-01T15:36:07.792Z",
+  "generatedAt": "2026-02-04T15:27:41.216Z",
   "icons": [
     {
-      "id": "4178:21809",
-      "name": "Setting_Оutlined_12px",
-      "fileName": "setting-utlined-12px.svg",
+      "id": "local-Archive_Outlined_12px",
+      "name": "Archive_Outlined_12px",
+      "fileName": "archive-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:21.150Z",
-      "hash": "ac7a27445b4832f19286d6decb930e899ad3b80cfea155884cf306090d1d30bc"
+      "lastModified": "a4029ad871fac8d9354be72d4a989b4a8a9399e33eb5103218a7f57802c805cf",
+      "hash": "2026-02-04T15:18:40.000Z"
     },
     {
-      "id": "4178:21811",
-      "name": "Setting_Оutlined_16px",
-      "fileName": "setting-utlined-16px.svg",
+      "id": "local-Archive_Outlined_16px",
+      "name": "Archive_Outlined_16px",
+      "fileName": "archive-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:35:21.409Z",
-      "hash": "cf31ab3ff3414cb959c7522465ebcaac02fbe2edd8f40e400ca4b9c2f78c3f1d"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "30e368660cbec898db00fba866d795ebff6b3cd7b505102ef4d206d86a4dbdd7"
     },
     {
-      "id": "4178:21813",
-      "name": "Setting_Оutlined_20px",
-      "fileName": "setting-utlined-20px.svg",
+      "id": "local-Archive_Outlined_20px",
+      "name": "Archive_Outlined_20px",
+      "fileName": "archive-outlined-20px.svg",
       "width": 20,
       "height": 20,
-      "lastModified": "2025-10-01T15:35:21.713Z",
-      "hash": "82c32f2aadae8834f2124fc657b5c3130523da8446eaecf44400557c5a2ab96c"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "c5489ea539599e104580f0e6a68e46b5b66a40e5046141714976fa3924581009"
     },
     {
-      "id": "4178:21816",
-      "name": "Printer_Outlined_12px",
-      "fileName": "printer-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:21.916Z",
-      "hash": "c69e0c366450a14cb6f0cc8c647c6e2764a64aaefb75f8758558df733eac9e7d"
-    },
-    {
-      "id": "4178:21818",
-      "name": "Printer_Outlined_16px",
-      "fileName": "printer-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:22.119Z",
-      "hash": "9742e450504e775dfcf9e4dfcb9f609744af5c0763d25b0907fb52710ec40b98"
-    },
-    {
-      "id": "4178:21820",
-      "name": "Printer_Outlined_20px",
-      "fileName": "printer-outlined-20px.svg",
-      "width": 20,
-      "height": 20,
-      "lastModified": "2025-10-01T15:35:22.420Z",
-      "hash": "e94f2369076181c4cbc3c15dba9ce60ebec4c0e2c5736cf27898a1a3c775f891"
-    },
-    {
-      "id": "4178:21823",
-      "name": "DangerCircle_Outlined_12px",
-      "fileName": "danger-circle-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:22.702Z",
-      "hash": "a48c02fe99a855869bc79b0437d8c1a0b68903292f6bd77517816c332f391e12"
-    },
-    {
-      "id": "4178:21825",
-      "name": "DangerCircle_Outlined_16px",
-      "fileName": "danger-circle-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:22.992Z",
-      "hash": "f3af4666d2b0a838f61bf8796c30de1dabb4ff085990084c42d72fbd682c7bae"
-    },
-    {
-      "id": "4178:21827",
-      "name": "DangerCircle_Outlined_20px",
-      "fileName": "danger-circle-outlined-20px.svg",
-      "width": 20,
-      "height": 20,
-      "lastModified": "2025-10-01T15:35:23.244Z",
-      "hash": "c18dc5e93df07951f263e26b1a3ee52778613b15b7ca1c745c0192217b37dd9c"
-    },
-    {
-      "id": "4178:21831",
-      "name": "DangerTriangle_Outlined_16px",
-      "fileName": "danger-triangle-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:23.445Z",
-      "hash": "8f67eed33de7794bd4934966ae75bed3f8b0234259fe1227b3b6273b2616de9f"
-    },
-    {
-      "id": "4178:21833",
-      "name": "DangerTriangle_Outlined_20px",
-      "fileName": "danger-triangle-outlined-20px.svg",
-      "width": 20,
-      "height": 20,
-      "lastModified": "2025-10-01T15:35:24.262Z",
-      "hash": "beed4bff552a6362c93356a6728d2cbb0356c83a2389aaf885ca1f29d0a9418f"
-    },
-    {
-      "id": "4178:21836",
-      "name": "Restart_Outlined_12px",
-      "fileName": "restart-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:24.477Z",
-      "hash": "cf94a3a25c695f3509a98f3db23da1713ae83cbe62096179e1460d76be5f1690"
-    },
-    {
-      "id": "4178:21838",
-      "name": "Restart_Outlined_16px",
-      "fileName": "restart-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:24.778Z",
-      "hash": "38ba1ecff9e52ff0a9e4a7986fd056a4850c7d5f3911a76831553ee10e5fc352"
-    },
-    {
-      "id": "4178:21842",
-      "name": "Pluse_Outlined_12px",
-      "fileName": "pluse-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:25.082Z",
-      "hash": "5464b2a1ebd4a24c2c496273a491d8872aade8908a505df3e942d04301014431"
-    },
-    {
-      "id": "4178:21844",
-      "name": "Pluse_Outlined_16px",
-      "fileName": "pluse-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:25.386Z",
-      "hash": "af5d59914afd9412748caa6cbe405ec5be76bc998e24fe5356feb969b7595040"
-    },
-    {
-      "id": "4178:21848",
-      "name": "Close_Outlined_12px",
-      "fileName": "close-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:25.698Z",
-      "hash": "77c02352803d59bdc16918dbaf10742db19129bf983b4a2999f6f2409269281e"
-    },
-    {
-      "id": "4178:21850",
-      "name": "Close_Outlined_16px",
-      "fileName": "close-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:25.895Z",
-      "hash": "eee03632d7a00eb02a5564dd9c12f1cc6d725f276756e436bf2aac8c3cbfc934"
-    },
-    {
-      "id": "4178:21854",
-      "name": "Search_Outlined_12px",
-      "fileName": "search-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:26.220Z",
-      "hash": "94c03c5f916dc8baf1ef3acd17d5d06db94e6774403cc4ddea701bfe5c28ea82"
-    },
-    {
-      "id": "4178:21856",
-      "name": "Search_Outlined_16px",
-      "fileName": "search-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:26.515Z",
-      "hash": "4a8b6f1fe06fd8e80602658487c09cba173739ea6f90dfaa9fb529e850e85f2b"
-    },
-    {
-      "id": "4178:21860",
-      "name": "Search2_Outlined_12px",
-      "fileName": "search2-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:26.824Z",
-      "hash": "8fdb19f3226ed35ae487982bbe29cf55d851c3ace1fa118914954b60af149025"
-    },
-    {
-      "id": "4178:21865",
-      "name": "ClipboardList_Outlined_12px",
-      "fileName": "clipboard-list-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:27.535Z",
-      "hash": "15b396c92bfa905c074fdbbca2624207e5891b38f50a624f7be30fe910b7a712"
-    },
-    {
-      "id": "4178:21867",
-      "name": "ClipboardList_Outlined_16px",
-      "fileName": "clipboard-list-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:27.849Z",
-      "hash": "1311cfead40d79e95e3814c925c3cca74256efa7d03799205fbbfd9cc9a0e55c"
-    },
-    {
-      "id": "4178:21871",
-      "name": "Tag_Outlined_12px",
-      "fileName": "tag-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:28.151Z",
-      "hash": "53e0ce6e0405d3b935192fa94bee295049495b10ca1e92f397f34f163cd8b653"
-    },
-    {
-      "id": "4178:21873",
-      "name": "Tag_Outlined_16px",
-      "fileName": "tag-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:28.359Z",
-      "hash": "adabeeecb518844107939ed8a0b4554497f9aca750149d206e4dad3251dfc990"
-    },
-    {
-      "id": "4178:21877",
-      "name": "File_Outlined_12px",
-      "fileName": "file-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:28.661Z",
-      "hash": "486be005ecc1b05a6e5bd9b7c86cc2b1e76594a932f3d491a0c08082a3dc2e56"
-    },
-    {
-      "id": "4178:21879",
-      "name": "File_Outlined_16px",
-      "fileName": "file-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:28.970Z",
-      "hash": "70a3d0c5aa166a66b37727795d88b786ffc5017ae665e63fbb53a67834a41f49"
-    },
-    {
-      "id": "4178:21883",
-      "name": "FileText_Outlined_12px",
-      "fileName": "file-text-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:29.281Z",
-      "hash": "5ffcbf233c4487d0f1b6868be9d1af138541ed5e653e5e8c659b561896ee2e3b"
-    },
-    {
-      "id": "4178:21885",
-      "name": "FileText_Outlined_16px",
-      "fileName": "file-text-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:29.485Z",
-      "hash": "33acb5f5ec47b0a7d466f2f8155180ce2a35b45b9afa2e57ab111651753b2d06"
-    },
-    {
-      "id": "4178:21889",
-      "name": "Notebook_Outlined_12px",
-      "fileName": "notebook-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:29.697Z",
-      "hash": "4db843e3544671ba3f199b869ad04c7a85eefe8891a16510dc733cdb0d238d9c"
-    },
-    {
-      "id": "4178:21891",
-      "name": "Notebook_Outlined_16px",
-      "fileName": "notebook-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:29.889Z",
-      "hash": "88fbc5615d04afd1d9071c1e53de9b699ccedebf91add84342b647819b62bdb7"
-    },
-    {
-      "id": "4178:21895",
-      "name": "Calendar_Outlined_12px",
-      "fileName": "calendar-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:30.716Z",
-      "hash": "8e8d5898ad17664026a4001914b290c8690ed38e0eb3f33fd13fc11b498b5561"
-    },
-    {
-      "id": "4178:21897",
-      "name": "Calendar_Outlined_16px",
-      "fileName": "calendar-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:31.019Z",
-      "hash": "6c1d1b4840b11ee2b1acd7b020e4912c724bac5ce6fda9abd8b5df863a30f3e7"
-    },
-    {
-      "id": "4178:21901",
-      "name": "Stopwatch_Outlined_12px",
-      "fileName": "stopwatch-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:31.227Z",
-      "hash": "18a2c42ec9feb5d5911977b6eb525000f138356fc2cff87b2b87c649dec84e09"
-    },
-    {
-      "id": "4178:21903",
-      "name": "Stopwatch_Outlined_16px",
-      "fileName": "stopwatch-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:31.533Z",
-      "hash": "04821a32071bb4f6a8c71d7c4ed57766141cca9d2efe16f9efd6ce784e8f87e7"
-    },
-    {
-      "id": "4178:21907",
-      "name": "DocumentText_Outlined_12px",
-      "fileName": "document-text-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:31.739Z",
-      "hash": "ef8b8051dbb72e8027624c0b5ca9274ab6da39081ede244d8108bb86a6076d2f"
-    },
-    {
-      "id": "4178:21909",
-      "name": "DocumentText_Outlined_16px",
-      "fileName": "document-text-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:32.048Z",
-      "hash": "8a3e6e3e1785dc945b4a274d300377e551bd1412298857557c5a92212ec23171"
-    },
-    {
-      "id": "4178:21913",
-      "name": "MapPoint_Outlined_12px",
-      "fileName": "map-point-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:32.349Z",
-      "hash": "a8d2c4eac5daf758de5c1df061daba27a862079d569ade94f6a659775330a651"
-    },
-    {
-      "id": "4178:21915",
-      "name": "MapPoint_Outlined_16px",
-      "fileName": "map-point-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:32.659Z",
-      "hash": "40f7e6a50a4da944b0d35277e24b989b371846a1d500755bd4b400fc5407f88c"
-    },
-    {
-      "id": "4178:21919",
-      "name": "Clock_Outlined_12px",
-      "fileName": "clock-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:32.970Z",
-      "hash": "e938c1a0e445b383a79154dd6d2f5ed9c22d8cd501d4e629951d3f0f12c01c33"
-    },
-    {
-      "id": "4178:21921",
-      "name": "Clock_Outlined_16px",
-      "fileName": "clock-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:33.189Z",
-      "hash": "44fc3b0a499b09d03fb826f82aa4c7340531b50a1e3ddb01db4c6701ca8c0ada"
-    },
-    {
-      "id": "4178:21925",
-      "name": "Comment_Outlined_12px",
-      "fileName": "comment-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:34.333Z",
-      "hash": "c44873c1ecbd6f84e80ec76cc84abfa534bbf67506649ad69e049cfcc4a34c35"
-    },
-    {
-      "id": "4178:21930",
-      "name": "Comment_Filled_12px",
-      "fileName": "comment-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:34.608Z",
-      "hash": "8a93d3d007cc9e92ed1430b3c74b88b5da96925de9f84ce60f6bc1286491961a"
-    },
-    {
-      "id": "4178:21935",
-      "name": "Delete_Outlined_12px",
-      "fileName": "delete-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:34.925Z",
-      "hash": "340bd2f017a651f860c166deb5bd2f8932f6fea4a24749daf80001092e366993"
-    },
-    {
-      "id": "4178:21937",
-      "name": "Delete_Outlined_16px",
-      "fileName": "delete-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:35.223Z",
-      "hash": "a03bf193837c5eb99e685d84adbc0e62f3532be51e36ccbc52d335a4c54d27ae"
-    },
-    {
-      "id": "4178:21941",
-      "name": "Right_Filled_12px",
-      "fileName": "right-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:35.417Z",
-      "hash": "f1026022793199d453d8bf43bdcd800b42bd8254e80e3d4298c32fefa8390240"
-    },
-    {
-      "id": "4178:21943",
-      "name": "Right_Filled_16px",
-      "fileName": "right-filled-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:35.634Z",
-      "hash": "293021cd5a3a0f5cdb2f53684a3bf5a754e975f406b949fc9f4de278787aec81"
-    },
-    {
-      "id": "4178:21947",
-      "name": "Down_Filled_12px",
-      "fileName": "down-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:35.929Z",
-      "hash": "5919d732b370c456ed45655dbfd0717f36d86a81f2922c324a60bd55330b8e40"
-    },
-    {
-      "id": "4178:21949",
-      "name": "Down_Filled_16px",
-      "fileName": "down-filled-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:36.246Z",
-      "hash": "e984a29d0a2a7af45246094205a0d36741b4ff28383fdafa0b84c19162392771"
-    },
-    {
-      "id": "4178:21953",
-      "name": "DownloadDown_Outlined_12px",
-      "fileName": "download-down-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:36.549Z",
-      "hash": "e5cb42043eaf994e2b884c269c324d759c94016521b326bcd5f0f06c19f8cdda"
-    },
-    {
-      "id": "4178:21955",
-      "name": "DownloadDown_Outlined_16px",
-      "fileName": "download-down-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:36.860Z",
-      "hash": "a5539c1afb1987a3687620795aa48481430dbfc08b440d4955fe89544a6111b4"
-    },
-    {
-      "id": "4178:21959",
-      "name": "DownloadUp_Outlined_12px",
-      "fileName": "download-up-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:38.086Z",
-      "hash": "92b232fd30c415aaf0fc3ffc4babd7c06eb73f089e7fe2256257a74fcb3e7c10"
-    },
-    {
-      "id": "4178:21961",
-      "name": "DownloadUp_Outlined_16px",
-      "fileName": "download-up-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:38.347Z",
-      "hash": "218233082ec7497ce612fd1de0d526114b7bbaffb2ce6aa90d1eaa6d61751ec9"
-    },
-    {
-      "id": "4178:21965",
-      "name": "ArrowUp_Outlined_12px",
-      "fileName": "arrow-up-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:38.570Z",
-      "hash": "4d1f70f95f385ef06d89e3e085110504e30a81e719effd507da26aaa7f246b54"
-    },
-    {
-      "id": "4178:21967",
-      "name": "ArrowUp_Outlined_16px",
-      "fileName": "arrow-up-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:38.822Z",
-      "hash": "45a0fe46bd7fc36a2768ecf97098a9d8d28f37a43b1126b5ff8b91c47afca98b"
-    },
-    {
-      "id": "4178:21971",
+      "id": "local-ArrowDown_Outlined_12px",
       "name": "ArrowDown_Outlined_12px",
       "fileName": "arrow-down-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:39.025Z",
-      "hash": "d7f5d3bd6cd5e3a27628bb5092af870f96a77be9cb3df28717a5594e5cb1bb71"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "aff1be78a1a67b1b4f7aa07a507b0ae676a583f954d4cb94b966b9bd495c6650"
     },
     {
-      "id": "4178:21973",
+      "id": "local-ArrowDown_Outlined_16px",
       "name": "ArrowDown_Outlined_16px",
       "fileName": "arrow-down-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:35:39.312Z",
-      "hash": "84d1d7407aa08476e81f53c756499890436ea622f59f6aca37516777f7805c19"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "ba39f0475f3f7c852618142eee17b5de09561b34e837cd58bb402f27fcbbae73"
     },
     {
-      "id": "4178:21977",
+      "id": "local-ArrowDown_Outlined_20px",
+      "name": "ArrowDown_Outlined_20px",
+      "fileName": "arrow-down-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "f16c78c83791199160e9ff52d1501d12c7df091073a67f9992c559d7805ce744"
+    },
+    {
+      "id": "local-ArrowLeft_Outlined_12px",
       "name": "ArrowLeft_Outlined_12px",
       "fileName": "arrow-left-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:39.618Z",
-      "hash": "d7a01aee7b0989facbf220f5b62fd03208e19552a4696c7fb59e725e2a22844f"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "8b4fb53862f1b17b96023e0577bb27b56084546e8e4de014abb845ed9e19715e"
     },
     {
-      "id": "4178:21979",
+      "id": "local-ArrowLeft_Outlined_16px",
       "name": "ArrowLeft_Outlined_16px",
       "fileName": "arrow-left-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:35:39.927Z",
-      "hash": "e0c1b2dbfaf338238927faf45bb7f5649e944dec7eeafec9e4a17ffc598d5764"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "c7f7792a80fd51e2605a35aefe5ae24f9930f7eb282672b28e4e01dad11fc2cd"
     },
     {
-      "id": "4178:21983",
+      "id": "local-ArrowLeft_Outlined_20px",
+      "name": "ArrowLeft_Outlined_20px",
+      "fileName": "arrow-left-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "29be902c3812a1852ac348cdd66303a679463ba869a443c728c19125971df656"
+    },
+    {
+      "id": "local-ArrowRight_Outlined_12px",
       "name": "ArrowRight_Outlined_12px",
       "fileName": "arrow-right-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:40.236Z",
-      "hash": "e65e0fa5c7c01165c19f150ebfb7648370e1fbaa20249719ea48c993b6e3e440"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "e5820c0ec2fed3817d76777809ddb5edb6fbd738bbddb5f1c11cfd68a26e9b5c"
     },
     {
-      "id": "4178:21985",
+      "id": "local-ArrowRight_Outlined_16px",
       "name": "ArrowRight_Outlined_16px",
       "fileName": "arrow-right-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:35:40.541Z",
-      "hash": "35a99fd618d5c0151779ebf5deeb2f077fe3c1e09ecb3135c18f0ffa8b73f64b"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "7de4883f58b581b3adac02755033aa44bb7bab05b99cd6698f2548e6f90ebf81"
     },
     {
-      "id": "4178:21989",
-      "name": "SquareArrowUp_Outlined_12px",
-      "fileName": "square-arrow-up-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:41.273Z",
-      "hash": "eae69cdbec821f99f7c13594a79d3bb70298a1c7fc2dd3040cdf621fedfd800e"
+      "id": "local-ArrowRight_Outlined_20px",
+      "name": "ArrowRight_Outlined_20px",
+      "fileName": "arrow-right-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "ed8aac185de71af84a17216e05172942f984a38993e3217986cf8661a4e805e1"
     },
     {
-      "id": "4178:21991",
-      "name": "SquareArrowUp_Outlined_16px",
-      "fileName": "square-arrow-up-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:41.578Z",
-      "hash": "91d7e7cb3239f7f81c979a4283a7df251ed1a63c983e28a0c61b863ae3d1c3f1"
-    },
-    {
-      "id": "4178:21995",
-      "name": "SquareArrowDown_Outlined_12px",
-      "fileName": "square-arrow-down-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:41.875Z",
-      "hash": "9f4abf10bb4155fcbcf778ed60f393086160a4da6746a7c61819cb00422eaf6c"
-    },
-    {
-      "id": "4178:21997",
-      "name": "SquareArrowDown_Outlined_16px",
-      "fileName": "square-arrow-down-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:42.188Z",
-      "hash": "5faf0fc7acc38bf4eff21ae79880523633ea66a17442805d1531526947c75172"
-    },
-    {
-      "id": "4178:22001",
+      "id": "local-ArrowSortHorizontal_Outlined_12px",
       "name": "ArrowSortHorizontal_Outlined_12px",
       "fileName": "arrow-sort-horizontal-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:42.487Z",
-      "hash": "324a207a066e303dd21f74b9ddf43c8ddad87fe29a32dc63116aafb50d87c4ae"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "7b016c41663c695d6e7f9fafeeaf248f472aa7438c280659c4be8eeb4b0038c0"
     },
     {
-      "id": "4178:22003",
+      "id": "local-ArrowSortHorizontal_Outlined_16px",
       "name": "ArrowSortHorizontal_Outlined_16px",
       "fileName": "arrow-sort-horizontal-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:35:42.797Z",
-      "hash": "2fe80512f30ecbeb831057e98b17be48fab0dad4dc517a3f4aa4271cdf3a2db8"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "5b3a25ce61c1de3433e34bd00628d3d8c0e81f18b72e0a03c39ea73398372caf"
     },
     {
-      "id": "4178:22007",
-      "name": "UpDown_Filled_12px",
-      "fileName": "up-down-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:43.104Z",
-      "hash": "b4c18d18323a1ec06e1e3bb9f740f27f39ae2fb82abea0b51bd1fa7fbdeda4cb"
+      "id": "local-ArrowSortHorizontal_Outlined_20px",
+      "name": "ArrowSortHorizontal_Outlined_20px",
+      "fileName": "arrow-sort-horizontal-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "05e4ecf90175403f0cc78e7c319537fa1f18cb234f7f7abf685a759e19b3a379"
     },
     {
-      "id": "4178:22012",
-      "name": "Calendar_Outlined_12px",
-      "fileName": "calendar-outlined-12px.svg",
+      "id": "local-ArrowUp_Outlined_12px",
+      "name": "ArrowUp_Outlined_12px",
+      "fileName": "arrow-up-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:43.310Z",
-      "hash": "26f285ffc1d4541610f9951b399820326bd2b15bfdc15e7a615d74673b1273d6"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "19251a7fce44d203b453737ff1b3948f23d0836f5aef45e5fc4f7ffa2162eb06"
     },
     {
-      "id": "4178:22017",
-      "name": "EyeOpen_Outlined_12px",
-      "fileName": "eye-open-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:43.615Z",
-      "hash": "2e858ae9cff2fa5de6958cdbf54636ef8f44389659d947cb1c791c3ed66c398e"
+      "id": "local-ArrowUp_Outlined_16px",
+      "name": "ArrowUp_Outlined_16px",
+      "fileName": "arrow-up-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "713c63465b92fb32272c3add82ac401e9ec647de66ee04ceb83b829f970ef5b0"
     },
     {
-      "id": "4178:22022",
-      "name": "EyeClosed_Outlined_12px",
-      "fileName": "eye-closed-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:43.924Z",
-      "hash": "35f7e5af53abcfe223adae9c8d36134260c22856f327384014303e71631bae61"
+      "id": "local-ArrowUp_Outlined_20px",
+      "name": "ArrowUp_Outlined_20px",
+      "fileName": "arrow-up-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "95528c5c26c6a5044b0c4482b30b385c4e50fb3bad663566f6dfa8cfbfbd58b4"
     },
     {
-      "id": "4178:22027",
-      "name": "Phone_Outlined_12px",
-      "fileName": "phone-outlined-12px.svg",
+      "id": "local-Back_Outlined_12px",
+      "name": "Back_Outlined_12px",
+      "fileName": "back-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:44.949Z",
-      "hash": "5e8484c3d8827c187fb7e5b2dd5fdd2f3f9a482c6a6919e5faa569a5442b0f19"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "65ca9ad71cb946616667e2e3956ffc4839761cbbc14a3a0b2d16e0a538932ef9"
     },
     {
-      "id": "4178:22032",
-      "name": "Email_Outlined_12px",
-      "fileName": "email-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:45.252Z",
-      "hash": "d1d23f4f392d814fa61a1331fcc167e8430aa8a9ffcee5d6f7ddb2d9b5189276"
+      "id": "local-Back_Outlined_16px",
+      "name": "Back_Outlined_16px",
+      "fileName": "back-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "5d1e2a1770f5253d3536568269166dce532d646a9b45c9c24da0a63a30544f7b"
     },
     {
-      "id": "4178:22037",
-      "name": "Info_Outlined_12px",
-      "fileName": "info-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:45.566Z",
-      "hash": "a6e03e96efc02a3362fa57615e9760d674fbfea41d05ae3bea23a7a3f17f9405"
-    },
-    {
-      "id": "4178:22042",
-      "name": "Filter_Filled_12px",
-      "fileName": "filter-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:45.762Z",
-      "hash": "71d0f48e0520a97bd248f046548fe5d85422728a890b6e38a29656047a5273bb"
-    },
-    {
-      "id": "4178:22047",
-      "name": "SortingDown_Outlined_12px",
-      "fileName": "sorting-down-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:46.078Z",
-      "hash": "4f8cc1fc75f41a2abcdf2f52039d9167f6f80d5f87ce143e1ec8fd1bcbc9805f"
-    },
-    {
-      "id": "4178:22052",
-      "name": "SortingUp_Outlined_12px",
-      "fileName": "sorting-up-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:46.380Z",
-      "hash": "343ca69572cff846f2e62511622c1ca872211c960f89f6a8fb0481df3fac0f13"
-    },
-    {
-      "id": "4178:22057",
-      "name": "SortingMess_Outlined_12px",
-      "fileName": "sorting-mess-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:46.691Z",
-      "hash": "7b21566a3a577ea360a2d40a086c26bbf48f71abd153c011a42e048ab4b20edd"
-    },
-    {
-      "id": "4178:22062",
-      "name": "Pin_Filled_12px",
-      "fileName": "pin-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:46.891Z",
-      "hash": "82aefcd43916b3b11c26c3a62886abddd60f2985f5e70dc000472e33a7f07fcc"
-    },
-    {
-      "id": "4178:22067",
-      "name": "Pin2_Filled_12px",
-      "fileName": "pin2-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:47.199Z",
-      "hash": "04591975503d840a8c8dca497d24c93fd590eed78d9f0adc6155a0e0860fa416"
-    },
-    {
-      "id": "4178:22072",
-      "name": "TextItalic_Outlined_12px",
-      "fileName": "text-italic-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:47.390Z",
-      "hash": "470e10da7c06ac3ffb14db8abf34567cca6233e7e493f7c5c9cc9eafc7442b14"
-    },
-    {
-      "id": "4178:22077",
-      "name": "SmallCaps_Outlined_12px",
-      "fileName": "caps-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:48.124Z",
-      "hash": "155422b0bdd51d1fd74193ca3a1632a2a0978a12615fbf2695b53ef33337c3f5"
-    },
-    {
-      "id": "4178:22082",
-      "name": "TextBold_Outlined_12px",
-      "fileName": "text-bold-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:48.431Z",
-      "hash": "4147a813e9502759137b87a5b1d7d8a9d1efbd6ec308610f13940ecb8e523019"
-    },
-    {
-      "id": "4178:22087",
-      "name": "TextUnderline_Outlined_12px",
-      "fileName": "text-underline-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:48.739Z",
-      "hash": "c8a3177ff15c1395aa75b7e7d682fb669b9bf1c52b1332ae83c362a135b7451f"
-    },
-    {
-      "id": "4178:22092",
-      "name": "EmptyCircle_Outlined_12px",
-      "fileName": "empty-circle-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:48.963Z",
-      "hash": "f8b7f16a69e2f8e2388ed44ae061230b8abefd64c92667c0fc3000b14c41472c"
-    },
-    {
-      "id": "4178:22097",
-      "name": "CrossCircle_Outlined_12px",
-      "fileName": "cross-circle-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:49.249Z",
-      "hash": "d6599aa6fadd7f0aeaab3bfca27b9a55223790ede65d5f2ddc3520e96a2ed16d"
-    },
-    {
-      "id": "4178:22102",
-      "name": "CrossCircle_Filled_12px",
-      "fileName": "cross-circle-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:49.460Z",
-      "hash": "41446e83b8e544133fd0a16868bc4a8147ec3f28bd0f5fa2b1a77db758f2a087"
-    },
-    {
-      "id": "4178:22107",
-      "name": "TickCircle_Filled_12px",
-      "fileName": "tick-circle-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:49.660Z",
-      "hash": "9826cb2ba5af0cc6fc0fc56dcb279866d7c892a0798f8d1cedbb4779fff930ae"
-    },
-    {
-      "id": "4178:22112",
-      "name": "DangerCircle_Filled_12px",
-      "fileName": "danger-circle-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:49.965Z",
-      "hash": "f6d70eeb99be7822c14bd2bf13f938ef5e63bcfd1787f75583a5a88a944f214e"
-    },
-    {
-      "id": "4178:22117",
-      "name": "MinusCircle_Filled_12px",
-      "fileName": "minus-circle-filled-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:50.273Z",
-      "hash": "3557ab3f7227e58262c24d4c90d3bbb0066964d97291ed08c8775de60a766dcf"
-    },
-    {
-      "id": "4178:22122",
-      "name": "Screen_Outlined_12px",
-      "fileName": "screen-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:50.477Z",
-      "hash": "35e1b7286c76753cb28a8a0dbe2ca443f6eea5e430ea6bcfc22402e29f29306b"
-    },
-    {
-      "id": "4178:22127",
-      "name": "Database_Outlined_12px",
-      "fileName": "database-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:52.120Z",
-      "hash": "d69624091fa3b2b3d7c6e844d743c5bb126e9badc4db7a79f482932bb4e9888d"
-    },
-    {
-      "id": "4178:22132",
-      "name": "Bug_Outlined_12px",
-      "fileName": "bug-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:52.320Z",
-      "hash": "1014604ea769420f70bc108c6dae97b9a2899bbe0d1b396b4fbfec89157dc50e"
-    },
-    {
-      "id": "4178:22137",
-      "name": "Server_Outlined_12px",
-      "fileName": "server-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:52.654Z",
-      "hash": "eba38ad036c8bc472504e0ca8de4856f02ef568e72b2cd553e142117916cce73"
-    },
-    {
-      "id": "4178:22142",
-      "name": "Notebook2_Outlined_12px",
-      "fileName": "notebook2-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:52.860Z",
-      "hash": "d6ceb4feb4b83329ced53c2e5a37ebdee270d6bedfe36085505c4533f1aeebad"
-    },
-    {
-      "id": "4178:22147",
-      "name": "Сube_Outlined_12px",
-      "fileName": "ube-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:53.052Z",
-      "hash": "0acb624ea8ec0ad027819178ccae0d8442a44423a966ebd08a8bfc258c0bcdd2"
-    },
-    {
-      "id": "4178:22152",
-      "name": "Tag_Outlined_12px",
-      "fileName": "tag-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:53.343Z",
-      "hash": "334b33dfdf6033a897def32fe334c98a435251b3b9654c7cf0fb7f5e35a3ccc3"
-    },
-    {
-      "id": "4178:22157",
-      "name": "CPU_Outlined_12px",
-      "fileName": "cpu-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:53.648Z",
-      "hash": "e8ab3524693529f4ba79121d67908764ac4fea7ac347971435f18a208989f683"
+      "id": "local-Back_Outlined_20px",
+      "name": "Back_Outlined_20px",
+      "fileName": "back-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "18aec37cd6d6eb1dcbb8f46333abaae2a51cd038700958b2191a2e8664fc3e83"
     },
     {
       "id": "4178:22162",
@@ -882,313 +198,143 @@
       "width": 12,
       "height": 12,
       "lastModified": "2025-10-01T15:35:53.955Z",
-      "hash": "6071ff6258b298b8efa6fcfb7dbb4054e5f99764d4329f7cd9817258ae5a12cf"
+      "hash": "6071ff6258b298b8efa6fcfb7dbb4054e5f99764d4329f7cd9817258ae5a12cf",
+      "deprecated": true
     },
     {
-      "id": "4178:22167",
-      "name": "Input_Outlined_12px",
-      "fileName": "input-outlined-12px.svg",
+      "id": "local-Bug_Outlined_12px",
+      "name": "Bug_Outlined_12px",
+      "fileName": "bug-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:54.265Z",
-      "hash": "0a8d75d48bd1c3e68a202c9a6573aab784d13dae076eacbfa6d804df76878a48"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "00b5f73c31707fe773af7526dc9cd29ed006c3811a15933b6e66ab7d63757182"
     },
     {
-      "id": "4178:22172",
-      "name": "Output_Outlined_12px",
-      "fileName": "output-outlined-12px.svg",
+      "id": "local-Bug_Outlined_16px",
+      "name": "Bug_Outlined_16px",
+      "fileName": "bug-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "e9bcbde1ddacb424919841af18ffae213bd5ec2ed7ef7bea5eb4cfe358d5a66f"
+    },
+    {
+      "id": "local-Bug_Outlined_20px",
+      "name": "Bug_Outlined_20px",
+      "fileName": "bug-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "1de5ad61811e94b8c307245fcb4ff9c910c7fdc2644e342a6de0642c7e1ec916"
+    },
+    {
+      "id": "local-Calendar_Outlined_12px",
+      "name": "Calendar_Outlined_12px",
+      "fileName": "calendar-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:54.537Z",
-      "hash": "76cb16e2416adc7f2487ef993dd960fc38c27c0c390c152ecf7c9873b2ee5d7f"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "3c166cb6df5257391fee9dbdd62bc72e242fcf02f60e48a3402d7e7f167cd0cf"
     },
     {
-      "id": "4178:22177",
-      "name": "Consumers_Outlined_12px",
-      "fileName": "consumers-outlined-12px.svg",
+      "id": "local-Calendar_Outlined_16px",
+      "name": "Calendar_Outlined_16px",
+      "fileName": "calendar-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "696917998778d9629f15dff7f05532c8943e97a93faf742533f0fe98116e4423"
+    },
+    {
+      "id": "local-Calendar_Outlined_20px",
+      "name": "Calendar_Outlined_20px",
+      "fileName": "calendar-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "c14e69d5775c423669577e992c0be75af251842ab70258557932afa7e549a3e9"
+    },
+    {
+      "id": "local-CalendarMark_Outlined_12px",
+      "name": "CalendarMark_Outlined_12px",
+      "fileName": "calendar-mark-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:55.608Z",
-      "hash": "dc52b98eeb6b691562d587933de8dd970207469c9d664bb10f3deae5e8ff43ce"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "be506371ee4aa29451ba1798796e7fe2c86857d3fc0ea63c616e286f9832b70c"
     },
     {
-      "id": "4178:22182",
-      "name": "Link_Outlined_12px",
-      "fileName": "link-outlined-12px.svg",
+      "id": "local-CalendarMark_Outlined_16px",
+      "name": "CalendarMark_Outlined_16px",
+      "fileName": "calendar-mark-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "13dc3e3f5dcd3a70f4d6cc24f05b9ea5994ea1dd7573027d54c26afdc65a041b"
+    },
+    {
+      "id": "local-CalendarMark_Outlined_20px",
+      "name": "CalendarMark_Outlined_20px",
+      "fileName": "calendar-mark-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "f4cd84b79d8762bf13147eae3679f5b52cbd440bae9370ff53fd488e499d64cf"
+    },
+    {
+      "id": "local-Chart_Outlined_12px",
+      "name": "Chart_Outlined_12px",
+      "fileName": "chart-outlined-12px.svg",
       "width": 12,
       "height": 12,
-      "lastModified": "2025-10-01T15:35:55.902Z",
-      "hash": "56ce4942e68682d68736a71257fe9af17b46051501d46e2eddb36aa838e2881f"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "e72d33add49b55d9fb778c36504ee40a7369dd21e22e38cc00b4385ab86fa6d7"
     },
     {
-      "id": "4178:22187",
-      "name": "Filter_Outlined_12px",
-      "fileName": "filter-outlined-12px.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "2025-10-01T15:35:56.092Z",
-      "hash": "ff169c7dbb0edf20b1f5574c54e96f5648a82d07cd0c2f4a67f4e6374bbe5a78"
-    },
-    {
-      "id": "4178:22193",
-      "name": " Play_Outlined_16px",
-      "fileName": "play-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:56.416Z",
-      "hash": "a18825d34eaafa71c6c1c85926ed34621417fc24e6178180a844abf424db8473"
-    },
-    {
-      "id": "4178:22198",
-      "name": "UndoLeft_Outlined_16px",
-      "fileName": "undo-left-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:56.723Z",
-      "hash": "c300a0f5ca0c65b4e755bc05459f36d05778faaa80a10b367f4bd21f67a1a3f4"
-    },
-    {
-      "id": "4178:22203",
-      "name": "Minus_Outlined_16px",
-      "fileName": "minus-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:57.029Z",
-      "hash": "b0833eb44cc0cec4ee89689009750819c4fbcb7fa6021436996b6cf10251c93d"
-    },
-    {
-      "id": "4178:22208",
-      "name": "ScreenSize_Outlined_16px",
-      "fileName": "screen-size-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:57.337Z",
-      "hash": "6efe437ebb33f630d1e6f8e175649b8debe41b974583d94b33094d2180e612d4"
-    },
-    {
-      "id": "4178:22213",
-      "name": "ScreenFull_Outlined_16px",
-      "fileName": "screen-full-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:57.644Z",
-      "hash": "c3731a2e81eb9982c12c20f3df91c282f383cfb0bc54b4c86e8a1725643bd5ab"
-    },
-    {
-      "id": "4178:22218",
-      "name": "Forward_Outlined_16px",
-      "fileName": "forward-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:57.950Z",
-      "hash": "92fc64bce3cb9e81080d539a0d79a7a375cb8c0691f090be34e03f83c1aff782"
-    },
-    {
-      "id": "4178:22223",
-      "name": "Сheck_Outlined_16px",
-      "fileName": "heck-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:58.263Z",
-      "hash": "565a99a3b1ac0bd30b2ff9184c9cccd08c4ccb2d927a48c77b1165ba5565b442"
-    },
-    {
-      "id": "4178:22228",
-      "name": "Сross_Outlined_16px",
-      "fileName": "ross-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:59.077Z",
-      "hash": "1a830ef5d9723ed9ce146aeb3e49604841b00076d41e4fddb8a7c6b093927354"
-    },
-    {
-      "id": "4178:22233",
-      "name": "Edit_Outlined_16px",
-      "fileName": "edit-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:59.387Z",
-      "hash": "5d76624d63850755b644e46105aeed4403544d2a635257f81778e858b8884b4e"
-    },
-    {
-      "id": "4178:22238",
-      "name": "Files_Outlined_16px",
-      "fileName": "files-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:59.694Z",
-      "hash": "5ade2321a7050413e2c6b1e847f9f061ef8660f69e89a006ca3c94014ff17de7"
-    },
-    {
-      "id": "4178:22243",
-      "name": "TableAdd_Outlined_16px",
-      "fileName": "table-add-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:35:59.901Z",
-      "hash": "f68e5f2e8a9a0bdf0471b8302c37e2d7c5b094ad89dfb769856ab119160c750c"
-    },
-    {
-      "id": "4178:22248",
-      "name": "Table_Outlined_16px",
-      "fileName": "table-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:00.213Z",
-      "hash": "315d99240f9abc1f69fc3408ce6d393fff87e30b2fa2b35e8a795c81a5ec6fc7"
-    },
-    {
-      "id": "4178:22253",
-      "name": "Export_Outlined_16px",
-      "fileName": "export-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:00.448Z",
-      "hash": "4a4c0fbd2e8b9b6f1994ff3fcdece75e391d64aeb071c67c5f5fa9afc2e2ac10"
-    },
-    {
-      "id": "4178:22258",
-      "name": "Import_Outlined_16px",
-      "fileName": "import-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:00.714Z",
-      "hash": "3d02c0a4a498c200949d4f1b5928b661fed735058755bec6d715ff602df8da10"
-    },
-    {
-      "id": "4178:22263",
-      "name": "Folder_Filled_16px",
-      "fileName": "folder-filled-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:01.024Z",
-      "hash": "a77a694d5a17bb149246b5a0dcc32b6b9e29ec8a7522f90c25a8af4ffa8189e4"
-    },
-    {
-      "id": "4178:22268",
-      "name": "Scanner_Outlined_16px",
-      "fileName": "scanner-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:01.335Z",
-      "hash": "e8162b3922eb5d35d3fc25da28b7f82b185c0d7e76468e129aff89f719de0907"
-    },
-    {
-      "id": "4178:22273",
+      "id": "local-Chart_Outlined_16px",
       "name": "Chart_Outlined_16px",
       "fileName": "chart-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:36:01.540Z",
-      "hash": "dfbe8772b6d8cb123289b84d1fce56fdd1fdea56a47423d4e3693dc73777ce42"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "27569c7b73844f7c19dfcbfcca184cc3b0cdb701d7807ccf2419cda2a829ede1"
     },
     {
-      "id": "4178:22278",
-      "name": "History_Outlined_16px",
-      "fileName": "history-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:02.664Z",
-      "hash": "c5e24faa9023260c54024846f26d55cc646d5f4cf4d8f855b43adac6373d17a6"
+      "id": "local-Chart_Outlined_20px",
+      "name": "Chart_Outlined_20px",
+      "fileName": "chart-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "22cfaca3007b4d1f7dd4b8491bd0e0123894189c0f5c5411e5ffe05661b8e627"
     },
     {
-      "id": "4178:22283",
-      "name": "Copy_Outlined_16px",
-      "fileName": "copy-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:02.968Z",
-      "hash": "a4443a67de4fe7f87567c117c9533adce54dc1fa128c9c7c92dcf66a91d15f39"
+      "id": "local-Сheck_Outlined_12px",
+      "name": "Check_Outlined_12px",
+      "fileName": "check-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "9b97a40b1e836cf8e6a2d78c1147daed8d3c362f55417d7f844a7074bfaa6de1",
+      "hash": "2026-02-04T15:18:40.000Z"
     },
     {
-      "id": "4178:22288",
-      "name": "QR-Code_Outlined_16px",
-      "fileName": "qr-code-outlined-16px.svg",
+      "id": "local-Сheck_Outlined_16px",
+      "name": "Check_Outlined_16px",
+      "fileName": "check-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:36:03.300Z",
-      "hash": "3822e8032d2f22457240569ab6e4005ff753b337c163b16c707ac7ee977ae805"
+      "lastModified": "420006782c59b94166d022c0d2de0c7347d9fa904ebc489de70093409c8c15b3",
+      "hash": "2026-02-04T15:18:40.000Z"
     },
     {
-      "id": "4178:22293",
-      "name": "FileRight_Outlined_16px",
-      "fileName": "file-right-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:03.587Z",
-      "hash": "fd0f3fc107b586c8b02bbe5713c98339925d3c4ce8ff54b0f9c35a25de7c6f10"
-    },
-    {
-      "id": "4178:22298",
-      "name": "FileDownload_Outlined_16px",
-      "fileName": "file-download-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:03.896Z",
-      "hash": "c47baa8ac66ff62c5cd6c4cd2fd2f61ba6854f0f26befb3bc39d2c873cbefdb5"
-    },
-    {
-      "id": "4178:22303",
-      "name": "RefreshSquare_Outlined_16px",
-      "fileName": "refresh-square-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:04.101Z",
-      "hash": "c89b58d1af9c71c0e51ffc4568e8c12901deaae1ce9a9ce89a10def31d6c472f"
-    },
-    {
-      "id": "4178:22313",
-      "name": "Refresh_Outlined_16px",
-      "fileName": "refresh-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:04.401Z",
-      "hash": "f0cb28308e22c3cfed08fb60a4e4fcf9905c2cd4809a6e3954c8d92b10b9d0bf"
-    },
-    {
-      "id": "4178:22308",
-      "name": "Comment_Outlined_16px",
-      "fileName": "comment-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:04.712Z",
-      "hash": "16d7d6a6562723cc475d3bb2e77d0d9b126308f8ce7e7b678b0001730a526ebd"
-    },
-    {
-      "id": "4178:22318",
-      "name": "Tree_Outlined_16px",
-      "fileName": "tree-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:05.013Z",
-      "hash": "9a5f1cb39a742e551e09a677cab67f930f5e1eea925c2802adcbcf3e0f9c3522"
-    },
-    {
-      "id": "4178:22323",
-      "name": "Columns_Outlined_16px",
-      "fileName": "columns-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:05.322Z",
-      "hash": "81fbbd971d59415f6bc30d65e3f30abbda9a1e357d052490c46e62c19f3bcbc8"
-    },
-    {
-      "id": "4178:22328",
-      "name": "FolderWithFiles_Outlined_16px",
-      "fileName": "folder-with-files-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:06.041Z",
-      "hash": "f948ca5745bd62f549754f67a566502aca095a72f00839ebd6afb4c9c1e50798"
-    },
-    {
-      "id": "4178:22333",
-      "name": "Documents_Outlined_16px",
-      "fileName": "documents-outlined-16px.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "2025-10-01T15:36:06.351Z",
-      "hash": "e4aa466b906490427c5294eb2e1d3dbd6399cf2cbbfd6fa2de80b95623297479"
+      "id": "local-Сheck_Outlined_20px",
+      "name": "Check_Outlined_20px",
+      "fileName": "check-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "ec19a972c1b93fc2b0f25537c3722bb5750487b7c0d035537d80472771899a92",
+      "hash": "2026-02-04T15:18:40.000Z"
     },
     {
       "id": "4178:22338",
@@ -1197,43 +343,612 @@
       "width": 16,
       "height": 16,
       "lastModified": "2025-10-01T15:36:06.557Z",
-      "hash": "8cd8ada869a90e6b785579c4303fa851af4c3461910867214c3b66fef2159a93"
+      "hash": "8cd8ada869a90e6b785579c4303fa851af4c3461910867214c3b66fef2159a93",
+      "deprecated": true
     },
     {
-      "id": "4178:22343",
-      "name": "User_Outlined_16px",
-      "fileName": "user-outlined-16px.svg",
+      "id": "local-ClipboardList_Outlined_12px",
+      "name": "ClipboardList_Outlined_12px",
+      "fileName": "clipboard-list-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "63d61a1533e07d14155d22b70e3b6bcff22e755ea2034dab38b2b3b973fc4cc7"
+    },
+    {
+      "id": "local-ClipboardList_Outlined_16px",
+      "name": "ClipboardList_Outlined_16px",
+      "fileName": "clipboard-list-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:36:06.775Z",
-      "hash": "60b84060dcd3da284b4bc0110ab59462216ac02d051cbfb8d8aa4f90b3c92e68"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "1a5a287bd3b41921679cbc24000cfe4bcde4b139126a3aeafa47132fb581ee23"
     },
     {
-      "id": "4178:22348",
-      "name": "Verified_Outlined_16px",
-      "fileName": "verified-outlined-16px.svg",
+      "id": "local-ClipboardList_Outlined_20px",
+      "name": "ClipboardList_Outlined_20px",
+      "fileName": "clipboard-list-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "4d0bffa7847f7403ffac1a958dda42ffc02295cafaea65c8ddb3f6a7959fdc3b"
+    },
+    {
+      "id": "local-Clock_Outlined_12px",
+      "name": "Clock_Outlined_12px",
+      "fileName": "clock-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "3ac302657afd85506de1b1bb9d84c462f93953783dc1549442731c184671e638"
+    },
+    {
+      "id": "local-Clock_Outlined_16px",
+      "name": "Clock_Outlined_16px",
+      "fileName": "clock-outlined-16px.svg",
       "width": 16,
       "height": 16,
-      "lastModified": "2025-10-01T15:36:07.064Z",
-      "hash": "7b40b6dcf1dfbe11763db3db04136a3ead3da07fa474ccabd50a536b6b4ca066"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "76002b73e875cb90ed0481524c13b95cc0a3a7cd630bcc4ec3d8ae47049b048d"
     },
     {
-      "id": "4178:22354",
-      "name": "Notification_Outlined_20px",
-      "fileName": "notification-outlined-20px.svg",
+      "id": "local-Clock_Outlined_20px",
+      "name": "Clock_Outlined_20px",
+      "fileName": "clock-outlined-20px.svg",
       "width": 20,
       "height": 20,
-      "lastModified": "2025-10-01T15:36:07.266Z",
-      "hash": "0a144ad33d221c8c6a2ce94457f23a9aaba7218d510d766e747bf08b630d3194"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "611907af6b2bc3a6f06057d0fcbc06a24025a56b8ea67c4c1c2967876af4cd68"
     },
     {
-      "id": "4178:22359",
-      "name": "Legend_Outlined_20px",
-      "fileName": "legend-outlined-20px.svg",
+      "id": "local-Close_Outlined_12px",
+      "name": "Close_Outlined_12px",
+      "fileName": "close-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "ba80ebe447eeb046c3c2ff607a01fd440eac7ec36564f454823ad3b19ca58311"
+    },
+    {
+      "id": "local-Close_Outlined_16px",
+      "name": "Close_Outlined_16px",
+      "fileName": "close-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "9f07cd34ab3eb4800e85ef4658606d2943cc6c9a5a4567c50f0368df3f497db5"
+    },
+    {
+      "id": "local-Close_Outlined_20px",
+      "name": "Close_Outlined_20px",
+      "fileName": "close-outlined-20px.svg",
       "width": 20,
       "height": 20,
-      "lastModified": "2025-10-01T15:36:07.577Z",
-      "hash": "1a8c0ce7125859cf897696544199c2b8c70cfe79441368d45d8254480fb5fade"
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "a4516625f5783ab9141ee33d0fa528d655ac021cddfc5f2d02f6ea92dc32e730"
+    },
+    {
+      "id": "local-Collapse_Outlined_12px",
+      "name": "Collapse_Outlined_12px",
+      "fileName": "collapse-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "bd76b67c4b95471dcf872ff4673c8135c908c3ea8452ef0e757c95d3f37ce2cf"
+    },
+    {
+      "id": "local-Collapse_Outlined_16px",
+      "name": "Collapse_Outlined_16px",
+      "fileName": "collapse-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "79c8852f19f6191c283b34b22ea0861f7fa4833f6dd7bfac10102ffe4d5eeb89"
+    },
+    {
+      "id": "local-Collapse_Outlined_20px",
+      "name": "Collapse_Outlined_20px",
+      "fileName": "collapse-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "fe586f736d4d73b6e2e12be88592ffb407ad08062aa73b914f26fd87185f07b7"
+    },
+    {
+      "id": "local-Columns_Outlined_12px",
+      "name": "Columns_Outlined_12px",
+      "fileName": "columns-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "bd35b7f058a45e9b28e0da1d8f747d0b28ef863577d08295d5e2e9cedb568148"
+    },
+    {
+      "id": "local-Columns_Outlined_16px",
+      "name": "Columns_Outlined_16px",
+      "fileName": "columns-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "179177c932494b16fc4d7464c7b44d7fcab125138fd3b355589277c5888e91a6"
+    },
+    {
+      "id": "local-Columns_Outlined_20px",
+      "name": "Columns_Outlined_20px",
+      "fileName": "columns-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "6c7645d91b764af56a16b87ca7084ceb3c552d9abb8e06a0846bc06cbd6a62e6"
+    },
+    {
+      "id": "local-Comment_Filled_12px",
+      "name": "Comment_Filled_12px",
+      "fileName": "comment-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "302e3eadac9a1d276f78c808fb1ef1bca6cae6ed777b8f5c6de59663239bb05a"
+    },
+    {
+      "id": "local-Comment_Filled_16px",
+      "name": "Comment_Filled_16px",
+      "fileName": "comment-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "ea3c15dd9fe900037f914b14c8ebd80e6c553e30431fa5dad272a2d7a7e82442"
+    },
+    {
+      "id": "local-Comment_Filled_20px",
+      "name": "Comment_Filled_20px",
+      "fileName": "comment-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "6895d221c2f5447b90390708db7e8066df18f9d4dc12ac822161c5d563e51e76"
+    },
+    {
+      "id": "local-Comment_Outlined_12px",
+      "name": "Comment_Outlined_12px",
+      "fileName": "comment-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "163c28f9df8bfcfccc3d9afef276ebb9c574810b4aa11511c0aef3fb19f8580c"
+    },
+    {
+      "id": "local-Comment_Outlined_16px",
+      "name": "Comment_Outlined_16px",
+      "fileName": "comment-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "d76e4911b54594ebe2d006a965cb759547681eca72a7be4d6820bc58761dca60"
+    },
+    {
+      "id": "local-Comment_Outlined_20px",
+      "name": "Comment_Outlined_20px",
+      "fileName": "comment-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "4aa9769564f3e905ecb1d140df145de82707210163afb5edd18cbb4b447405c7"
+    },
+    {
+      "id": "local-CommentRectangular_Outlined_12px",
+      "name": "CommentRectangular_Outlined_12px",
+      "fileName": "comment-rectangular-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "ee32abf6e4334079821f5391dbc45c8b4147d88cac14dc81fbbf6207b2a5347d"
+    },
+    {
+      "id": "local-CommentRectangular_Outlined_16px",
+      "name": "CommentRectangular_Outlined_16px",
+      "fileName": "comment-rectangular-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "634ca31e10ef8664a918f8cc4f16c22cdf1f002ea82bc8b0c1ddc62080bdda8a"
+    },
+    {
+      "id": "local-CommentRectangular_Outlined_20px",
+      "name": "CommentRectangular_Outlined_20px",
+      "fileName": "comment-rectangular-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "85a01d069ee52a575a05afd674a1fb901bd3154ebf505610eb5b61bf9eb1a158"
+    },
+    {
+      "id": "local-Computer_Outlined_12px",
+      "name": "Computer_Outlined_12px",
+      "fileName": "computer-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "f300e3205e12d207696266bd8e49c87cade0b624ea49260369fff1dcce33bd2b"
+    },
+    {
+      "id": "local-Computer_Outlined_16px",
+      "name": "Computer_Outlined_16px",
+      "fileName": "computer-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "b0217faae092400dcd37dd6f59f9f0c3d44c4c0659bb8564493dc41f42da11dc"
+    },
+    {
+      "id": "local-Computer_Outlined_20px",
+      "name": "Computer_Outlined_20px",
+      "fileName": "computer-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "7e92cf674fab52811e30b6c43f830789d14d0df71cff4a78c44c580368f6b6d0"
+    },
+    {
+      "id": "local-Consumers_Outlined_12px",
+      "name": "Consumers_Outlined_12px",
+      "fileName": "consumers-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "0b038c1fd37f5e7e9aaa689d63c5d5e6d1c27e001d83fc19e9e8e871d4967a54"
+    },
+    {
+      "id": "local-Consumers_Outlined_16px",
+      "name": "Consumers_Outlined_16px",
+      "fileName": "consumers-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "d597d0986c3904d4dbd072959d2487a09d74ce11ae948a90f73c63ab27b6da1b"
+    },
+    {
+      "id": "local-Consumers_Outlined_20px",
+      "name": "Consumers_Outlined_20px",
+      "fileName": "consumers-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "2e0dfb847033e5f53f402af721c55d69acb987d3174ddcd23fbb8677f2e07546"
+    },
+    {
+      "id": "local-Copy_Outlined_12px",
+      "name": "Copy_Outlined_12px",
+      "fileName": "copy-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "1cd16d9a64f3c4c6a1976d5b57dcd5384026882dc2ec4889f30797fc62b6c11f"
+    },
+    {
+      "id": "local-Copy_Outlined_16px",
+      "name": "Copy_Outlined_16px",
+      "fileName": "copy-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "d99833319517a006900499609ceda4fea40b69fd081aa6de744ec3d6081a42e9"
+    },
+    {
+      "id": "local-Copy_Outlined_20px",
+      "name": "Copy_Outlined_20px",
+      "fileName": "copy-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "5bbe78b0f2e4267d87187a6a611f76c062990c94b3cce1c24cc32abff89019bb"
+    },
+    {
+      "id": "local-CPU_Outlined_12px",
+      "name": "CPU_Outlined_12px",
+      "fileName": "cpu-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "0971489c063e696c1231e4bd428fbc8003748d0350e3373e06b2ab58c66882c7"
+    },
+    {
+      "id": "local-CPU_Outlined_16px",
+      "name": "CPU_Outlined_16px",
+      "fileName": "cpu-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "f9f337da4c8200f7f292d9dee237f780d8074700981d94a1e9252fd02a66758a"
+    },
+    {
+      "id": "local-CPU_Outlined_20px",
+      "name": "CPU_Outlined_20px",
+      "fileName": "cpu-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "dcf65822efce59d32f9c4fdef36516105c1b469aa6d892a343de4ab2f2e5e2c2"
+    },
+    {
+      "id": "local-CrossCircle_Filled_12px",
+      "name": "CrossCircle_Filled_12px",
+      "fileName": "cross-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "c487ca22d52db9fdffd7f0fb38179f50c6bfcc1f7347cb75b59f79e9f06d3674"
+    },
+    {
+      "id": "local-CrossCircle_Filled_16px",
+      "name": "CrossCircle_Filled_16px",
+      "fileName": "cross-circle-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "e932dca1bd8d695cb5db89ac35a5d8051c5273cb46a6ae65b8b98b8cd37d15ba"
+    },
+    {
+      "id": "local-CrossCircle_Filled_20px",
+      "name": "CrossCircle_Filled_20px",
+      "fileName": "cross-circle-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "44256feb15638dd70372c20688355382b4bdf86eeea869378a8be4d944d829c8"
+    },
+    {
+      "id": "local-CrossCircle_Оutlined_12px",
+      "name": "CrossCircle_Outlined_12px",
+      "fileName": "cross-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "49784b0cd278c3f18cf04f19462d4e6090bdde2f70f176cfc09bb7634e585dd7",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-CrossCircle_Оutlined_16px",
+      "name": "CrossCircle_Outlined_16px",
+      "fileName": "cross-circle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "ea63b36dd14ac205762681d0555314c08039d9ad74a1354c5d4606e40760a821",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-CrossCircle_Оutlined_20px",
+      "name": "CrossCircle_Outlined_20px",
+      "fileName": "cross-circle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "45453b14dbd46b378f0d630c24267edd3321fa7e781d10fcfe6eca2c5ebc78a9",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-DangerCircle_Filled_12px",
+      "name": "DangerCircle_Filled_12px",
+      "fileName": "danger-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "0b5f383e7dc7c02bf3157b73dd7baf18427650076495a18268d77d0e5de45134"
+    },
+    {
+      "id": "local-DangerCircle_Filled_16px",
+      "name": "DangerCircle_Filled_16px",
+      "fileName": "danger-circle-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "2ad391f39c04cb11bf03e97de7a8a96444151f63bb46b1a93d7818728af3a4a0"
+    },
+    {
+      "id": "local-DangerCircle_Filled_20px",
+      "name": "DangerCircle_Filled_20px",
+      "fileName": "danger-circle-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "bfbfe18ff032b8e8cad3b123b1922afa538261672039379dcc18b6998bad13f5"
+    },
+    {
+      "id": "local-DangerCircle_Оutlined_12px",
+      "name": "DangerCircle_Outlined_12px",
+      "fileName": "danger-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "5455e7f4e23979898256fa0d3047df8cbe149364106e2c36cb771bb6a2b93aee",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-DangerCircle_Оutlined_16px",
+      "name": "DangerCircle_Outlined_16px",
+      "fileName": "danger-circle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "1235895a3caefe6a5cd770a6501fe659c6758709723462a500bd152d8c179fd2",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-DangerCircle_Оutlined_20px",
+      "name": "DangerCircle_Outlined_20px",
+      "fileName": "danger-circle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "e2abbbac1fd3ea45c955d5090dff35f7248fdcd2f358c6f7a66a0c4af77df09c",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-DangerTriangle_Filled_12px",
+      "name": "DangerTriangle_Filled_12px",
+      "fileName": "danger-triangle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "4be9d02e52ced362594e60a0bdf22561aeba8bd5410e39566b89c614569d199a"
+    },
+    {
+      "id": "local-DangerTriangle_Filled_16px",
+      "name": "DangerTriangle_Filled_16px",
+      "fileName": "danger-triangle-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "b67ae89850d6aedde84a2d2bf67b57cdc0135617321a1be581e9a517f477577e"
+    },
+    {
+      "id": "local-DangerTriangle_Filled_20px",
+      "name": "DangerTriangle_Filled_20px",
+      "fileName": "danger-triangle-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "beb88b4d7b3e52f4bf635938efcbf86ab28d29ec2e077529b220d762834120f1"
+    },
+    {
+      "id": "local-DangerTriangle_Outlined_12px",
+      "name": "DangerTriangle_Outlined_12px",
+      "fileName": "danger-triangle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "93c71c423aa3bb7827e811b93b2c64f8af54f7122f6d9ebdd9df7954c04a70aa"
+    },
+    {
+      "id": "local-DangerTriangle_Outlined_16px",
+      "name": "DangerTriangle_Outlined_16px",
+      "fileName": "danger-triangle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "ad9e46ae7d82fbf0edc74ffc536611417272de02776645f12978748d41093e89"
+    },
+    {
+      "id": "local-DangerTriangle_Outlined_20px",
+      "name": "DangerTriangle_Outlined_20px",
+      "fileName": "danger-triangle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "e9a9cc6cc7957f2730993c7d6052a106cceb2620be163ae411808524cb7ea63b"
+    },
+    {
+      "id": "4178:22127",
+      "name": "Database_Outlined_12px",
+      "fileName": "database-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:52.120Z",
+      "hash": "d69624091fa3b2b3d7c6e844d743c5bb126e9badc4db7a79f482932bb4e9888d",
+      "deprecated": true
+    },
+    {
+      "id": "local-Delete_Outlined_12px",
+      "name": "Delete_Outlined_12px",
+      "fileName": "delete-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "34e1c662c21c1a4bfa0a37fe1684e1409867cee63ab4d2e7f121aadeb5ef2889"
+    },
+    {
+      "id": "local-Delete_Outlined_16px",
+      "name": "Delete_Outlined_16px",
+      "fileName": "delete-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "cce0c55301bf82744ebae9a4af330ec58ca5abe4d241f5c27d2f5e6fb848e4cc"
+    },
+    {
+      "id": "local-Delete_Outlined_20px",
+      "name": "Delete_Outlined_20px",
+      "fileName": "delete-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "daaf8428485eadc1185a2eb929cf701725daf63064525bd49e2cf2a0eb5233ce"
+    },
+    {
+      "id": "local-DocumentGeo_Outlined_12px",
+      "name": "DocumentGeo_Outlined_12px",
+      "fileName": "document-geo-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "27b22702357a70dbc6bf8cc0aad32d4447e82392f6b6f3579a43ff66014568ca"
+    },
+    {
+      "id": "local-DocumentGeo_Outlined_16px",
+      "name": "DocumentGeo_Outlined_16px",
+      "fileName": "document-geo-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "56732a79fb5574a39ef2f18aada0f10fcb1c49e545e90d928b78efd0a836bae9"
+    },
+    {
+      "id": "local-DocumentGeo_Outlined_20px",
+      "name": "DocumentGeo_Outlined_20px",
+      "fileName": "document-geo-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "f4ca8b752e9f81be6cf117770683e7443df616d58b6e8858eb9ffe43b567c03e"
+    },
+    {
+      "id": "local-Documents_Outlined_12px",
+      "name": "Documents_Outlined_12px",
+      "fileName": "documents-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "5920cbcc0028090a9250d8d29e963e238a30ac2dfcdb72abcbac5786cdf1e28e"
+    },
+    {
+      "id": "local-Documents_Outlined_16px",
+      "name": "Documents_Outlined_16px",
+      "fileName": "documents-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "ab7c16063fa8c6884d2a35ba049b7c6344d1ee032ca9909c354b77fb0aad58f6"
+    },
+    {
+      "id": "local-Documents_Outlined_20px",
+      "name": "Documents_Outlined_20px",
+      "fileName": "documents-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "803cd4ceed9f68172cfe062161884c706b8cee6bb1cc04a7a23ba3888b1b28c2"
+    },
+    {
+      "id": "local-DocumentText_Outlined_12px",
+      "name": "DocumentText_Outlined_12px",
+      "fileName": "document-text-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "b5cf0fd6e7e9149aac03f0ab9f37fd1cbb86667543d8d7a916d0b411fe2d5a9c"
+    },
+    {
+      "id": "local-DocumentText_Outlined_16px",
+      "name": "DocumentText_Outlined_16px",
+      "fileName": "document-text-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "915800cbe0fef73ce4ec02db7838e97ebe0508f9563feee76bfda320155d4242"
+    },
+    {
+      "id": "local-DocumentText_Outlined_20px",
+      "name": "DocumentText_Outlined_20px",
+      "fileName": "document-text-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "fe89578fcf6801a0c180d2a4a72b779e2d4b262bd349fc54fbab224241fab0a1"
     },
     {
       "id": "4178:22364",
@@ -1242,7 +957,2237 @@
       "width": 20,
       "height": 20,
       "lastModified": "2025-10-01T15:36:07.785Z",
-      "hash": "f370f0159060759ab9efce8a055ecc147ad84acdc35c8bc75d9af469f318fe4b"
+      "hash": "f370f0159060759ab9efce8a055ecc147ad84acdc35c8bc75d9af469f318fe4b",
+      "deprecated": true
+    },
+    {
+      "id": "local-Down_Filled_12px",
+      "name": "Down_Filled_12px",
+      "fileName": "down-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "af1f6f6f49fd684fe5d99f085cd2eec4437ffb21ad34c3fa057b527c10251834"
+    },
+    {
+      "id": "local-Down_Filled_16px",
+      "name": "Down_Filled_16px",
+      "fileName": "down-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "949d4c5aac96d58469f74675abe6c6383a4e350efc529d5ed5780c4b5cfcdbbf"
+    },
+    {
+      "id": "local-Down_Filled_20px",
+      "name": "Down_Filled_20px",
+      "fileName": "down-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "79b290195b903b5fbc62b1648a2ffaec19c82a7cd85c8cdf0d3194ef0ea4d3ac"
+    },
+    {
+      "id": "local-DownloadDown_Outlined_12px",
+      "name": "DownloadDown_Outlined_12px",
+      "fileName": "download-down-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "7d11b62667e3a2894f4d0923088abac821d2dfb715c2ce9dc66162b63d1308c2"
+    },
+    {
+      "id": "local-DownloadDown_Outlined_16px",
+      "name": "DownloadDown_Outlined_16px",
+      "fileName": "download-down-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "fbd1bbdaecf1da134a6bf6faa2ea7e74865748725af514c73ec393576827cd6e"
+    },
+    {
+      "id": "local-DownloadDown_Outlined_20px",
+      "name": "DownloadDown_Outlined_20px",
+      "fileName": "download-down-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "8495dbcd286024d55352890ddc548f6981a2c66195e8aec64652e54809b25812"
+    },
+    {
+      "id": "local-DownloadUp_Outlined_12px",
+      "name": "DownloadUp_Outlined_12px",
+      "fileName": "download-up-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "e32e1bcae82deb32b60042198a46f377060d34304e50a600e9914c48d3353a29"
+    },
+    {
+      "id": "local-DownloadUp_Outlined_16px",
+      "name": "DownloadUp_Outlined_16px",
+      "fileName": "download-up-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "bb004a4793f0372ba1ca6aa315fcbf2229f4fbb1832e6f605a99b41d892208a9"
+    },
+    {
+      "id": "local-DownloadUp_Outlined_20px",
+      "name": "DownloadUp_Outlined_20px",
+      "fileName": "download-up-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "1da1a9bce8d4abe53b18ad6d9d199e1c3f4c07fa4d8e79303666988b6d2dc82e"
+    },
+    {
+      "id": "local-EchargeableAcidBattery_Outlined_12px",
+      "name": "EchargeableAcidBattery_Outlined_12px",
+      "fileName": "echargeable-acid-battery-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "8f7b778f311b60bb2424d498e6497d4e15c8b26779d0119d77c0a3f922ecf273"
+    },
+    {
+      "id": "local-EchargeableAcidBattery_Outlined_16px",
+      "name": "EchargeableAcidBattery_Outlined_16px",
+      "fileName": "echargeable-acid-battery-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "adf35d123499973bbcf9302ffe19fd75c30eeaf2056d89466067d9f364d97cd9"
+    },
+    {
+      "id": "local-EchargeableAcidBattery_Outlined_20px",
+      "name": "EchargeableAcidBattery_Outlined_20px",
+      "fileName": "echargeable-acid-battery-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "418eb64f9663098f823da5d2eb1acafb6f692b4c292a1fbc1ca18f93a048b7e2"
+    },
+    {
+      "id": "local-Edit_Outlined_12px",
+      "name": "Edit_Outlined_12px",
+      "fileName": "edit-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "76b35c2c872d31e00fd317b211b45f87990d4931758fb08d9b622e8a1eef6a69"
+    },
+    {
+      "id": "local-Edit_Outlined_16px",
+      "name": "Edit_Outlined_16px",
+      "fileName": "edit-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.360Z",
+      "hash": "2a71e78368259457660c0cea9cec41d701163d372c90c3a5074224719def6262"
+    },
+    {
+      "id": "local-Edit_Outlined_20px",
+      "name": "Edit_Outlined_20px",
+      "fileName": "edit-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "87b57442950add4ee4b7786c0af43fe828c21b4443dc8571f29342a243b57d63"
+    },
+    {
+      "id": "local-Email_Outlined_12px",
+      "name": "Email_Outlined_12px",
+      "fileName": "email-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "8695fa896a5e9be3c505651a8a19d7f0081336f0a49786e4b09ebdfa27b997a7"
+    },
+    {
+      "id": "local-Email_Outlined_16px",
+      "name": "Email_Outlined_16px",
+      "fileName": "email-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "a1d9ba88e6d1db11ed0a062d41262beed86e06557d686ebe152deeaae85a7547"
+    },
+    {
+      "id": "local-Email_Outlined_20px",
+      "name": "Email_Outlined_20px",
+      "fileName": "email-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ce868bfd3eeb16d89e4ff2ffd321620a9ec8339f5d945eaa873cbf45cc360ffd"
+    },
+    {
+      "id": "local-EmptyCircle_Outlined_12px",
+      "name": "EmptyCircle_Outlined_12px",
+      "fileName": "empty-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ce6e76fd5823a2dbf13c62b38548f6408801994db0a7060924d0c81f74ae9213"
+    },
+    {
+      "id": "local-EmptyCircle_Outlined_16px",
+      "name": "EmptyCircle_Outlined_16px",
+      "fileName": "empty-circle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "eb3b205f8946ebefd16adb039401de8110bc1b83af16ec898ce048680528d400"
+    },
+    {
+      "id": "local-EmptyCircle_Outlined_20px",
+      "name": "EmptyCircle_Outlined_20px",
+      "fileName": "empty-circle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "fe5b49dde5d7e46a8a8a288db15480dd6de8c0dd729641305cf3577c9a8c9ac3"
+    },
+    {
+      "id": "local-Export_Outlined_12px",
+      "name": "Export_Outlined_12px",
+      "fileName": "export-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e7bb72bad989b97391469d9771c3c28bb0250da7d77feea1d32a9427a7a27af3"
+    },
+    {
+      "id": "local-Export_Outlined_16px",
+      "name": "Export_Outlined_16px",
+      "fileName": "export-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "7563a73fcaf1867002c35f731f9a7f18c24f637fcfaf1943d849b65f7ff74c2f"
+    },
+    {
+      "id": "local-Export_Outlined_20px",
+      "name": "Export_Outlined_20px",
+      "fileName": "export-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b115667f43b4a523f9d56e21f744d6a8665c567d6b18d4320b3eb78f6cf01ed6"
+    },
+    {
+      "id": "local-EyeClosed_Outlined_12px",
+      "name": "EyeClosed_Outlined_12px",
+      "fileName": "eye-closed-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "61bac7320c05f51eda9b1ad8e0fdfa3597f81c19a8cf0c15cf0c17e6eb05eaec"
+    },
+    {
+      "id": "local-EyeClosed_Outlined_16px",
+      "name": "EyeClosed_Outlined_16px",
+      "fileName": "eye-closed-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "0afb9d7eb75e46851f779a56f81c374c642ba92f0033d8e6127c65cdbf279008"
+    },
+    {
+      "id": "local-EyeClosed_Outlined_20px",
+      "name": "EyeClosed_Outlined_20px",
+      "fileName": "eye-closed-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "516bb5b2ab9dd7a4770bb3beb1d5c5a62986ac2da56d3483b14c40cd5089f820"
+    },
+    {
+      "id": "local-EyeOpen_Outlined_12px",
+      "name": "EyeOpen_Outlined_12px",
+      "fileName": "eye-open-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "8b0e896d7572c11e3c34f0333114a94af13f2a0827be474cd52bddc17a0e8602"
+    },
+    {
+      "id": "local-EyeOpen_Outlined_16px",
+      "name": "EyeOpen_Outlined_16px",
+      "fileName": "eye-open-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "865b25dabd7ddbd81e47f449b97ac06c37a7ecdabea65da7cd6e5d72d3b9b1b5"
+    },
+    {
+      "id": "local-EyeOpen_Outlined_20px",
+      "name": "EyeOpen_Outlined_20px",
+      "fileName": "eye-open-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "f41b5c6659c988aa4cd1fe7b07e4f2d04adc11cb703334287b32509c0e759951"
+    },
+    {
+      "id": "local-File_Outlined_12px",
+      "name": "File_Outlined_12px",
+      "fileName": "file-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e5fa8cb13820acbfc4a8ca53ad4bf6d5794ee03447bbfb150cb9173ef9e10099"
+    },
+    {
+      "id": "local-File_Outlined_16px",
+      "name": "File_Outlined_16px",
+      "fileName": "file-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "03f07a3bcf0d605555492bcc2d46e10f8b984b8dcf876a1dae52e10f7005177f"
+    },
+    {
+      "id": "local-File_Outlined_20px",
+      "name": "File_Outlined_20px",
+      "fileName": "file-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "4b57a03921a1056e177cc76dcba4f6607f425d7530a3ae306bd77a356dc51b66"
+    },
+    {
+      "id": "local-FileDownload_Outlined_12px",
+      "name": "FileDownload_Outlined_12px",
+      "fileName": "file-download-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "0ad0a6337411e9d2dcdde8a9c3bd14ae899f9988e1f1b3170857d911a5eb99eb"
+    },
+    {
+      "id": "local-FileDownload_Outlined_16px",
+      "name": "FileDownload_Outlined_16px",
+      "fileName": "file-download-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "7c589ca5205ffdd8ab0d93a9bd35e0671a5be9c0fc72e63b12628fab50b16441"
+    },
+    {
+      "id": "local-FileDownload_Outlined_20px",
+      "name": "FileDownload_Outlined_20px",
+      "fileName": "file-download-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ddfa6001f5c661e38cacd4d290073ef879a2633f3942296c68e30cf838a0d718"
+    },
+    {
+      "id": "local-FileRight_Outlined_12px",
+      "name": "FileRight_Outlined_12px",
+      "fileName": "file-right-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "92a61ebc5cb7b9ccff6d9a14673556b51b2c745ce25e5e67b070d7be53272d4c"
+    },
+    {
+      "id": "local-FileRight_Outlined_16px",
+      "name": "FileRight_Outlined_16px",
+      "fileName": "file-right-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ee339b53953c991a2b62aff2ad2154602fc62c826205f546fad8d61d62996e66"
+    },
+    {
+      "id": "local-FileRight_Outlined_20px",
+      "name": "FileRight_Outlined_20px",
+      "fileName": "file-right-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e1112b63f4c0430199843763c18d753a172025b3cf22ddee2229169ce538f844"
+    },
+    {
+      "id": "local-Files_Outlined_12px",
+      "name": "Files_Outlined_12px",
+      "fileName": "files-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "d724971248a185f9233512339af088015ec7cec6a7ea3cce893219e5f613b0c8"
+    },
+    {
+      "id": "local-Files_Outlined_16px",
+      "name": "Files_Outlined_16px",
+      "fileName": "files-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ef9806c7e7547a69f5eb9147b2f8aff7c3fc5b000ded11b9540b993d777e7781"
+    },
+    {
+      "id": "local-Files_Outlined_20px",
+      "name": "Files_Outlined_20px",
+      "fileName": "files-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "9b370aabd38717c9eff48688d1922a1967a7b305396020254d7cf553fc3f4d21"
+    },
+    {
+      "id": "local-FileText_Outlined_12px",
+      "name": "FileText_Outlined_12px",
+      "fileName": "file-text-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "815b419c1ab0e0908e984b3d00ac20a2a0807cae1a17d9223f6e458a5f5628e8"
+    },
+    {
+      "id": "local-FileText_Outlined_16px",
+      "name": "FileText_Outlined_16px",
+      "fileName": "file-text-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "245a9917bd36c6e5aaef68824549715d4fe0d79d34b5e7387158a76d565794a6"
+    },
+    {
+      "id": "local-FileText_Outlined_20px",
+      "name": "FileText_Outlined_20px",
+      "fileName": "file-text-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "60b1d9e0d74e3e7f516cbc758b2d02c34f35f470fe7d35ebe12bbe00a477e588"
+    },
+    {
+      "id": "local-Filter_Filled_12px",
+      "name": "Filter_Filled_12px",
+      "fileName": "filter-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "d9ea54be672d3d9b8450ef4da5bfc5bbba018ccb25cca80a4b135912c1c39b8c"
+    },
+    {
+      "id": "local-Filter_Filled_16px",
+      "name": "Filter_Filled_16px",
+      "fileName": "filter-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "17d0ca4c130181e41ccd56025db9363e018ef358a9b59b60832d5e7a8d5bb50d"
+    },
+    {
+      "id": "local-Filter_Filled_20px",
+      "name": "Filter_Filled_20px",
+      "fileName": "filter-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "cf1df48206e1af161d5ce4adb0650664716632d479421945e944d9545d2101f4"
+    },
+    {
+      "id": "local-Filter_Outlined_12px",
+      "name": "Filter_Outlined_12px",
+      "fileName": "filter-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "d169d98408a05e30afde346d07b4387ed7e6eca4cd6598bef31b396f4ac4224c"
+    },
+    {
+      "id": "local-Filter_Outlined_16px",
+      "name": "Filter_Outlined_16px",
+      "fileName": "filter-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "d07838310514c854a8b2c7211c36ba3ab2c5b3f017d49c02b6d689a3048921a1"
+    },
+    {
+      "id": "local-Filter_Outlined_20px",
+      "name": "Filter_Outlined_20px",
+      "fileName": "filter-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "c15fbc90b8bcbdb50efb2dfc340f2bc63fe3de54d253570346f46c7d8c47d02e"
+    },
+    {
+      "id": "local-Folder_Filled_12px",
+      "name": "Folder_Filled_12px",
+      "fileName": "folder-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e05d526216b13551935a642bbd98ffb490c35d842bb292b4f50f751e6637f523"
+    },
+    {
+      "id": "local-Folder_Filled_16px",
+      "name": "Folder_Filled_16px",
+      "fileName": "folder-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "0939440f62ddcae19ac01fe559f2537b5883b23edbfc8b234429f04bcd0a0562"
+    },
+    {
+      "id": "local-Folder_Filled_20px",
+      "name": "Folder_Filled_20px",
+      "fileName": "folder-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "7406975f604f99342a5bde45fd8f21531a45a4885b51195be3e6cece5f6dc52c"
+    },
+    {
+      "id": "local-Folder_Outlined_12px",
+      "name": "Folder_Outlined_12px",
+      "fileName": "folder-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "a2f46c6e801e6bf9d98908d229fb5cdb276745324eebb7e6f8d442f6811c403c"
+    },
+    {
+      "id": "local-Folder_Outlined_16px",
+      "name": "Folder_Outlined_16px",
+      "fileName": "folder-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "94d7ea24253b2760e70baf77f391e9018653eb9636a32189e6190bcd4b1a5f56"
+    },
+    {
+      "id": "local-Folder_Outlined_20px",
+      "name": "Folder_Outlined_20px",
+      "fileName": "folder-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "f4aa0f6536f846d66a33e2f8ce46338436ab7d02d2cd93ddb65f8a8984713b40"
+    },
+    {
+      "id": "4178:22328",
+      "name": "FolderWithFiles_Outlined_16px",
+      "fileName": "folder-with-files-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:36:06.041Z",
+      "hash": "f948ca5745bd62f549754f67a566502aca095a72f00839ebd6afb4c9c1e50798",
+      "deprecated": true
+    },
+    {
+      "id": "local-Forward_Outlined_12px",
+      "name": "Forward_Outlined_12px",
+      "fileName": "forward-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "7a9063562c070700e5a9157d3311c32a14992bc1d41c4f55c2e5269d62f1e4a5"
+    },
+    {
+      "id": "local-Forward_Outlined_16px",
+      "name": "Forward_Outlined_16px",
+      "fileName": "forward-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "270f53f8477e91e35ac708b2cdaccb995faf721c68ff7f66dd0909ae4f5aa56b"
+    },
+    {
+      "id": "local-Forward_Outlined_20px",
+      "name": "Forward_Outlined_20px",
+      "fileName": "forward-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "4a8ca75b06647c44efcf481855b7bdaa99cd5169e3835f44c95212c733ebda32"
+    },
+    {
+      "id": "local-FullScreen_Outlined_12px",
+      "name": "FullScreen_Outlined_12px",
+      "fileName": "full-screen-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "9a9ffa5abf69e748170f3ec4cb2e54eac912a18602e4140107974928a81880e3"
+    },
+    {
+      "id": "local-FullScreen_Outlined_16px",
+      "name": "FullScreen_Outlined_16px",
+      "fileName": "full-screen-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "3679d0dddce696adc4c4de5e2e48e5e27c1f2c0a595523576afe9419ab02e513"
+    },
+    {
+      "id": "local-FullScreen_Outlined_20px",
+      "name": "FullScreen_Outlined_20px",
+      "fileName": "full-screen-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "9c5d5623b33f1e3019e39b05b6192696f3804a2d16db6b655a88dcad113f32da"
+    },
+    {
+      "id": "local-History_Outlined_12px",
+      "name": "History_Outlined_12px",
+      "fileName": "history-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "201368f5b96a8737ec866755a87edfd725c6a1cd14d738bd7ca9e57d6a004cf0"
+    },
+    {
+      "id": "local-History_Outlined_16px",
+      "name": "History_Outlined_16px",
+      "fileName": "history-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "a855827b19d5cd9301a1c68de3817c0c83b8a2664f945f52a92ac93a3b1feb62"
+    },
+    {
+      "id": "local-History_Outlined_20px",
+      "name": "History_Outlined_20px",
+      "fileName": "history-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b8325f0cf2c3d9cc8edd03cb4aabd5e033fbab580f5ae830f46716cc2e4f8dd9"
+    },
+    {
+      "id": "local-Import_Outlined_12px",
+      "name": "Import_Outlined_12px",
+      "fileName": "import-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "30de423bf806ccd6ff3409c51dd30fd051938d2ca782f419ab8f0607c8f594ff"
+    },
+    {
+      "id": "local-Import_Outlined_16px",
+      "name": "Import_Outlined_16px",
+      "fileName": "import-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "000e0ec26e9b435c8d6efbfb8afe6522cb2e41af2d8229b85c89031807f4d13c"
+    },
+    {
+      "id": "local-Import_Outlined_20px",
+      "name": "Import_Outlined_20px",
+      "fileName": "import-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "c7956eaa326b9df03ee5064356d81f1d8d2b563581070c4cb7500dceaa08d45a"
+    },
+    {
+      "id": "local-Info_Outlined_12px",
+      "name": "Info_Outlined_12px",
+      "fileName": "info-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "f2d0e9f14eec1857e5c875783f87f16864130a5c53ab987f3e37793c6d52ccd2"
+    },
+    {
+      "id": "local-Info_Outlined_16px",
+      "name": "Info_Outlined_16px",
+      "fileName": "info-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "66e256a34e0c662e0f73cdf58a6e61f18bb396036ef8098e2485040d2b175362"
+    },
+    {
+      "id": "local-Info_Outlined_20px",
+      "name": "Info_Outlined_20px",
+      "fileName": "info-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "2cb0b025002e61b6f8054027801fb406a330e4aa9b333353fdc86655548ea2c5"
+    },
+    {
+      "id": "local-Input_Outlined_12px",
+      "name": "Input_Outlined_12px",
+      "fileName": "input-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "6877180fd66a8b57999b83a5e2d991bff4fad463e1af91b7bd00f618250b6eb2"
+    },
+    {
+      "id": "local-Input_Outlined_16px",
+      "name": "Input_Outlined_16px",
+      "fileName": "input-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "d33496ff94e84139d13a27119ba130fd836bd22bf001efb1e445dcd4408c14d7"
+    },
+    {
+      "id": "local-Input_Outlined_20px",
+      "name": "Input_Outlined_20px",
+      "fileName": "input-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ec5a53fb3459dedfc47acb80967607d718b8ab051e78bff8836bbf90c62ffa55"
+    },
+    {
+      "id": "local-Laptop1_Outlined_12px",
+      "name": "Laptop1_Outlined_12px",
+      "fileName": "laptop1-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "f738b41d776f23a6995b846c4cd82f02bd87863314ddd07033a12709e4a72cff",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop1_Outlined_16px",
+      "name": "Laptop1_Outlined_16px",
+      "fileName": "laptop1-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "9d9198a19d520f558c0032209779623785837e9b120b755fc9877509dc17032f",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop1_Outlined_20px",
+      "name": "Laptop1_Outlined_20px",
+      "fileName": "laptop1-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "f4bd155b362d7b4f5012c12b7887d370322eb0e5a395dfed000228de35e54d35",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop2_Outlined_12px",
+      "name": "Laptop2_Outlined_12px",
+      "fileName": "laptop2-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "de959f1feaec34ac53282e4c5cd7b881309bb4c8bf0b7d0f45a6bd2f14156972",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop2_Outlined_16px",
+      "name": "Laptop2_Outlined_16px",
+      "fileName": "laptop2-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "b10d82bf07910c1bedd119f1f226eaa175f1df0d92565afc85a4ce2a275156e4",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop2_Outlined_20px",
+      "name": "Laptop2_Outlined_20px",
+      "fileName": "laptop2-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "eeed743e000890d2c47debc8127d43b8886f18e4f469d88cfa95b980fb0c048e",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop3_Outlined_12px",
+      "name": "Laptop3_Outlined_12px",
+      "fileName": "laptop3-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "efd2e7cea24da7aee62e56364a8b6d8404f19fa3852ee1f76a3661c51aad9f01",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop3_Outlined_16px",
+      "name": "Laptop3_Outlined_16px",
+      "fileName": "laptop3-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "fcb3fb194e452845618b516b327f20c4bd797a3dfbd8da4b17a926e878a686cf",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Laptop3_Outlined_20px",
+      "name": "Laptop3_Outlined_20px",
+      "fileName": "laptop3-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "53ea748cc235f8fb4c84857c2842bb8930df615c9ca9a93286e676baa6c215c7",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Legend_Outlined_12px",
+      "name": "Legend_Outlined_12px",
+      "fileName": "legend-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "3c65135630dbdf142f06f4b2f887c40ffebb61a8ba75cae9d5977b1aebd16101"
+    },
+    {
+      "id": "local-Legend_Outlined_16px",
+      "name": "Legend_Outlined_16px",
+      "fileName": "legend-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "eed14af72d5664e14905179898c7c66a01bb5f0ff2d3babe247d7baebf0e0d28"
+    },
+    {
+      "id": "local-Legend_Outlined_20px",
+      "name": "Legend_Outlined_20px",
+      "fileName": "legend-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "4b666d9939f4898f3ec8ba96791afce60368f86c4c491b6f1fbade35c8140832"
+    },
+    {
+      "id": "local-Link_Outlined_12px",
+      "name": "Link_Outlined_12px",
+      "fileName": "link-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "23fdcfd38e59ced0b73b0d9fd73048fe0ccad380ca2037190607a1fa95e7ef8b"
+    },
+    {
+      "id": "local-Link_Outlined_16px",
+      "name": "Link_Outlined_16px",
+      "fileName": "link-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "6a1579088f68b9d3f3aab7d74a9051b9e733b78d0053308b5a6ca27dabb8d79e"
+    },
+    {
+      "id": "local-Link_Outlined_20px",
+      "name": "Link_Outlined_20px",
+      "fileName": "link-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "0aa360a4d8b618f19e102eeaf160f709ccf8d0fd696e3b80716b8584a2850421"
+    },
+    {
+      "id": "local-MapPoint_Outlined_12px",
+      "name": "MapPoint_Outlined_12px",
+      "fileName": "map-point-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "f7c62247738d3d02c0d287964ec91c6257cdd0f74fcd092f840f6355b4838a8f"
+    },
+    {
+      "id": "local-MapPoint_Outlined_16px",
+      "name": "MapPoint_Outlined_16px",
+      "fileName": "map-point-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "421ff63bdca8468afd8a3e3011920739854fa69f51f702aa6a2f64d54435c605"
+    },
+    {
+      "id": "local-MapPoint_Outlined_20px",
+      "name": "MapPoint_Outlined_20px",
+      "fileName": "map-point-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "8032170c7748c7b59f065c96bc312aeb4cf5579fed10c130a77399cafe849553"
+    },
+    {
+      "id": "local-Minus_Outlined_12px",
+      "name": "Minus_Outlined_12px",
+      "fileName": "minus-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "c8583ccbcd41864079205e9337fd3572473651e5a8981a011e63bfe845b0772a"
+    },
+    {
+      "id": "local-Minus_Outlined_16px",
+      "name": "Minus_Outlined_16px",
+      "fileName": "minus-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "f4781610533b3d4d726c3ada557eb6583cb03c94a8a15ee1d9276616b64bc4c2"
+    },
+    {
+      "id": "local-Minus_Outlined_20px",
+      "name": "Minus_Outlined_20px",
+      "fileName": "minus-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "d32b4e7fca1d0164ca3044a902924c3b1b7d0e40ef9263e5d6fe1983324018e9"
+    },
+    {
+      "id": "local-MinusCircle_Filled_12px",
+      "name": "MinusCircle_Filled_12px",
+      "fileName": "minus-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b0e01d9bc9db80731ce9731571e4d8fe790cbc30ae599d4c566b957d864d1bba"
+    },
+    {
+      "id": "local-MinusCircle_Filled_16px",
+      "name": "MinusCircle_Filled_16px",
+      "fileName": "minus-circle-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "05c3c980aec9252c3ad62835fa82dbc3dc1294d04c8ff3ab2af8886d16b84a86"
+    },
+    {
+      "id": "local-MinusCircle_Filled_20px",
+      "name": "MinusCircle_Filled_20px",
+      "fileName": "minus-circle-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "829d87b62e081d94b546d8770deb0b0796be2ea0e4529dc48e5b982afc1de6ec"
+    },
+    {
+      "id": "local-MinusCircle_Outlined_12px",
+      "name": "MinusCircle_Outlined_12px",
+      "fileName": "minus-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "24535cb0814aa812cbb9eb0f336edab976d112b1f0831c212731b72e88f49679"
+    },
+    {
+      "id": "local-MinusCircle_Outlined_16px",
+      "name": "MinusCircle_Outlined_16px",
+      "fileName": "minus-circle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "cdc4fc6e10e3d4ace58957a2bf43cf5e1555b6ec55f9e18185f91b1f877090c3"
+    },
+    {
+      "id": "local-MinusCircle_Outlined_20px",
+      "name": "MinusCircle_Outlined_20px",
+      "fileName": "minus-circle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "c9fafca1fd83762522ac834e08fef90bb62a9d521287e1c6fd3da512b82553f6"
+    },
+    {
+      "id": "4178:21889",
+      "name": "Notebook_Outlined_12px",
+      "fileName": "notebook-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:29.697Z",
+      "hash": "4db843e3544671ba3f199b869ad04c7a85eefe8891a16510dc733cdb0d238d9c",
+      "deprecated": true
+    },
+    {
+      "id": "4178:21891",
+      "name": "Notebook_Outlined_16px",
+      "fileName": "notebook-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:29.889Z",
+      "hash": "88fbc5615d04afd1d9071c1e53de9b699ccedebf91add84342b647819b62bdb7",
+      "deprecated": true
+    },
+    {
+      "id": "4178:22142",
+      "name": "Notebook2_Outlined_12px",
+      "fileName": "notebook2-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:52.860Z",
+      "hash": "d6ceb4feb4b83329ced53c2e5a37ebdee270d6bedfe36085505c4533f1aeebad",
+      "deprecated": true
+    },
+    {
+      "id": "local-Notification_Outlined_12px",
+      "name": "Notification_Outlined_12px",
+      "fileName": "notification-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "192e2b2c911f7515acba536943de9cd7a4e610aad986892b54ef23cf53a93cbb"
+    },
+    {
+      "id": "local-Notification_Outlined_16px",
+      "name": "Notification_Outlined_16px",
+      "fileName": "notification-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "42f4e11939bfd1e09a0b8b7513f289dada96da5b0de3c1c8d3f5fba5286416f6"
+    },
+    {
+      "id": "local-Notification_Outlined_20px",
+      "name": "Notification_Outlined_20px",
+      "fileName": "notification-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "46e50b9278ed17dff7966c6c809daec885cc6a2f0508b274fe81bd09b9e65278"
+    },
+    {
+      "id": "local-Output_Outlined_12px",
+      "name": "Output_Outlined_12px",
+      "fileName": "output-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "a6a2509041bdee5d78ac940185eb20cadb5fe29f16b46d7ccd87ade5ef9a70da"
+    },
+    {
+      "id": "local-Output_Outlined_16px",
+      "name": "Output_Outlined_16px",
+      "fileName": "output-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "6f1c747ab2d14b1c0cdc53244c569ad5f2ce8cfff1abed0033df053c1a0e9362"
+    },
+    {
+      "id": "local-Output_Outlined_20px",
+      "name": "Output_Outlined_20px",
+      "fileName": "output-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "12084540cda8eb66f92fbac21f67a29dc857a53e6fbeb2e88a282b4b7a61737f"
+    },
+    {
+      "id": "local-Phone_Filled_12px",
+      "name": "Phone_Filled_12px",
+      "fileName": "phone-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "9593b3bc5cb5980f436e343c4629a54f3ecb462771aeadd2202ede4dd93781c8"
+    },
+    {
+      "id": "local-Phone_Filled_16px",
+      "name": "Phone_Filled_16px",
+      "fileName": "phone-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "2c7b321ff5200cd5913813408184bdd9f11ec1c103d69f8add1c6b7518a042ef"
+    },
+    {
+      "id": "local-Phone_Filled_20px",
+      "name": "Phone_Filled_20px",
+      "fileName": "phone-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "82b60d4a3d4b9066a37a5ec3a078356634850e37bb6f7f3a7e912072dfc923f4"
+    },
+    {
+      "id": "4178:22027",
+      "name": "Phone_Outlined_12px",
+      "fileName": "phone-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:44.949Z",
+      "hash": "5e8484c3d8827c187fb7e5b2dd5fdd2f3f9a482c6a6919e5faa569a5442b0f19",
+      "deprecated": true
+    },
+    {
+      "id": "local-Pin_Filled_12px",
+      "name": "Pin_Filled_12px",
+      "fileName": "pin-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "09bdf907455a30130f59c1109118fb900a676feca3226859554b6851bcc36a2a"
+    },
+    {
+      "id": "local-Pin_Filled_16px",
+      "name": "Pin_Filled_16px",
+      "fileName": "pin-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "c3d71c7c43402e2584e9e992b9083a8a880aba05a8655135f57c0d35751b8d38"
+    },
+    {
+      "id": "local-Pin_Filled_20px",
+      "name": "Pin_Filled_20px",
+      "fileName": "pin-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b5280fac77c0d3ee86b20dda8ee5e7b721bbdcc36e5c9a6234fa2fb61203a27b"
+    },
+    {
+      "id": "4178:22067",
+      "name": "Pin2_Filled_12px",
+      "fileName": "pin2-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:47.199Z",
+      "hash": "04591975503d840a8c8dca497d24c93fd590eed78d9f0adc6155a0e0860fa416",
+      "deprecated": true
+    },
+    {
+      "id": "local-PinIt_Filled_12px",
+      "name": "PinIt_Filled_12px",
+      "fileName": "pin-it-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ff7b8f1d0ae18aabffe4ac0876ccc97ab98cea6bae6d08d33515b372c5baece9"
+    },
+    {
+      "id": "local-PinIt_Filled_16px",
+      "name": "PinIt_Filled_16px",
+      "fileName": "pin-it-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "12853f570f3b820ed83d7de489f1bea40ea4099656696350aa260247ccf21606"
+    },
+    {
+      "id": "local-PinIt_Filled_20px",
+      "name": "PinIt_Filled_20px",
+      "fileName": "pin-it-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "0a390d7e23c13a0c6b12b065993d92697cb1122c23e8577ba69b6421125471c3"
+    },
+    {
+      "id": "local-Play_Outlined_12px",
+      "name": "Play_Outlined_12px",
+      "fileName": "play-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e0e23bb561af0eae876f7cffbac9be182f1658f7bf34fab8d525bb2abafc27a8"
+    },
+    {
+      "id": "local-Play_Outlined_16px",
+      "name": "Play_Outlined_16px",
+      "fileName": "play-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e05cef98ad3b3eee16db5db8c1371600cefac33adb8e6f013a24e9d5e17eca87"
+    },
+    {
+      "id": "local-Play_Outlined_20px",
+      "name": "Play_Outlined_20px",
+      "fileName": "play-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "1231ad1d7052e316e75bef3a3ebe937dda5a2f646a071a97655988bacceb5ab4"
+    },
+    {
+      "id": "local-Pluse_Outlined_12px",
+      "name": "Pluse_Outlined_12px",
+      "fileName": "pluse-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "923fabc07adfcc748cb8ea019c178af315bccfa2464438a771655cb369dc052d"
+    },
+    {
+      "id": "local-Pluse_Outlined_16px",
+      "name": "Pluse_Outlined_16px",
+      "fileName": "pluse-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "12975956eddcfc8ef8a42b0acaa1f7fc66a4c147dc1c2c4f8e632259398c740f"
+    },
+    {
+      "id": "local-Pluse_Outlined_20px",
+      "name": "Pluse_Outlined_20px",
+      "fileName": "pluse-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "234538be3a1aee752cf6fdec5ce506daf54fe863ab6590c2bb34d6fcffff11a9"
+    },
+    {
+      "id": "local-Printer_Outlined_12px",
+      "name": "Printer_Outlined_12px",
+      "fileName": "printer-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "2fe6acaac4250019c994b9e9a2b4ae93b9072ee481fa6b6ddb50224c2574275d"
+    },
+    {
+      "id": "local-Printer_Outlined_16px",
+      "name": "Printer_Outlined_16px",
+      "fileName": "printer-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "51de99424ed6b8a62a067caa993d759c6b35b4ec99b8541ade2a762202d81f3e"
+    },
+    {
+      "id": "local-Printer_Outlined_20px",
+      "name": "Printer_Outlined_20px",
+      "fileName": "printer-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "26a69e4689857d93905f2085396813fde9ca07f9e87fa3ac9b4c4a12b4f27dca"
+    },
+    {
+      "id": "local-QR-Code_Outlined_12px",
+      "name": "QR-Code_Outlined_12px",
+      "fileName": "qr-code-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "fae098f0dafc72eba9ee110ccf01fe0e59b9ebca00539b271e4d88938bd6d9d0"
+    },
+    {
+      "id": "local-QR-Code_Outlined_16px",
+      "name": "QR-Code_Outlined_16px",
+      "fileName": "qr-code-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "5392a54cf1f70958482d35d84a2ea77afab68d28b96e64e8bcc4ed1e9466345e"
+    },
+    {
+      "id": "local-QR-Code_Outlined_20px",
+      "name": "QR-Code_Outlined_20px",
+      "fileName": "qr-code-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "8b7ca845bc12f12e051c57d619451c256f5502ec1b585d611d83961ac63c65dc"
+    },
+    {
+      "id": "local-Refresh_Outlined_12px",
+      "name": "Refresh_Outlined_12px",
+      "fileName": "refresh-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "0447fb86281afe0cfe834c9635a0a9cdd8733ea50038e02b40b4074944e1dca8"
+    },
+    {
+      "id": "local-Refresh_Outlined_16px",
+      "name": "Refresh_Outlined_16px",
+      "fileName": "refresh-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "d566b3240b83995c45c21afa1e41e79711c24cf5c8ef4c43548bf0951bdf9dc2"
+    },
+    {
+      "id": "local-Refresh_Outlined_20px",
+      "name": "Refresh_Outlined_20px",
+      "fileName": "refresh-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "c186fbc0190d9f7ae4b6453f6c0c28a153f2e4bf94c1f95f54b74af9c563e03b"
+    },
+    {
+      "id": "local-RefreshSquare_Outlined_12px",
+      "name": "RefreshSquare_Outlined_12px",
+      "fileName": "refresh-square-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ddb4384851f70103631db3abddb7b037e8df06014ed57a238fdf5e0d2ebb9dcd"
+    },
+    {
+      "id": "local-RefreshSquare_Outlined_16px",
+      "name": "RefreshSquare_Outlined_16px",
+      "fileName": "refresh-square-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "929aeaf220914523f8aa2e57ba809752329e9ee9704ed093e163bd116bb32a73"
+    },
+    {
+      "id": "local-RefreshSquare_Outlined_20px",
+      "name": "RefreshSquare_Outlined_20px",
+      "fileName": "refresh-square-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "81e14c9c6b9b3c94febc9d50fce33cb5cb7b42fbc7e46b4490653af3010a8e99"
+    },
+    {
+      "id": "local-Restart_Outlined_12px",
+      "name": "Restart_Outlined_12px",
+      "fileName": "restart-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "7fd7a9740fa2e5f7208964ddce984b37b099a6f052b87cba84641de4c45802f6"
+    },
+    {
+      "id": "local-Restart_Outlined_16px",
+      "name": "Restart_Outlined_16px",
+      "fileName": "restart-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "9c92a5c554f2ace966fb0427907f0ce6fb08e0796b6ba912468084d1588c5829"
+    },
+    {
+      "id": "local-Restart_Outlined_20px",
+      "name": "Restart_Outlined_20px",
+      "fileName": "restart-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "df15ecedae0ba469429db82dae8181ebcbb023ae100f49e12b2a92b29523877b"
+    },
+    {
+      "id": "local-Right_Filled_12px",
+      "name": "Right_Filled_12px",
+      "fileName": "right-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "89f4e6f572f2dcf1d4fd900257c91e133e5aacb176082cdb8bb7c82a2c286e21"
+    },
+    {
+      "id": "local-Right_Filled_16px",
+      "name": "Right_Filled_16px",
+      "fileName": "right-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "0f248bdd5a47aa3590cc7f6b51b9f6bec30f6db258b6146ae3e6d82956bbf4e5"
+    },
+    {
+      "id": "local-Right_Filled_20px",
+      "name": "Right_Filled_20px",
+      "fileName": "right-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "679766879db5a9192c9e073210e7f9d00fac6033f37d07972e66e01e93c54773"
+    },
+    {
+      "id": "local-Scanner_Outlined_12px",
+      "name": "Scanner_Outlined_12px",
+      "fileName": "scanner-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "3540275af6a689f1e39f0a39d91edbde35be08ca76b6935751fa7a5a65c3a112"
+    },
+    {
+      "id": "local-Scanner_Outlined_16px",
+      "name": "Scanner_Outlined_16px",
+      "fileName": "scanner-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b53c5be9f7177426335db4965dc83b1e4fb74969e86b58a4f07a38657ea0cca5"
+    },
+    {
+      "id": "local-Scanner_Outlined_20px",
+      "name": "Scanner_Outlined_20px",
+      "fileName": "scanner-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "73f9382a1e1d7f6b49f301ebb9eed1658189854d6147ef12bfac91e8d5ca0c51"
+    },
+    {
+      "id": "local-Screen_Outlined_12px",
+      "name": "Screen_Outlined_12px",
+      "fileName": "screen-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b95063b9268fd5c8677249078079126db2f636c8bfe64f53ff772c8ecb13ffee"
+    },
+    {
+      "id": "local-Screen_Outlined_16px",
+      "name": "Screen_Outlined_16px",
+      "fileName": "screen-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "a8986d1e36909d95a26428313e68f2fbac294af034103937612b2bc8d7fc27b2"
+    },
+    {
+      "id": "local-Screen_Outlined_20px",
+      "name": "Screen_Outlined_20px",
+      "fileName": "screen-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ed3bae9b39193f0786ed2a29194940c12be0c05f1fa720919b95c37b3fab2240"
+    },
+    {
+      "id": "4178:22213",
+      "name": "ScreenFull_Outlined_16px",
+      "fileName": "screen-full-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:57.644Z",
+      "hash": "c3731a2e81eb9982c12c20f3df91c282f383cfb0bc54b4c86e8a1725643bd5ab",
+      "deprecated": true
+    },
+    {
+      "id": "4178:22208",
+      "name": "ScreenSize_Outlined_16px",
+      "fileName": "screen-size-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:57.337Z",
+      "hash": "6efe437ebb33f630d1e6f8e175649b8debe41b974583d94b33094d2180e612d4",
+      "deprecated": true
+    },
+    {
+      "id": "local-Sealing_Outlined_12px",
+      "name": "Sealing_Outlined_12px",
+      "fileName": "sealing-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "a9f7c2427659690ca58583b0d8f0b27be127b3eb79e7fa55f91bf31f7b8a8cf4"
+    },
+    {
+      "id": "local-Sealing_Outlined_16px",
+      "name": "Sealing_Outlined_16px",
+      "fileName": "sealing-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "8c6708ab4d5bc1b0377fdbd7ac3e443fab416f9af689b1a9e5d06f494a3834d5"
+    },
+    {
+      "id": "local-Sealing_Outlined_20px",
+      "name": "Sealing_Outlined_20px",
+      "fileName": "sealing-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "291494848da9aa7a2c647d3854cf23b08cf1d0109498610afb5f14d4a5acd32f"
+    },
+    {
+      "id": "local-Search_Outlined_12px",
+      "name": "Search_Outlined_12px",
+      "fileName": "search-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "40c7fddc267c7a8e46e13462f77e78aa0456452b66353b2a336350e3d5db3b20"
+    },
+    {
+      "id": "local-Search_Outlined_16px",
+      "name": "Search_Outlined_16px",
+      "fileName": "search-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "fdb258f59582d7f93b9c031ced3eb997d388e2338592a034d18b96b2f41a3634"
+    },
+    {
+      "id": "local-Search_Outlined_20px",
+      "name": "Search_Outlined_20px",
+      "fileName": "search-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "c5594180f3741ed974f5103dd8a0957817125e8033c056235d8da4119fbb21a7"
+    },
+    {
+      "id": "4178:21860",
+      "name": "Search2_Outlined_12px",
+      "fileName": "search2-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:26.824Z",
+      "hash": "8fdb19f3226ed35ae487982bbe29cf55d851c3ace1fa118914954b60af149025",
+      "deprecated": true
+    },
+    {
+      "id": "local-Server_Outlined_12px",
+      "name": "Server_Outlined_12px",
+      "fileName": "server-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "7d2de5c239c20fddeeee0c8279edb1eb903a888287c09ef53bb2c3165da3c9cd"
+    },
+    {
+      "id": "local-Server_Outlined_16px",
+      "name": "Server_Outlined_16px",
+      "fileName": "server-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "5c78130b13b3a9d171e4d98f0a017c3676e36caa63eb5134bbf356f7df079dd9"
+    },
+    {
+      "id": "local-Server_Outlined_20px",
+      "name": "Server_Outlined_20px",
+      "fileName": "server-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e99880a6fcae8be32da1b906d170b9ad5d0b9d89791b5f8f88b35ae65a2a4935"
+    },
+    {
+      "id": "4178:21809",
+      "name": "Setting_Оutlined_12px",
+      "fileName": "setting-utlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:21.150Z",
+      "hash": "ac7a27445b4832f19286d6decb930e899ad3b80cfea155884cf306090d1d30bc",
+      "deprecated": true
+    },
+    {
+      "id": "4178:21811",
+      "name": "Setting_Оutlined_16px",
+      "fileName": "setting-utlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:21.409Z",
+      "hash": "cf31ab3ff3414cb959c7522465ebcaac02fbe2edd8f40e400ca4b9c2f78c3f1d",
+      "deprecated": true
+    },
+    {
+      "id": "4178:21813",
+      "name": "Setting_Оutlined_20px",
+      "fileName": "setting-utlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2025-10-01T15:35:21.713Z",
+      "hash": "82c32f2aadae8834f2124fc657b5c3130523da8446eaecf44400557c5a2ab96c",
+      "deprecated": true
+    },
+    {
+      "id": "local-Settings_Outlined_12px",
+      "name": "Settings_Outlined_12px",
+      "fileName": "settings-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "111c467b7260d87d8610eb2c1b5d9e09defcc1ffb7fd657082bc2dbfaecf5bf8"
+    },
+    {
+      "id": "local-Settings_Outlined_16px",
+      "name": "Settings_Outlined_16px",
+      "fileName": "settings-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "e5a6f92ea4f6816ad5eb39aeec506d23360ac064b0c976675ffa9554c28f2c60"
+    },
+    {
+      "id": "local-Settings_Outlined_20px",
+      "name": "Settings_Outlined_20px",
+      "fileName": "settings-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "490b104e2f086bb08c86a9350de1f82fc016e2171929c5000c181579f0b46767"
+    },
+    {
+      "id": "local-Size_Outlined_12px",
+      "name": "Size_Outlined_12px",
+      "fileName": "size-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "3b42a1d2401434b0561dd15010daa11fd5860d256e0dc6de0cdd000cc269194c"
+    },
+    {
+      "id": "local-Size_Outlined_16px",
+      "name": "Size_Outlined_16px",
+      "fileName": "size-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b8aa9095e1fcf3c4bfaae78340de08f0b4746f2cf7c38cacba52d11179310d03"
+    },
+    {
+      "id": "local-Size_Outlined_20px",
+      "name": "Size_Outlined_20px",
+      "fileName": "size-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "4b2beeb5544af447de29d32dbaf80bae5610c00a46ee9a63c4f69f9072573401"
+    },
+    {
+      "id": "local-SmallCaps_Outlined_12px",
+      "name": "SmallCaps_Outlined_12px",
+      "fileName": "small-caps-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "655251dfe218f180e042ae851864787abe5bf7c96a0e8514919605992db0035a"
+    },
+    {
+      "id": "local-SmallCaps_Outlined_16px",
+      "name": "SmallCaps_Outlined_16px",
+      "fileName": "small-caps-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "240f66940c0b5243dc580efc9be97926a03c20ee6e2428d376e815b93e420ee5"
+    },
+    {
+      "id": "local-SmallCaps_Outlined_20px",
+      "name": "SmallCaps_Outlined_20px",
+      "fileName": "small-caps-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "97fc5ee138e0b6f57767a99048a014ec369dc7e883b884f516c7c7b2860d34ae"
+    },
+    {
+      "id": "local-SortingDown_Outlined_12px",
+      "name": "SortingDown_Outlined_12px",
+      "fileName": "sorting-down-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "9d8ca7c4dc20e3bf241a81d3c17806eb54645d849afa93d61a3e86602bf0160b"
+    },
+    {
+      "id": "local-SortingDown_Outlined_16px",
+      "name": "SortingDown_Outlined_16px",
+      "fileName": "sorting-down-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "17b8d4506c58b845180d9f35410631d3ce72f11d4e93d8c8eb258823e0d012b3"
+    },
+    {
+      "id": "local-SortingDown_Outlined_20px",
+      "name": "SortingDown_Outlined_20px",
+      "fileName": "sorting-down-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b1bad4d36244fdfce73cb81dc3018d8eb1e60077616370322e518606846374df"
+    },
+    {
+      "id": "local-SortingMess_Outlined_12px",
+      "name": "SortingMess_Outlined_12px",
+      "fileName": "sorting-mess-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "46e9a14c8db3ab5bd0a28f5319273dee7b777264b4e1427cfe8f05e1d292c238"
+    },
+    {
+      "id": "local-SortingMess_Outlined_16px",
+      "name": "SortingMess_Outlined_16px",
+      "fileName": "sorting-mess-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "1db3b880163d9258422063e3bc58ddb86db6fff00cd21a59a49efcc0ac4c42c4"
+    },
+    {
+      "id": "local-SortingMess_Outlined_20px",
+      "name": "SortingMess_Outlined_20px",
+      "fileName": "sorting-mess-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "b00c66a6af7b418b19b95541871669fd2e1f7f25f282a154f6c7ea5c67bde2ec"
+    },
+    {
+      "id": "local-SortingUp_Outlined_12px",
+      "name": "SortingUp_Outlined_12px",
+      "fileName": "sorting-up-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "717fb883911242a45c9e716ef547b20eb15082195debd4445f93822f21a4a9d0"
+    },
+    {
+      "id": "local-SortingUp_Outlined_16px",
+      "name": "SortingUp_Outlined_16px",
+      "fileName": "sorting-up-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "ad45dfb9b377cd8d1e2b3dd517d5dfe4dad938542bb64534092a8ff67a413e12"
+    },
+    {
+      "id": "local-SortingUp_Outlined_20px",
+      "name": "SortingUp_Outlined_20px",
+      "fileName": "sorting-up-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "9d3a4820c01c72ebb9315b19297245697c6f7c2392b9a14fad4582707eb8be9f"
+    },
+    {
+      "id": "local-SquareArrowDown_Outlined_12px",
+      "name": "SquareArrowDown_Outlined_12px",
+      "fileName": "square-arrow-down-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "790808372b72905252e257a5009306f6f1c632043adab87c034cd6544c5d786a"
+    },
+    {
+      "id": "local-SquareArrowDown_Outlined_16px",
+      "name": "SquareArrowDown_Outlined_16px",
+      "fileName": "square-arrow-down-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "6cf9307982d8c8a626f010c0f033e3b8824a08b8cc74d4790f1163cda6ad8a85"
+    },
+    {
+      "id": "local-SquareArrowDown_Outlined_20px",
+      "name": "SquareArrowDown_Outlined_20px",
+      "fileName": "square-arrow-down-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "41412b1f69b9c5056c75aa79db81d425d981079dd411618f623e9c6766aee20e"
+    },
+    {
+      "id": "local-SquareArrowUp_Outlined_12px",
+      "name": "SquareArrowUp_Outlined_12px",
+      "fileName": "square-arrow-up-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.361Z",
+      "hash": "2ff3a6321ef552490aca1094b8055a3d8e181cac0b36d534e8c3c837847c29d4"
+    },
+    {
+      "id": "local-SquareArrowUp_Outlined_16px",
+      "name": "SquareArrowUp_Outlined_16px",
+      "fileName": "square-arrow-up-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "39709f2a2fbbda00aec95ea10b3bdce2076180b26505b4d1ebdfe486af5d0a67"
+    },
+    {
+      "id": "local-SquareArrowUp_Outlined_20px",
+      "name": "SquareArrowUp_Outlined_20px",
+      "fileName": "square-arrow-up-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "5683336af5d356f73d05fa619e3f5bae6797491875169d8f4d9d016bc3dbb167"
+    },
+    {
+      "id": "local-Stopwatch_Outlined_12px",
+      "name": "Stopwatch_Outlined_12px",
+      "fileName": "stopwatch-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "e9bc4e7b67a7531514cf8f0ae1329eb65f0f0426031b6600da4fb980631fce61"
+    },
+    {
+      "id": "local-Stopwatch_Outlined_16px",
+      "name": "Stopwatch_Outlined_16px",
+      "fileName": "stopwatch-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "62cd202f19192443b079295c985b9a635cb536d4c0569950e9ce05336f8ea784"
+    },
+    {
+      "id": "local-Stopwatch_Outlined_20px",
+      "name": "Stopwatch_Outlined_20px",
+      "fileName": "stopwatch-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "cab4698bdd31d94a2d8025a135f402b513da84feaadf27e99b64c43202d5210f"
+    },
+    {
+      "id": "local-SUBD_Outlined_12px",
+      "name": "SUBD_Outlined_12px",
+      "fileName": "subd-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "be43b9c67d3ff46a09f21abfd347f2d7a23ec2fb41dcee77600f4c739d49ecac"
+    },
+    {
+      "id": "local-SUBD_Outlined_16px",
+      "name": "SUBD_Outlined_16px",
+      "fileName": "subd-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "787e6609eea86e99375f408b390cdb2d9a46983b89451ec7e04224da26818d0f"
+    },
+    {
+      "id": "local-SUBD_Outlined_20px",
+      "name": "SUBD_Outlined_20px",
+      "fileName": "subd-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "ea444fdb4aa0444f1a5808e3f4ce17d1c667d4e2fe291f49ae7288957bdeb283"
+    },
+    {
+      "id": "local-Table_Outlined_12px",
+      "name": "Table_Outlined_12px",
+      "fileName": "table-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "007ba1e99a7ea0a520348f88e1d0f5eccc5bc9706741437a7f6e452ae9c30080"
+    },
+    {
+      "id": "local-Table_Outlined_16px",
+      "name": "Table_Outlined_16px",
+      "fileName": "table-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "3bfe929ee4273cb82eb69b864d55f90e1a8603032633b29be47af15c910f09b8"
+    },
+    {
+      "id": "local-Table_Outlined_20px",
+      "name": "Table_Outlined_20px",
+      "fileName": "table-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "de8548c385927fd2d6088867957525e47fb75cfa6307e388ef6d871a94f307b9"
+    },
+    {
+      "id": "local-TableAdd_Outlined_12px",
+      "name": "TableAdd_Outlined_12px",
+      "fileName": "table-add-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "7e8e6f2d75a210a019c4846c194c61cf5ebabcdc89222ad545ef684d9382b738"
+    },
+    {
+      "id": "local-TableAdd_Outlined_16px",
+      "name": "TableAdd_Outlined_16px",
+      "fileName": "table-add-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "70966249d59e8249b43463f0411ecd22df42f10b075a7dd02a8b7bb66f7db9af"
+    },
+    {
+      "id": "local-TableAdd_Outlined_20px",
+      "name": "TableAdd_Outlined_20px",
+      "fileName": "table-add-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "a0450705db5e54e0a22581ee516fc64af61260441c70004a409a59c69a5c49df"
+    },
+    {
+      "id": "local-Tag_Outlined_12px",
+      "name": "Tag_Outlined_12px",
+      "fileName": "tag-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "0132cd395b59d7d16a6ecc7ca169c56aaf0169da1e52beed83940c872fff5dcc"
+    },
+    {
+      "id": "local-Tag_Outlined_16px",
+      "name": "Tag_Outlined_16px",
+      "fileName": "tag-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "2d137042b274ad68abf8b708340dfe18492ccafef2c5290dbb289abdfc478429"
+    },
+    {
+      "id": "local-Tag_Outlined_20px",
+      "name": "Tag_Outlined_20px",
+      "fileName": "tag-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "e046ee58bb33d2c31b0a11af890a9ccb02c45f9638b61c4878ae0c4c233bab48"
+    },
+    {
+      "id": "local-TextBold_Outlined_12px",
+      "name": "TextBold_Outlined_12px",
+      "fileName": "text-bold-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "e178e1fc38535180e4f24d538120a4e65a5801b8d7ddc353844dedd98aa268f0"
+    },
+    {
+      "id": "local-TextBold_Outlined_16px",
+      "name": "TextBold_Outlined_16px",
+      "fileName": "text-bold-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "7f3b4b0e9cde5e6e8c9b57187c8e70f36696a85c9779662bbd1240a1c8068988"
+    },
+    {
+      "id": "local-TextBold_Outlined_20px",
+      "name": "TextBold_Outlined_20px",
+      "fileName": "text-bold-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "30176c8599c8d5fb0a65cde36e45da6f89812be78eecf615137fd9dd413192a7"
+    },
+    {
+      "id": "local-TextItalic_Outlined_12px",
+      "name": "TextItalic_Outlined_12px",
+      "fileName": "text-italic-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "f42d665e12cadade5721d501027f5e0d423efa005ce8e27eee6168907fe87ef9"
+    },
+    {
+      "id": "local-TextItalic_Outlined_16px",
+      "name": "TextItalic_Outlined_16px",
+      "fileName": "text-italic-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "f5768dea24a2d471791e342b90a1da8c1d820c9e131dc1386421116d03a70a84"
+    },
+    {
+      "id": "local-TextItalic_Outlined_20px",
+      "name": "TextItalic_Outlined_20px",
+      "fileName": "text-italic-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "0cbffae92df8694567ef25aad08171b1afe2438bf46c064699079272878e1425"
+    },
+    {
+      "id": "local-TextUnderline_Outlined_12px",
+      "name": "TextUnderline_Outlined_12px",
+      "fileName": "text-underline-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "3860d47990897dfe46d76746ed956774857148eaf0c2bf307fd5a69942162693"
+    },
+    {
+      "id": "local-TextUnderline_Outlined_16px",
+      "name": "TextUnderline_Outlined_16px",
+      "fileName": "text-underline-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "f4d91e8b9b7c67e1377d5bb5df74752f4bf45e9eff845a11a916a3c90ff64783"
+    },
+    {
+      "id": "local-TextUnderline_Outlined_20px",
+      "name": "TextUnderline_Outlined_20px",
+      "fileName": "text-underline-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "32a49b6ca6da3f5efcb6c6ace0f46187dd2fa05412e9db993e1ad3241df97ceb"
+    },
+    {
+      "id": "local-TickCircle_Filled_12px",
+      "name": "TickCircle_Filled_12px",
+      "fileName": "tick-circle-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "00d72beda18ea86c1ef2775e3e364317032b2b84bdebc63e28bbb2d4500d83ba"
+    },
+    {
+      "id": "local-TickCircle_Filled_16px",
+      "name": "TickCircle_Filled_16px",
+      "fileName": "tick-circle-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "c742ee5496be345d24675e57404690d3413f3f66e5ff9ba2fd6d846bd42419f0"
+    },
+    {
+      "id": "local-TickCircle_Filled_20px",
+      "name": "TickCircle_Filled_20px",
+      "fileName": "tick-circle-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "889727eb42a815ffc972d7690f9ea74462659d026076aecdbeb10c8a1c1dedaf"
+    },
+    {
+      "id": "local-TickCircle_Оutlined_12px",
+      "name": "TickCircle_Outlined_12px",
+      "fileName": "tick-circle-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "032a8287652225ad5c6a93c78d785763e4b896f3f8963f4403a68a6aace470b0",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-TickCircle_Оutlined_16px",
+      "name": "TickCircle_Outlined_16px",
+      "fileName": "tick-circle-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "c47b17dfeb2d9bd91a10e3384dda5731a08bea2a3350ee433fd2e8a90ed9e432",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-TickCircle_Оutlined_20px",
+      "name": "TickCircle_Outlined_20px",
+      "fileName": "tick-circle-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "cefd4e1e2de19ec406bbf4bf09387196dd9eb6e49dc25897f20bd3de5531cb10",
+      "hash": "2026-02-04T15:18:40.000Z"
+    },
+    {
+      "id": "local-Tree_Outlined_12px",
+      "name": "Tree_Outlined_12px",
+      "fileName": "tree-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "4eea4aa8be69699c2439b7918571d28120a1e74f49acdd47fc45faf6eba7d252"
+    },
+    {
+      "id": "local-Tree_Outlined_16px",
+      "name": "Tree_Outlined_16px",
+      "fileName": "tree-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "65ccd78c98e93a5e053a93fe8bf9896adb5d1bdb39835adc8cecdc183299f81b"
+    },
+    {
+      "id": "local-Tree_Outlined_20px",
+      "name": "Tree_Outlined_20px",
+      "fileName": "tree-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "92ff82a0aa7609b31161ca9cb9ac2b58bfd3218425fdbfdab4bcdc6f76df81e0"
+    },
+    {
+      "id": "4178:22198",
+      "name": "UndoLeft_Outlined_16px",
+      "fileName": "undo-left-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:56.723Z",
+      "hash": "c300a0f5ca0c65b4e755bc05459f36d05778faaa80a10b367f4bd21f67a1a3f4",
+      "deprecated": true
+    },
+    {
+      "id": "local-UndoLeftRound_Outlined_12px",
+      "name": "UndoLeftRound_Outlined_12px",
+      "fileName": "undo-left-round-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "7d6309a20fedb5ba3cd9a8aebed9611ea1e48657b2c8585b914563d1436f4e20"
+    },
+    {
+      "id": "local-UndoLeftRound_Outlined_16px",
+      "name": "UndoLeftRound_Outlined_16px",
+      "fileName": "undo-left-round-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "3a7860b96deb763bb8a9d6024ad5f5a2d0da32466277be1455ac01a9ba0dd1f0"
+    },
+    {
+      "id": "local-UndoLeftRound_Outlined_20px",
+      "name": "UndoLeftRound_Outlined_20px",
+      "fileName": "undo-left-round-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "ed7d10d14d79cd47b7187ef30e38d5d5bba4e292b982f13ced65caa6e6cc05e2"
+    },
+    {
+      "id": "local-UpDown_Filled_12px",
+      "name": "UpDown_Filled_12px",
+      "fileName": "up-down-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "622c00f5043a4614f8cc36aa547435cbe7bbec948bbbeff744b3e008c0e18e74"
+    },
+    {
+      "id": "local-UpDown_Filled_16px",
+      "name": "UpDown_Filled_16px",
+      "fileName": "up-down-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "99e01bfb24aab33459d3ed9c227b2b310fcb8635f7523855f61b74151f73df85"
+    },
+    {
+      "id": "local-UpDown_Filled_20px",
+      "name": "UpDown_Filled_20px",
+      "fileName": "up-down-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "7c092fbea8d5a50bb56b9a272917d94cbc287ce6bbdf6d109d3a13365dd80b61"
+    },
+    {
+      "id": "local-User_Filled_12px",
+      "name": "User_Filled_12px",
+      "fileName": "user-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "ec27e7884b3e9dda856d8f00d165a0313f135d427368a7af208b0f995f0ab008"
+    },
+    {
+      "id": "local-User_Filled_16px",
+      "name": "User_Filled_16px",
+      "fileName": "user-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "0b40df4634846c34792e52fe7bbf4cdeb6dd7912eebea5382b39c723085335eb"
+    },
+    {
+      "id": "local-User_Filled_20px",
+      "name": "User_Filled_20px",
+      "fileName": "user-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "ab51aa325c268ccdb6ec455da9bb96aad45cf03fea719b1465f4f1932d1df7d5"
+    },
+    {
+      "id": "local-User_Outlined_12px",
+      "name": "User_Outlined_12px",
+      "fileName": "user-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "3e144b2f7f90cf1ed6696af5824180e686086af591f07619b12edce88788e47b"
+    },
+    {
+      "id": "local-User_Outlined_16px",
+      "name": "User_Outlined_16px",
+      "fileName": "user-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "faed6698632ae957e108a181556300099e40156eaf3ba7e210b8c0a02dd71649"
+    },
+    {
+      "id": "local-User_Outlined_20px",
+      "name": "User_Outlined_20px",
+      "fileName": "user-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "c1b86c29c7db8afa9e2545dd4b84f44d8b4e77208dc7919cbf4ff16b151d898a"
+    },
+    {
+      "id": "local-Verified_Outlined_12px",
+      "name": "Verified_Outlined_12px",
+      "fileName": "verified-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "174b0ba653c6c42f94a89a2a607a85d721ad6f88a8699a80c7f0183e5bad64ec"
+    },
+    {
+      "id": "local-Verified_Outlined_16px",
+      "name": "Verified_Outlined_16px",
+      "fileName": "verified-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "b0f2423deb7a5722d8c4d6319e9b2790697141c15c3c4940a5e7c49997c2a9d7"
+    },
+    {
+      "id": "local-Verified_Outlined_20px",
+      "name": "Verified_Outlined_20px",
+      "fileName": "verified-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "8e8dbaf571316eef7235030a0bb229a15d313f06f3c1422c959d502ec9d14636"
+    },
+    {
+      "id": "local-Virtualization_Outlined_12px",
+      "name": "Virtualization_Outlined_12px",
+      "fileName": "virtualization-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "324c6088d7bcbd8ea0df70320f9c536a7e1fd737fe8966c7f24608fa6623e1f4"
+    },
+    {
+      "id": "local-Virtualization_Outlined_16px",
+      "name": "Virtualization_Outlined_16px",
+      "fileName": "virtualization-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "d32d6ad11e2f37fcfa7edd6679a1cd4e8e25a501e15677d311a749f3b400faf0"
+    },
+    {
+      "id": "local-Virtualization_Outlined_20px",
+      "name": "Virtualization_Outlined_20px",
+      "fileName": "virtualization-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2026-01-29T15:51:06.362Z",
+      "hash": "82471675e22b1ad73443dff630b3fcc6cddbbbdd1efc5c19a780a7f10311a6c1"
+    },
+    {
+      "id": "4178:22228",
+      "name": "Сross_Outlined_16px",
+      "fileName": "ross-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2025-10-01T15:35:59.077Z",
+      "hash": "1a830ef5d9723ed9ce146aeb3e49604841b00076d41e4fddb8a7c6b093927354",
+      "deprecated": true
+    },
+    {
+      "id": "4178:22147",
+      "name": "Сube_Outlined_12px",
+      "fileName": "ube-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2025-10-01T15:35:53.052Z",
+      "hash": "0acb624ea8ec0ad027819178ccae0d8442a44423a966ebd08a8bfc258c0bcdd2",
+      "deprecated": true
     }
   ]
 }

@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * ArrowLeftOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,19 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M7.146 2.646a.5.5 0 1 1 .707.707L5.207 6l2.646 2.646.065.079a.5.5 0 0 1-.693.693l-.079-.065-3-3a.5.5 0 0 1 0-.707z"/>`,
+      __html: `<path d="M7.854 3.354a.5.5 0 1 0-.707-.707l-3 3a.5.5 0 0 0 0 .707l3 3a.5.5 0 1 0 .707-.707L5.207 6z" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M9.146 4.646a.5.5 0 1 1 .707.707L7.207 8l2.646 2.646.065.079a.5.5 0 0 1-.693.693l-.079-.064-3-3a.5.5 0 0 1 0-.708z"/>`,
+      __html: `<path d="M9.854 5.354a.5.5 0 1 0-.707-.707l-3 3a.5.5 0 0 0 0 .707l3 3a.5.5 0 0 0 .707-.707L7.207 8z" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M12.264 6.638a.55.55 0 1 0-.778-.778l-3.75 3.75a.55.55 0 0 0 0 .778l3.75 3.75a.55.55 0 1 0 .778-.778L8.902 10z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

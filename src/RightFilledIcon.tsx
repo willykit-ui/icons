@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * RightFilledIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,19 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M7.146 5.647 5.354 3.854a.5.5 0 0 0-.854.354v3.586a.5.5 0 0 0 .854.353l1.792-1.793a.5.5 0 0 0 0-.707"/>`,
+      __html: `<path d="M4.5 4.208a.5.5 0 0 1 .854-.354l1.792 1.793a.5.5 0 0 1 0 .707L5.354 8.147a.5.5 0 0 1-.854-.353z" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M6.809 4.538a.5.5 0 0 1 .545.108l3 3a.5.5 0 0 1 0 .708l-3 3A.5.5 0 0 1 6.5 11V5a.5.5 0 0 1 .309-.462"/>`,
+      __html: `<path d="M6.309 4.538a.5.5 0 0 1 .545.108l3 3a.5.5 0 0 1 0 .708l-3 3A.5.5 0 0 1 6 11V5a.5.5 0 0 1 .309-.462" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M7.809 5.538a.5.5 0 0 1 .545.108l3.93 3.93a.6.6 0 0 1 0 .848l-3.93 3.93A.5.5 0 0 1 7.5 14V6a.5.5 0 0 1 .309-.462" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

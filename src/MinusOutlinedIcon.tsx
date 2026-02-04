@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * MinusOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -13,16 +12,26 @@ import type { IconProps } from "./types";
  */
 
 const svgChildren = {
-  small: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  small: {
+    content: {
+      __html: `<path d="M9.5 5.5a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 12 12",
+  },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M11.5 7.5a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z"/>`,
+      __html: `<path d="M12.5 7.5a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1z" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M15.5 9.4a.6.6 0 1 1 0 1.2h-11a.6.6 0 1 1 0-1.2z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

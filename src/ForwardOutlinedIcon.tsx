@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * ForwardOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -13,16 +12,26 @@ import type { IconProps } from "./types";
  */
 
 const svgChildren = {
-  small: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  small: {
+    content: {
+      __html: `<path d="M7.302 2.56a.5.5 0 0 1 .706-.026l3.333 3.1a.5.5 0 0 1 0 .732l-3.333 3.1a.5.5 0 0 1-.68-.732l2.4-2.234H1a.5.5 0 0 1 0-1h8.728l-2.4-2.233a.5.5 0 0 1-.026-.707" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 12 12",
+  },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M9.315 4.31a.5.5 0 0 1 .708 0l3.333 3.333a.5.5 0 0 1 0 .707l-3.333 3.335a.5.5 0 0 1-.708-.708l2.48-2.48H3a.5.5 0 0 1 0-1h8.796l-2.48-2.48a.5.5 0 0 1 0-.707"/>`,
+      __html: `<path d="M9.592 4.032a.55.55 0 0 1 .777-.041l4 3.6a.55.55 0 0 1 0 .818l-4 3.6a.55.55 0 1 1-.736-.818l2.933-2.64H2A.55.55 0 0 1 2 7.45h10.566L9.633 4.809a.55.55 0 0 1-.041-.777" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M11.912 4.873a.6.6 0 0 1 .849.003l4.665 4.7a.6.6 0 0 1 0 .846l-4.665 4.7a.6.6 0 0 1-.852-.845l3.65-3.678H3a.6.6 0 1 1 0-1.2h12.559l-3.65-3.677a.6.6 0 0 1 .003-.849" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

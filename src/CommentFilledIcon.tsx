@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * CommentFilledIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M6 .5a5.5 5.5 0 1 1-2.45 10.426.32.32 0 0 0-.22-.031l-1.114.297A1.15 1.15 0 0 1 .808 9.784l.297-1.113a.32.32 0 0 0-.03-.222A5.5 5.5 0 0 1 6 .5m-1.5 6a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0-2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h12v12H0z"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path d="M6 .55a5.45 5.45 0 1 1-2.427 10.332.37.37 0 0 0-.257-.035l-1.113.298A1.1 1.1 0 0 1 .856 9.798l.298-1.113a.37.37 0 0 0-.035-.257A5.45 5.45 0 0 1 6 .55m-1.8 6a.45.45 0 0 0 0 .901h1.5a.45.45 0 0 0 0-.9zm0-2a.45.45 0 0 0 0 .901h3.599a.45.45 0 0 0 0-.9z" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h12v12H0z" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<g clipPath="url(#a)"><path d="M8 .957a7.042 7.042 0 1 1-3.136 13.349.52.52 0 0 0-.364-.05l-1.447.389a1.387 1.387 0 0 1-1.699-1.699l.388-1.447a.52.52 0 0 0-.049-.364A7.042 7.042 0 0 1 8 .957M5 8.999a.5.5 0 0 0 0 1h3a.5.5 0 1 0 0-1zm0-2.5a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1z" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h16v16H0z" fill="currentColor"/></clipPath></defs>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M10 1.45a8.55 8.55 0 1 1-3.808 16.206.76.76 0 0 0-.53-.067l-1.781.476a1.59 1.59 0 0 1-1.947-1.947l.476-1.781a.76.76 0 0 0-.067-.53A8.55 8.55 0 0 1 10 1.45m-4 9.5a.55.55 0 1 0 0 1.099h5a.55.55 0 1 0 0-1.1zm0-3a.55.55 0 1 0 0 1.099h8a.55.55 0 1 0 0-1.1z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

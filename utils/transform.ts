@@ -19,6 +19,7 @@ interface BuildComponentOptions {
   typescript: boolean;
   memo: boolean;
   ref: boolean;
+  deprecated?: boolean;
 }
 
 /**
@@ -113,6 +114,7 @@ export async function buildComponentCode({
   typescript,
   memo,
   ref,
+  deprecated,
 }: BuildComponentOptions): Promise<string> {
   const sizes = ["small", "medium", "large"] as const;
 
@@ -133,8 +135,9 @@ export async function buildComponentCode({
     const cleanedContent = cleanSvgContent(content);
     const camelCasedContent = convertSvgAttributesToCamelCase(cleanedContent);
     const colorProcessedContent = replaceColorAttributes(camelCasedContent);
+    const fillProcessedContent = replaceFillAttribute(colorProcessedContent);
 
-    const safeContent = escapeTemplateString(colorProcessedContent);
+    const safeContent = escapeTemplateString(fillProcessedContent);
 
     processedSvgData[size] = { content: safeContent, viewBox };
   }
@@ -151,23 +154,26 @@ export async function buildComponentCode({
 
   const displayName = `\n${componentName}.displayName = '${componentName}';`;
 
+  let jsDocContent = ` * ${componentName} icon component.`;
+
+  if (deprecated) {
+    jsDocContent += `\n * @deprecated This icon is deprecated and will be removed in a future version.`;
+  }
+
+  jsDocContent += `\n * @description Supports sizes: small (12px), medium (16px, default), large (20px).\n * Automatically falls back to the closest available size if exact one is missing.`;
+
+  if (typescript) {
+    jsDocContent += `\n *\n * @param fontSize - Icon size preset or custom pixel value\n * @param color - Icon color (supports CSS colors, variables, and 'currentColor')\n * @param ...props - All other SVG element props`;
+  }
+
   const jsDoc = typescript
     ? `
 /**
- * ${componentName} icon component.
- * 
- * @description Supports sizes: small (12px), medium (16px, default), large (20px).
- * Automatically falls back to the closest available size if exact one is missing.
- * 
- * @param fontSize - Icon size preset or custom pixel value
- * @param color - Icon color (supports CSS colors, variables, and 'currentColor')
- * @param ...props - All other SVG element props
+${jsDocContent}
  */`
     : `
 /**
- * ${componentName} icon component.
- * Supports sizes: small (12px), medium (16px, default), large (20px).
- * Automatically falls back to the closest available size if exact one is missing.
+${jsDocContent}
  */`;
 
   const templateData = {
@@ -181,6 +187,7 @@ export async function buildComponentCode({
     processedSvgData,
     sizes,
     sizeToPixel,
+    deprecated,
   };
 
   try {
@@ -205,10 +212,31 @@ export async function buildComponentCode({
 }
 
 /**
- * Заменяет fill="currentColor" на fill={color} в SVG строке
+ * Сохраняет fill="currentColor" как есть
+ * и добавляет fill="currentColor" к элементам, у которых нет атрибута fill
  */
 export function replaceFillAttribute(svg: string): string {
   if (!svg) return svg;
 
-  return svg.replace(/fill="currentColor"/g, "fill={color}");
+  // Оставляем fill="currentColor" как есть
+  let result = svg.replace(/fill="currentColor"/g, 'fill="currentColor"');
+
+  // Добавляем fill="currentColor" к элементам, у которых нет атрибута fill
+  // Работаем с самозакрывающимися тегами (например, <path ... />)
+  result = result.replace(
+    /<(path|rect|circle|polygon|polyline|ellipse)((?:\s+[^>]*?)??)(\s*\/?>)/g,
+    (match, tagName, attrs, closing) => {
+      // Проверяем, содержит ли элемент уже атрибут fill
+      if (!/\sfill=/.test(attrs)) {
+        // Добавляем fill="currentColor" перед закрывающим слешем или перед >
+        const newAttrs = attrs.trim()
+          ? attrs + ' fill="currentColor"'
+          : 'fill="currentColor"';
+        return `<${tagName}${newAttrs}${closing}`;
+      }
+      return match;
+    },
+  );
+
+  return result;
 }

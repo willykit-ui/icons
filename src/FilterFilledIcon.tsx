@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * FilterFilledIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M9.4 3H2.6a.1.1 0 0 0-.1.1v.817a.2.2 0 0 0 .059.142L5.47 6.97a.1.1 0 0 1 .029.07v2.72a.1.1 0 0 0 .17.07l.8-.8a.1.1 0 0 0 .03-.07V7.04a.1.1 0 0 1 .03-.07L9.44 4.059a.2.2 0 0 0 .059-.142V3.1a.1.1 0 0 0-.1-.1"/>`,
+      __html: `<path d="M10.5 1.95h-9v.526a.9.9 0 0 0 .264.637l3.072 3.073a.9.9 0 0 1 .264.636v3.227l1.8-.9V6.822a.9.9 0 0 1 .264-.636l3.072-3.073a.9.9 0 0 0 .264-.637z" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<path d="M14.5 2h-13v.804c0 .34.132.665.37.908l4.46 4.576a1.3 1.3 0 0 1 .37.908V14l2.6-1.333V9.196c0-.34.132-.665.37-.908l4.46-4.576a1.3 1.3 0 0 0 .37-.908z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path stroke="currentColor" d="M18 3.5v.415c0 .273-.112.534-.309.723l-5.574 5.336a2 2 0 0 0-.617 1.444v3.723l-2 1.036v-4.759a2 2 0 0 0-.617-1.444L3.309 4.638A1 1 0 0 1 3 3.915V3.5z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

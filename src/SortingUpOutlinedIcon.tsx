@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * SortingUpOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M5.2 10V9H2v1zm2.4-4v1H2V6zM10 3v1H2V3z"/>`,
+      __html: `<path d="M5 8.5v1H1v-1zm3-3v1H1v-1zm3-3v1H1v-1z" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<path d="M6.8 11.4v1.2H2v-1.2zm3.6-3.6V9H2V7.8zm3.6-4V5H2V3.8z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M8.5 13.799v1.4h-6v-1.4zm4.5-4.5v1.4H2.5V9.3zm4.5-4.5v1.4h-15V4.8z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

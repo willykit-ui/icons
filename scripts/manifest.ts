@@ -10,6 +10,7 @@ export interface IconManifestEntry {
   height: number;
   lastModified: string;
   hash: string;
+  deprecated?: boolean;
 }
 
 export interface IconManifest {
@@ -99,6 +100,7 @@ export function createManifestEntry(
   width: number,
   height: number,
   hash: string = "",
+  lastModified: string = new Date().toISOString(),
 ): IconManifestEntry {
   return {
     id,
@@ -106,7 +108,7 @@ export function createManifestEntry(
     fileName,
     width,
     height,
-    lastModified: new Date().toISOString(),
+    lastModified,
     hash,
   };
 }

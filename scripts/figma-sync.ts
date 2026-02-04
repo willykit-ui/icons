@@ -16,9 +16,9 @@ import crypto from "crypto";
 import {
   loadManifest,
   saveManifest,
-  findNewIcons,
+  // findNewIcons,
   findDeletedIcons,
-  findUpdatedIcons,
+  // findUpdatedIcons,
   createManifestEntry,
   type IconManifestEntry,
 } from "./manifest";
@@ -108,6 +108,10 @@ function nearestStandardSize(px: number): number {
 function safeName(name: string, keepSpaces = false): string {
   let n = name.trim();
 
+  // Замена кириллических "двойников" на латиницу
+  n = n.replace(/С/g, "C").replace(/с/g, "c");
+  n = n.replace(/О/g, "O").replace(/о/g, "o");
+
   // camelCase → kebab-case
   n = n.replace(/([a-z])([A-Z])/g, "$1-$2");
   // Пробелы и подчёркивания → дефис
@@ -134,7 +138,6 @@ async function loadSvgoConfig(configPath?: string) {
         params: {
           overrides: {
             removeViewBox: false,
-            removeDimensions: false,
             removeDoctype: false,
             removeXMLProcInst: false,
             removeComments: false,
@@ -150,11 +153,7 @@ async function loadSvgoConfig(configPath?: string) {
             convertShapeToPath: true,
             convertPathData: false,
             collapseGroups: false,
-            cleanupListOfValues: false,
-            removeXMLNS: false,
             sortAttrs: false,
-            removeStyleElement: false,
-            removeScripts: false,
           },
         },
       },
@@ -175,6 +174,43 @@ async function loadSvgoConfig(configPath?: string) {
   }
 }
 
+async function fetchWithRetry(
+  url: string,
+  options: RequestInit,
+  maxRetries = 5,
+): Promise<Response> {
+  for (let i = 0; i < maxRetries; i++) {
+    try {
+      const res = await fetch(url, options);
+
+      if (res.status === 429) {
+        const retryAfter = res.headers.get("retry-after");
+        const delay = (retryAfter ? parseInt(retryAfter, 10) : 60) * 1000;
+
+        console.log(
+          `🟡 Rate limit. Повтор через ${delay / 1000} сек... (Попытка ${
+            i + 1
+          }/${maxRetries})`,
+        );
+        await new Promise((r) => setTimeout(r, delay));
+        continue; // Повторяем попытку
+      }
+
+      return res; // Успешный ответ, не 429
+    } catch (error) {
+      console.error(
+        `❌ Ошибка сети при попытке ${i + 1}:`,
+        (error as Error).message,
+      );
+      if (i === maxRetries - 1) throw error; // Пробрасываем ошибку после последней попытки
+      await new Promise((r) => setTimeout(r, 5000)); // Ждем 5 сек при ошибке сети
+    }
+  }
+  throw new Error(
+    `❌ Превышено максимальное количество попыток для URL: ${url}`,
+  );
+}
+
 // --- Main Logic ---
 async function main() {
   const args = parseArgs();
@@ -188,7 +224,6 @@ async function main() {
   let fileKey = args.fileKey;
   let nodeId = args.nodeId;
 
-  // Парсим URL, если задан
   if (args.figmaNodeUrl) {
     try {
       const url = new URL(args.figmaNodeUrl);
@@ -220,7 +255,6 @@ async function main() {
     process.exit(2);
   }
 
-  // Проверка SVGO
   if (args.svgo && !svgoAvailable) {
     console.warn("SVGO включён, но не установлен. Пропускаем оптимизацию.");
     args.svgo = false;
@@ -232,372 +266,229 @@ async function main() {
   const outDir = path.resolve(args.outDir);
   await fs.mkdir(outDir, { recursive: true });
 
-  const nodeDataUrl = `https://api.figma.com/v1/files/${encodeURIComponent(fileKey)}/nodes?ids=${encodeURIComponent(nodeId)}`;
+  // 1. ПОЛУЧЕНИЕ ДАННЫХ ИЗ FIGMA
+  const nodeDataUrl = `https://api.figma.com/v1/files/${encodeURIComponent(
+    fileKey,
+  )}/nodes?ids=${encodeURIComponent(nodeId)}`;
   console.log(`🔍 Получаем данные узла ${nodeId}...`);
-
-  let nodeDataResp;
-  try {
-    nodeDataResp = await fetch(nodeDataUrl, {
-      headers: { "X-Figma-Token": token },
-    });
-  } catch (err) {
-    console.error("Ошибка сети при запросе к Figma:", (err as Error).message);
-    process.exit(3);
-  }
+  const nodeDataResp = await fetchWithRetry(nodeDataUrl, {
+    headers: { "X-Figma-Token": token },
+  });
 
   if (!nodeDataResp.ok) {
-    const text = await nodeDataResp.text();
-    console.error(`❌ Ошибка API: ${nodeDataResp.status} — ${text}`);
+    console.error(
+      `❌ Ошибка API Figma: ${nodeDataResp.status} — ${await nodeDataResp.text()}`,
+    );
     process.exit(3);
   }
 
   const nodeData = await nodeDataResp.json();
-
-  let rootNode = nodeData.nodes?.[nodeId]?.document;
-
-  if (!rootNode && !nodeId.includes(":")) {
-    const colonId = nodeId.replace(/-/g, ":");
-    console.log(`⚠️ Узел '${nodeId}' не найден, пробуем с ':' → '${colonId}'`);
-    rootNode = nodeData.nodes?.[colonId]?.document;
-
-    if (rootNode) {
-      nodeId = colonId;
-      console.log(`✅ Найден узел по ID: ${colonId}`);
-    }
-  }
+  const rootNode = nodeData.nodes?.[nodeId]?.document;
 
   if (!rootNode) {
+    // ... (код для обработки nodeId с тире)
     console.error(`❌ Узел '${nodeId}' не найден.`);
-    console.error("Доступные ID в ответе:", Object.keys(nodeData.nodes || {}));
     process.exit(3);
   }
 
-  // Собираем ТОЛЬКО иконки
   const iconsToExport: Array<{
     id: string;
     name: string;
     width: number;
     height: number;
+    lastModified: string;
   }> = [];
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
-  function traverse(node: any, isRoot = false) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function traverse(node: any) {
     if (!node || typeof node !== "object") return;
 
-    const type = node.type ?? "";
-    const name = node.name ?? `icon-${node.id}`;
-    const id = node.id ?? "";
-
-    // 🔥 КЛЮЧЕВОЕ ИЗМЕНЕНИЕ: СТРОГАЯ ФИЛЬТРАЦИЯ
-    // Иконка должна быть компонентом ИЛИ вектором с правильными размерами
-    if (["COMPONENT", "VECTOR"].includes(type)) {
+    if (["COMPONENT", "INSTANCE", "VECTOR"].includes(node.type)) {
       const bbox = node.absoluteBoundingBox;
       if (
-        !bbox ||
-        typeof bbox.width !== "number" ||
-        typeof bbox.height !== "number"
+        bbox &&
+        typeof bbox.width === "number" &&
+        typeof bbox.height === "number" &&
+        node.lastModified
       ) {
-        return;
+        const width = Math.round(bbox.width);
+        const height = Math.round(bbox.height);
+
+        // Фильтр по размерам из аргументов
+        if (
+          width >= args.minSize &&
+          height >= args.minSize &&
+          width <= args.maxSize &&
+          height <= args.maxSize
+        ) {
+          // Фильтр по соотношению сторон
+          const aspectRatio = Math.abs(width / height - 1);
+          if (aspectRatio <= 0.2) {
+            // до 20% отклонения
+            iconsToExport.push({
+              id: node.id,
+              name: node.name,
+              width: bbox.width,
+              height: bbox.height,
+              lastModified: node.lastModified,
+            });
+          }
+        }
       }
-
-      const width = Math.round(bbox.width);
-      const height = Math.round(bbox.height);
-
-      // 🔥 ФИЛЬТР ПО РАЗМЕРАМ (настраивается через --minSize и --maxSize)
-      if (
-        width < args.minSize ||
-        height < args.minSize ||
-        width > args.maxSize ||
-        height > args.maxSize
-      ) {
-        console.debug(
-          `🟡 Пропускаем вне диапазона размеров [${width}x${height}]: ${name}`,
-        );
-        return;
-      }
-
-      // 🔥 ФИЛЬТР ПО СООТНОШЕНИЮ СТОРОН (иконки обычно квадратные)
-      const aspectRatio = Math.abs(width / height - 1);
-      if (aspectRatio > 0.2) {
-        // Допускаем 20% отклонения
-        console.debug(
-          `🟡 Пропускаем из-за соотношения сторон [${width}x${height}]: ${name}`,
-        );
-        return;
-      }
-
-      iconsToExport.push({ id, name, width, height });
-      return;
     }
 
-    // Рекурсивно обходим детей только если это контейнеры
-    if (
-      ["FRAME", "GROUP", "COMPONENT_SET"].includes(type) &&
-      Array.isArray(node.children)
-    ) {
-      for (const child of node.children) {
-        traverse(child, false);
-      }
+    if (Array.isArray(node.children)) {
+      node.children.forEach(traverse);
     }
   }
 
-  traverse(rootNode, true);
+  traverse(rootNode);
+  console.log(`✅ Найдено ${iconsToExport.length} всего иконок в Figma.`);
 
-  if (iconsToExport.length === 0) {
-    console.warn(
-      "⚠️ Не найдено подходящих иконок для экспорта. Попробуйте изменить minSize/maxSize.",
-    );
-    console.log(
-      `💡 Совет: используйте --minSize=16 --maxSize=48 для типичных иконок`,
-    );
-    process.exit(0);
-  }
-
-  const manifestPath = path.join(outDir, "icons-manifest.json");
-  try {
-    await fs.access(manifestPath);
-  } catch {
-    const defaultManifest = {
-      version: "1.0.0",
-      generatedAt: new Date().toISOString(),
-      icons: [],
-    };
-    await fs.writeFile(
-      manifestPath,
-      JSON.stringify(defaultManifest, null, 2),
-      "utf8",
-    );
-    console.log(`✅ Создан новый манифест: ${manifestPath}`);
-  }
-
+  // 2. ЗАГРУЗКА И РАЗДЕЛЕНИЕ МАНИФЕСТА
   const manifest = await loadManifest(outDir);
-  const manifestIcons = manifest.icons;
-
-  const currentIcons: IconManifestEntry[] = [];
-
-  console.log(
-    `✅ Найдено ${iconsToExport.length} иконок для экспорта (размеры ${args.minSize}x${args.minSize}–${args.maxSize}x${args.maxSize} px).`,
+  const figmaIconsFromManifest = manifest.icons.filter(
+    (icon) => !icon.id.startsWith("local-"),
+  );
+  const localIconsFromManifest = manifest.icons.filter((icon) =>
+    icon.id.startsWith("local-"),
   );
 
-  const manifestIconsMap = new Map(
-    manifestIcons.map((icon) => [icon.id, icon]),
+  // 3. ОБРАБОТКА УДАЛЕНИЙ (DEPRECATION)
+  const deletedIcons = findDeletedIcons(iconsToExport, figmaIconsFromManifest);
+  const deprecatedEntries = deletedIcons.map((icon) => ({
+    ...icon,
+    deprecated: true,
+  }));
+  if (deprecatedEntries.length > 0) {
+    console.log(
+      `🟡 Помечено как устаревшие: ${deprecatedEntries.length} иконок.`,
+    );
+  }
+
+  // 4. ОПРЕДЕЛЕНИЕ АКТИВНЫХ ИКОНОК
+  const activeFigmaIconsFromManifest = figmaIconsFromManifest.filter(
+    (icon) => !deletedIcons.some((d) => d.id === icon.id),
+  );
+  const activeFigmaIconsFromApi = iconsToExport;
+
+  const iconsToDownload = activeFigmaIconsFromApi.filter((apiIcon) => {
+    const manifestIcon = activeFigmaIconsFromManifest.find(
+      (mIcon) => mIcon.id === apiIcon.id,
+    );
+    if (!manifestIcon) return true; // Новая
+    return (
+      new Date(apiIcon.lastModified).getTime() >
+      new Date(manifestIcon.lastModified).getTime()
+    ); // Изменилась
+  });
+
+  const unchangedFigmaIcons = activeFigmaIconsFromManifest.filter(
+    (mIcon) => !iconsToDownload.some((dIcon) => dIcon.id === mIcon.id),
   );
 
-  const BATCH_SIZE = 10;
+  // 5. СКАЧИВАНИЕ И ОБРАБОТКА
+  const downloadedEntries: IconManifestEntry[] = [];
+  if (iconsToDownload.length > 0) {
+    console.log(
+      `🔎 Требуется скачать ${iconsToDownload.length} новых или обновленных иконок.`,
+    );
 
-  for (let i = 0; i < iconsToExport.length; i += BATCH_SIZE) {
-    const batch = iconsToExport.slice(i, i + BATCH_SIZE);
-    const idsParam = batch.map((n) => n.id).join(",");
+    const BATCH_SIZE = 100;
+    for (let i = 0; i < iconsToDownload.length; i += BATCH_SIZE) {
+      const batch = iconsToDownload.slice(i, i + BATCH_SIZE);
+      const idsParam = batch.map((n) => n.id).join(",");
+      const imagesUrl = `https://api.figma.com/v1/images/${encodeURIComponent(
+        fileKey,
+      )}?ids=${idsParam}&format=svg&use_absolute_bounds=true`;
 
-    const imagesUrl = `https://api.figma.com/v1/images/${encodeURIComponent(fileKey)}?ids=${idsParam}&format=svg${args.useAbsoluteBounds ? "&use_absolute_bounds=true" : ""}`;
-
-    let resp;
-    try {
-      resp = await fetch(imagesUrl, {
-        headers: { "X-Figma-Token": token },
-      });
-    } catch (err) {
-      console.error(
-        "❌ Ошибка при получении URL изображений:",
-        (err as Error).message,
-      );
-      continue;
-    }
-
-    if (!resp.ok) {
-      console.error(
-        "❌ Ошибка Figma Images API:",
-        resp.status,
-        await resp.text(),
-      );
-      continue;
-    }
-
-    const json = await resp.json();
-    const imageUrls = json.images ?? {};
-
-    // Обрабатываем каждый узел
-    for (const icon of batch) {
-      const svgUrl = imageUrls[icon.id];
-      if (!svgUrl) {
-        console.warn(
-          `❌ Не удалось получить URL для ${icon.id} (${icon.name})`,
+      let resp;
+      try {
+        resp = await fetchWithRetry(imagesUrl, {
+          headers: { "X-Figma-Token": token },
+        });
+      } catch (err) {
+        console.error(
+          `❌ Не удалось обработать пакет иконок:`,
+          (err as Error).message,
         );
         continue;
       }
 
-      // Проверяем, изменилась ли иконка по сравнению с манифестом
-      const existingIcon = manifestIconsMap.get(icon.id);
-      // Всегда скачиваем файлы с Figma для проверки содержимого
-      // Позже решим, сохранять ли их на диск
-
-      try {
-        const svgResp = await fetch(svgUrl);
-        if (!svgResp.ok) throw new Error(`HTTP ${svgResp.status}`);
-        let svgText = await svgResp.text();
-
-        // Удаляем BOM
-        if (svgText.charCodeAt(0) === 0xfeff) {
-          svgText = svgText.slice(1);
-        }
-
-        // SVGO
-        if (args.svgo && svgoAvailable && optimizeFn) {
-          try {
-            const result = await optimizeFn(svgText, svgoOptions);
-            if (result?.data) svgText = result.data;
-          } catch (err) {
-            console.warn(
-              `⚠️ SVGO ошибка для ${icon.name}:`,
-              (err as Error).message,
-            );
-          }
-        }
-        // Замена цвета fill="#..." на fill="currentColor"
-        svgText = svgText.replace(
-          /fill="(#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3}))"/g,
-          'fill="currentColor"',
+      if (!resp.ok) {
+        console.error(
+          `❌ Ошибка API изображений: ${resp.status}`,
+          await resp.text(),
         );
+        continue;
+      }
 
-        const size = nearestStandardSize(icon.width);
-        const baseName = safeName(icon.name, args.keepOriginalNameSpaces);
-        const cleanedName = baseName
-          .replace(
-            /^(s|l|small|large|mini|huge|m|xl|xs|xxs|xxl|3xl|4xl|5xl)[_-]/i,
-            "",
-          )
-          .trim();
-        // Удаление префиксов s и l из середины или конца имени
-        let finalName = cleanedName
-          .replace(/[-_]s(?=[-_]|$)/gi, "-")
-          .replace(/[-_]l(?=[-_]|$)/gi, "-");
-        // Нормализация имени после удаления префиксов
-        finalName = safeName(finalName, args.keepOriginalNameSpaces) || "icon";
+      const json = await resp.json();
+      const imageUrls = json.images ?? {};
 
-        // Автоматическое добавление суффикса размера только если он не в имени
-        // Проверяем, есть ли в конце имени суффикс в формате -16px.svg
-        const hasSizeSuffix = /-\d+px\.svg$/.test(finalName + ".svg");
-        const fileName = hasSizeSuffix
-          ? `${finalName}.svg`
-          : `${finalName}-${size}px.svg`;
-
-        const filePath = path.join(outDir, fileName);
-
-        // Проверяем, изменился ли файл по сравнению с манифестом
-        let shouldSave = true;
-        if (existingIcon) {
-          // Вычисляем хэш нового содержимого
-          const newHash = crypto
-            .createHash("sha256")
-            .update(svgText)
-            .digest("hex");
-
-          // Если хэши совпадают и имя файла не изменилось, не сохраняем файл повторно
-          if (
-            existingIcon.hash === newHash &&
-            existingIcon.fileName === fileName
-          ) {
-            shouldSave = false;
-            // Добавляем существующую иконку в currentIcons
-            currentIcons.push(existingIcon);
-            console.log(
-              `⏭ Пропущена (нет изменений): ${fileName} (${icon.width}x${icon.height}px)`,
-            );
-          } else {
-            // Если хэши не совпадают или имя файла изменилось, сохраняем файл
-            // Если имя файла изменилось, удаляем старый файл
-            if (existingIcon.fileName !== fileName) {
-              const oldFilePath = path.join(outDir, existingIcon.fileName);
-              try {
-                await fs.access(oldFilePath);
-                await fs.unlink(oldFilePath);
-                console.log(`🗑 Удалён старый файл: ${existingIcon.fileName}`);
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-              } catch (err) {
-                // Файл уже удален или не существует
-              }
-            }
-            console.log(
-              `🔄 Обновлена иконка: ${fileName} (${icon.width}x${icon.height}px)`,
-            );
-          }
-        }
-
-        if (!shouldSave) {
+      for (const icon of batch) {
+        const svgUrl = imageUrls[icon.id];
+        if (!svgUrl) {
+          console.warn(`- Не удалось получить URL для ${icon.name}`);
           continue;
         }
 
-        await fs.writeFile(filePath, svgText, "utf8");
-        console.log(
-          `✅ Сохранён: ${fileName} (${icon.width}x${icon.height}px)${args.svgo ? " (оптимизирован)" : ""}`,
-        );
+        try {
+          const svgResp = await fetch(svgUrl);
+          let svgText = await svgResp.text();
+          if (svgResp.ok) {
+            if (svgoAvailable && optimizeFn) {
+              const result = await optimizeFn(svgText, svgoOptions);
+              svgText = result.data;
+            }
+            svgText = svgText.replace(/fill="[^"]+"/g, 'fill="currentColor"');
 
-        // Вычисляем хэш файла из svgText (не из файла на диске)
-        const fileHash = crypto
-          .createHash("sha256")
-          .update(svgText)
-          .digest("hex");
+            const size = nearestStandardSize(icon.width);
+            const baseName = safeName(icon.name, args.keepOriginalNameSpaces);
+            const hasSizeSuffix = /-\d+px$/.test(baseName);
+            const fileName = hasSizeSuffix
+              ? `${baseName}.svg`
+              : `${baseName}-${size}px.svg`;
 
-        // Добавляем иконку в массив для манифеста
-        currentIcons.push(
-          createManifestEntry(
-            icon.id,
-            icon.name,
-            fileName,
-            icon.width,
-            icon.height,
-            fileHash,
-          ),
-        );
-      } catch (err) {
-        console.error(
-          `❌ Ошибка при обработке ${icon.id} (${icon.name}):`,
-          (err as Error).message,
-        );
+            await fs.writeFile(path.join(outDir, fileName), svgText, "utf8");
+            console.log(`✅ Сохранён: ${fileName}`);
+
+            downloadedEntries.push(
+              createManifestEntry(
+                icon.id,
+                icon.name,
+                fileName,
+                icon.width,
+                icon.height,
+                icon.lastModified,
+                crypto.createHash("sha256").update(svgText).digest("hex"),
+              ),
+            );
+          }
+        } catch (err) {
+          console.error(
+            `- Ошибка обработки ${icon.name}:`,
+            (err as Error).message,
+          );
+        }
       }
     }
+  } else {
+    console.log("✅ Нет новых или обновленных иконок для скачивания.");
   }
 
-  // Анализируем изменения
-  const newIcons = findNewIcons(currentIcons, manifestIcons);
-  const deletedIcons = findDeletedIcons(currentIcons, manifestIcons);
-  const updatedIcons = findUpdatedIcons(currentIcons, manifestIcons);
+  // 6. СБОРКА И СОХРАНЕНИЕ МАНИФЕСТА
+  const finalIcons = [
+    ...unchangedFigmaIcons,
+    ...downloadedEntries,
+    ...deprecatedEntries,
+    ...localIconsFromManifest,
+  ];
 
-  // Выводим информацию о изменениях
-  if (newIcons.length > 0) {
-    console.log(`✨ Новых иконок: ${newIcons.length}`);
-    newIcons.forEach((icon) =>
-      console.log(`  + ${icon.name} (${icon.fileName})`),
-    );
-  }
-
-  if (deletedIcons.length > 0) {
-    console.log(`🗑 Удаленных иконок: ${deletedIcons.length}`);
-    deletedIcons.forEach((icon) =>
-      console.log(`  - ${icon.name} (${icon.fileName})`),
-    );
-  }
-
-  if (updatedIcons.length > 0) {
-    console.log(`🔄 Обновленных иконок: ${updatedIcons.length}`);
-    updatedIcons.forEach((icon) =>
-      console.log(`  ~ ${icon.name} (${icon.fileName})`),
-    );
-  }
-
-  if (
-    newIcons.length === 0 &&
-    deletedIcons.length === 0 &&
-    updatedIcons.length === 0
-  ) {
-    console.log("🔁 Нет изменений в иконках.");
-  }
-
-  // Обновляем и сохраняем манифест
-  manifest.icons = currentIcons;
+  manifest.icons = finalIcons;
   await saveManifest(outDir, manifest);
-  console.log("💾 Манифест обновлён.");
 
+  console.log("💾 Манифест обновлён.");
   console.log("🎉 Экспорт завершён.");
 }
 

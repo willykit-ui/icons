@@ -1,6 +1,6 @@
 {
   "name": "@willykit-ui/icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "license": "MIT",
   "description": "Willykit-UI Design icons distributed as SVG React components.",
@@ -46,7 +46,8 @@
     "build:prod": "npm run generate-icons && npm run generate-index && npm run build",
     "clean-package": "tsx scripts/clean-package.ts",
     "release": "npm run clean-package && semantic-release",
-    "export": "tsx ./scripts/figma-sync.ts"
+    "export": "tsx ./scripts/figma-sync.ts",
+    "import-local": "tsx ./scripts/local-import.ts"
   },
   "peerDependencies": {
     "@types/react": "^18.0.0 || ^19.0.0",

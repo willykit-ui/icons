@@ -3,7 +3,7 @@ import type { IconProps } from "./types";
 
 /**
  * FolderWithFilesOutlinedIcon icon component.
- *
+ * @deprecated This icon is deprecated and will be removed in a future version.
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *

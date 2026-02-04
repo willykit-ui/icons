@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * CloseOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,19 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M8.123 3.172a.5.5 0 1 1 .707.707L6.707 6.002l2.12 2.12.064.078a.5.5 0 0 1-.693.693l-.078-.064L6 6.71 3.88 8.83a.5.5 0 0 1-.707-.707l2.12-2.12L3.17 3.879a.5.5 0 1 1 .707-.707L6 5.295z"/>`,
+      __html: `<path d="M9.182 2.183a.45.45 0 0 1 .636.636L6.637 6l3.182 3.183a.45.45 0 0 1-.636.636L6 6.637 2.819 9.819a.45.45 0 0 1-.636-.636L5.364 6l-3.18-3.18a.45.45 0 0 1 .636-.637L6 5.363z" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M10.646 4.646a.5.5 0 0 1 .707.707L8.708 8l2.646 2.646.065.079a.5.5 0 0 1-.693.693l-.079-.064L8 8.707l-2.647 2.646a.5.5 0 0 1-.707-.707L7.293 8 4.646 5.353a.5.5 0 1 1 .707-.707L8 7.293z"/>`,
+      __html: `<path d="M12.146 3.146a.5.5 0 0 1 .707.707L8.708 8l4.147 4.146a.5.5 0 0 1-.708.707L8 8.708l-4.147 4.147a.5.5 0 0 1-.707-.708L7.293 8 3.146 3.853a.5.5 0 1 1 .707-.707L8 7.293z" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M15.111 4.112a.55.55 0 1 1 .778.778L10.777 10l5.112 5.112a.55.55 0 1 1-.778.778L10 10.778 4.889 15.89a.55.55 0 1 1-.778-.778l5.112-5.111L4.11 4.89a.55.55 0 1 1 .778-.778L10 9.224z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

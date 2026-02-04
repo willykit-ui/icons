@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * ClockOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,19 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" fillRule="evenodd" d="M6 2.245a3.754 3.754 0 1 0 0 7.508 3.754 3.754 0 0 0 0-7.508M1.444 6a4.554 4.554 0 1 1 9.108 0 4.554 4.554 0 0 1-9.108 0m4.277-2.246a.4.4 0 0 1 .4.4v1.8l1.587.595a.4.4 0 0 1-.281.749l-1.846-.693a.4.4 0 0 1-.26-.374V4.153c0-.22.18-.4.4-.4" clipRule="evenodd"/>`,
+      __html: `<g clipPath="url(#a)"><path d="M10.55 6.001a4.55 4.55 0 1 0-9.1 0 4.55 4.55 0 0 0 9.1 0m-5-1.998a.45.45 0 0 1 .9 0v1.759l1.3.867a.45.45 0 0 1-.5.748l-1.5-1-.2-.133zM11.45 6A5.45 5.45 0 1 1 .55 6a5.45 5.45 0 0 1 10.9 0" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h12v12H0z" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M14 8a6 6 0 1 0-6 6v1A7 7 0 1 1 8 1a7 7 0 0 1 0 14v-1a6 6 0 0 0 6-6"/><path fill="currentColor" d="M7.5 5a.5.5 0 0 1 1 0v3.161l2.185.875a.5.5 0 1 1-.37.928l-2.5-1A.5.5 0 0 1 7.5 8.5z"/>`,
+      __html: `<g clipPath="url(#a)"><path d="M14.5 8a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0m-7-3a.5.5 0 0 1 1 0v3.161l2.185.875a.5.5 0 1 1-.37.928l-2.5-1A.5.5 0 0 1 7.5 8.5zm8 3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h16v16H0z" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M17.45 9.999a7.45 7.45 0 1 0-14.9 0 7.45 7.45 0 0 0 14.9 0m-8-3.429a.55.55 0 1 1 1.1 0v3.627l2.512 1.005a.551.551 0 0 1-.409 1.022L9.796 11.08l-.346-.139zm9.1 3.43A8.55 8.55 0 0 1 10 18.55 8.55 8.55 0 1 1 18.55 10" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

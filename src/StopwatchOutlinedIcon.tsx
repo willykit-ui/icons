@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * StopwatchOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,19 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M10 6.498a4 4 0 1 0-8 0 4 4 0 0 0 8 0M5.5 4.5a.5.5 0 0 1 1 0v1.732l1.277.852a.5.5 0 1 1-.554.832L5.5 6.768zm2-4.25a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zM11 6.498a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>`,
+      __html: `<path d="M9.8 6.751a3.8 3.8 0 1 0-7.6 0 3.8 3.8 0 0 0 7.6 0m-4.25-1.75a.45.45 0 0 1 .9 0v1.563l1.106.767a.45.45 0 1 1-.512.74l-1.3-.9-.194-.134zM7.5.551a.45.45 0 0 1 0 .9h-3a.45.45 0 0 1 0-.9zm3.2 6.2a4.7 4.7 0 1 1-9.4 0 4.7 4.7 0 0 1 9.4 0" fill="currentColor"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M13.5 8.664a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0M7.5 6a.5.5 0 0 1 1 0v2.398l1.777 1.186a.5.5 0 1 1-.554.832L7.5 8.935zM10 .5a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1zm4.5 8.164a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>`,
+      __html: `<path d="M13.25 8.75a5.25 5.25 0 1 0-10.5 0 5.25 5.25 0 0 0 10.5 0M7.5 6.197a.5.5 0 1 1 1 0v2.287l1.694 1.13a.5.5 0 0 1-.554.832L7.5 9.021zM10 1a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1zm4.25 7.75a6.25 6.25 0 1 1-12.5 0 6.25 6.25 0 0 1 12.5 0" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M16.45 10.999a6.45 6.45 0 1 0-12.9 0 6.45 6.45 0 0 0 12.9 0m-7-3a.55.55 0 1 1 1.1 0v3.172l2.355 1.57a.55.55 0 0 1-.61.915l-2.6-1.733-.245-.163zM13 1.449a.55.55 0 1 1 0 1.1H7a.55.55 0 1 1 0-1.1zM17.55 11a7.55 7.55 0 1 1-15.1 0 7.55 7.55 0 0 1 15.1 0" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

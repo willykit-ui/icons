@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * DownFilledIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -14,18 +13,25 @@ import type { IconProps } from "./types";
 
 const svgChildren = {
   small: {
-    content: { __html: `<path fill="currentColor" d="m3 4.5 3 3 3-3"/>` },
+    content: {
+      __html: `<path d="m6.354 7.25 1.792-1.793a.5.5 0 0 0-.353-.853H4.207a.5.5 0 0 0-.353.853L5.646 7.25a.5.5 0 0 0 .708 0" fill="currentColor"/>`,
+    },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fill="currentColor" d="M11 6.5a.5.5 0 0 1 .354.854l-3 3a.5.5 0 0 1-.708 0l-3-3A.5.5 0 0 1 5 6.5z"/>`,
+      __html: `<path d="M11.462 6.309a.5.5 0 0 1-.108.545l-3 3a.5.5 0 0 1-.707 0l-3-3A.5.5 0 0 1 5 6h6a.5.5 0 0 1 .462.309" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M14.461 7.83a.5.5 0 0 1-.108.545l-3.93 3.93a.6.6 0 0 1-.847 0l-3.93-3.93A.5.5 0 0 1 6 7.521h8a.5.5 0 0 1 .461.31" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

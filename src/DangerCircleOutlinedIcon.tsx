@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * DangerCircleOutlinedIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g fill="currentColor" clipPath="url(#a)"><path d="M10.5 6a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0m1 0a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/><path d="M5.5 6.5v-3a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0m1 1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h12v12H0z"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path d="M6.001.55a5.45 5.45 0 1 1 0 10.901 5.45 5.45 0 0 1 0-10.9m0 .901a4.55 4.55 0 1 0 0 9.1 4.55 4.55 0 0 0 0-9.1M6 7.501a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1m.001-4.25a.45.45 0 0 1 .45.45v2.7a.45.45 0 0 1-.9 0v-2.7a.45.45 0 0 1 .45-.45" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h12v12H0z" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<g fill="currentColor" clipPath="url(#a)"><path d="M14.169 8.003a6.167 6.167 0 1 0-12.333 0 6.167 6.167 0 0 0 12.333 0m1 0A7.167 7.167 0 1 1 .836 8.002a7.167 7.167 0 0 1 14.333 0"/><path d="M7.5 8.664v-4a.5.5 0 0 1 1 0v4a.5.5 0 0 1-1 0m1.17 2.003a.667.667 0 1 1-1.334 0 .667.667 0 0 1 1.333 0"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h16v16H0z"/></clipPath></defs>`,
+      __html: `<path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1m0 1a6 6 0 1 0 0 12A6 6 0 0 0 8 2m.003 8a.667.667 0 1 1-.001 1.333.667.667 0 0 1 0-1.333M8 4.1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 1 .5-.5" fill="currentColor"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<g fill="currentColor" clipPath="url(#a)"><path d="M18.125 10a8.125 8.125 0 1 0-16.25 0 8.125 8.125 0 0 0 16.25 0m1.25 0a9.375 9.375 0 1 1-18.75 0 9.375 9.375 0 0 1 18.75 0"/><path d="M9.375 10.83v-5a.625.625 0 1 1 1.25 0v5a.625.625 0 1 1-1.25 0m1.463 2.503a.833.833 0 1 1-1.666 0 .833.833 0 0 1 1.666 0"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h20v20H0z"/></clipPath></defs>`,
+      __html: `<path d="M9.999 1.45a8.55 8.55 0 0 1 8.55 8.549 8.55 8.55 0 0 1-8.55 8.55 8.55 8.55 0 1 1 0-17.1m0 1.099a7.45 7.45 0 1 0 0 14.9 7.45 7.45 0 0 0 0-14.9m.001 9.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5m-.001-6.75a.55.55 0 0 1 .55.55v4.6a.55.55 0 0 1-1.1 0V6.1a.55.55 0 0 1 .55-.55" fill="currentColor"/>`,
     },
     viewBox: "0 0 20 20",
   },

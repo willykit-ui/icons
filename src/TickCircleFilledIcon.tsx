@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * TickCircleFilledIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M11 6a5 5 0 1 0-5 5v1A6 6 0 1 1 6 0a6 6 0 0 1 0 12v-1a5 5 0 0 0 5-5"/><path fill="currentColor" fillRule="evenodd" d="M6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0M2.611 5.504a.5.5 0 0 0 .075.703l2.7 2.182a.5.5 0 0 0 .7-.07l3.3-4 .056-.085a.5.5 0 0 0-.755-.624l-.073.072L5.63 7.3 3.314 5.43a.5.5 0 0 0-.703.074" clipRule="evenodd"/>`,
+      __html: `<g clipPath="url(#a)"><path d="M6 .5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11m2.315 3.68a.45.45 0 0 0-.635.005L5.143 6.758l-.823-.834a.45.45 0 0 0-.64.632l1.142 1.16a.45.45 0 0 0 .642 0l2.856-2.9a.45.45 0 0 0-.005-.636" fill="currentColor"/></g><defs><clipPath id="a"><rect width="12" height="12" rx="2" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1m3.071 4.755a.5.5 0 0 0-.707-.015L6.853 9.107 5.656 7.96a.5.5 0 1 0-.691.722l1.542 1.48a.5.5 0 0 0 .692 0l3.858-3.701a.5.5 0 0 0 .014-.706" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M10 1.45a8.55 8.55 0 1 1 0 17.099 8.55 8.55 0 1 1 0-17.1m3.437 6.013a.55.55 0 0 0-.778-.005l-3.972 3.918-1.355-1.338a.55.55 0 0 0-.773.783l1.743 1.72a.55.55 0 0 0 .772 0l4.358-4.3a.55.55 0 0 0 .005-.778" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {

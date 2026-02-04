@@ -3,7 +3,6 @@ import type { IconProps } from "./types";
 
 /**
  * MinusCircleFilledIcon icon component.
- *
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -15,14 +14,24 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fill="currentColor" d="M0 6a6 6 0 0 0 6 6v-1A5 5 0 1 1 6 1a5 5 0 0 1 0 10v1a6 6 0 1 0-6-6"/><path fill="currentColor" fillRule="evenodd" d="M11 6A5 5 0 1 0 1 6a5 5 0 0 0 10 0m-3 .5v-1H4v1z" clipRule="evenodd"/>`,
+      __html: `<g clipPath="url(#a)"><path d="M6 .5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11m-2 5v1h4v-1z" fill="currentColor"/></g><defs><clipPath id="a"><rect width="12" height="12" rx="2" fill="currentColor"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
-  medium: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  medium: {
+    content: {
+      __html: `<path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1M5.5 7.5v1h5v-1z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 16 16",
+  },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M10 1.45a8.55 8.55 0 1 1 0 17.099 8.55 8.55 0 1 1 0-17.1M7 9.498v1h6v-1z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {
