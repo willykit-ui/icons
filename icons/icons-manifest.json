@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-02-04T15:27:41.216Z",
+  "generatedAt": "2026-02-10T16:01:18.574Z",
   "icons": [
     {
       "id": "local-Archive_Outlined_12px",
@@ -9,7 +9,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "a4029ad871fac8d9354be72d4a989b4a8a9399e33eb5103218a7f57802c805cf",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Archive_Outlined_16px",
@@ -202,6 +202,60 @@
       "deprecated": true
     },
     {
+      "id": "local-Blocks_Outlined_12px",
+      "name": "Blocks_Outlined_12px",
+      "fileName": "blocks-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "30a331d117cc370cd5d31169d319045a0525be4362c2736bf3c739df915a85d9",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Blocks_Outlined_16px",
+      "name": "Blocks_Outlined_16px",
+      "fileName": "blocks-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "39f6ec209588f825d8a9f7798cf80f8f8831cef6869eb64bc469b2462ea02f65",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Blocks_Outlined_20px",
+      "name": "Blocks_Outlined_20px",
+      "fileName": "blocks-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "8495030d3813154fad4bc640a3b964787028caa901e3c6a7c32ddf8ffb57c448",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-BlocksAdd_Outlined_12px",
+      "name": "BlocksAdd_Outlined_12px",
+      "fileName": "blocks-add-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "7722e583f3be174febcf92935aeff1395b325aff5dae6e47d507697116c44fe0",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-BlocksAdd_Outlined_16px",
+      "name": "BlocksAdd_Outlined_16px",
+      "fileName": "blocks-add-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "5620eb5e0e05be9fba74abd2f7a9573108076d7fd91a2711e547849a1e0cc479",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-BlocksAdd_Outlined_20px",
+      "name": "BlocksAdd_Outlined_20px",
+      "fileName": "blocks-add-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "79da712b5a4a7144235227ee68392d0d047b36f3e786063b835ca6aa025b529a",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
       "id": "local-Bug_Outlined_12px",
       "name": "Bug_Outlined_12px",
       "fileName": "bug-outlined-12px.svg",
@@ -316,7 +370,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "9b97a40b1e836cf8e6a2d78c1147daed8d3c362f55417d7f844a7074bfaa6de1",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Сheck_Outlined_16px",
@@ -325,7 +379,7 @@
       "width": 16,
       "height": 16,
       "lastModified": "420006782c59b94166d022c0d2de0c7347d9fa904ebc489de70093409c8c15b3",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Сheck_Outlined_20px",
@@ -334,7 +388,7 @@
       "width": 20,
       "height": 20,
       "lastModified": "ec19a972c1b93fc2b0f25537c3722bb5750487b7c0d035537d80472771899a92",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "4178:22338",
@@ -704,7 +758,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "49784b0cd278c3f18cf04f19462d4e6090bdde2f70f176cfc09bb7634e585dd7",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-CrossCircle_Оutlined_16px",
@@ -713,7 +767,7 @@
       "width": 16,
       "height": 16,
       "lastModified": "ea63b36dd14ac205762681d0555314c08039d9ad74a1354c5d4606e40760a821",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-CrossCircle_Оutlined_20px",
@@ -722,7 +776,7 @@
       "width": 20,
       "height": 20,
       "lastModified": "45453b14dbd46b378f0d630c24267edd3321fa7e781d10fcfe6eca2c5ebc78a9",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-DangerCircle_Filled_12px",
@@ -758,7 +812,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "5455e7f4e23979898256fa0d3047df8cbe149364106e2c36cb771bb6a2b93aee",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-DangerCircle_Оutlined_16px",
@@ -767,7 +821,7 @@
       "width": 16,
       "height": 16,
       "lastModified": "1235895a3caefe6a5cd770a6501fe659c6758709723462a500bd152d8c179fd2",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-DangerCircle_Оutlined_20px",
@@ -776,7 +830,7 @@
       "width": 20,
       "height": 20,
       "lastModified": "e2abbbac1fd3ea45c955d5090dff35f7248fdcd2f358c6f7a66a0c4af77df09c",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-DangerTriangle_Filled_12px",
@@ -951,6 +1005,33 @@
       "hash": "fe89578fcf6801a0c180d2a4a72b779e2d4b262bd349fc54fbab224241fab0a1"
     },
     {
+      "id": "local-DocumentTextEdit_Outlined_12px",
+      "name": "DocumentTextEdit_Outlined_12px",
+      "fileName": "document-text-edit-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "c402d6784134e0a0cbcb947e7a274f50a22abd84f61e64b6f743e6b136c1b064",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-DocumentTextEdit_Outlined_16px",
+      "name": "DocumentTextEdit_Outlined_16px",
+      "fileName": "document-text-edit-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "994415aad6f0e13ab623fd4a5dcf90164ebcb170fa0291a8ed586cbd7631828f",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-DocumentTextEdit_Outlined_20px",
+      "name": "DocumentTextEdit_Outlined_20px",
+      "fileName": "document-text-edit-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "250e531cc39bc11aff03aa42ba8a0324fd31032882e99dbd105ef44fd030309f",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
       "id": "4178:22364",
       "name": "Done_Outlined_20px",
       "fileName": "done-outlined-20px.svg",
@@ -1040,6 +1121,60 @@
       "height": 20,
       "lastModified": "2026-01-29T15:51:06.360Z",
       "hash": "1da1a9bce8d4abe53b18ad6d9d199e1c3f4c07fa4d8e79303666988b6d2dc82e"
+    },
+    {
+      "id": "local-DrawerLeftClose_Outlined_12px",
+      "name": "DrawerLeftClose_Outlined_12px",
+      "fileName": "drawer-left-close-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "4f8f49c6190bdc6e164a3064e2a9b25809f7aca515da6833e5e2b25d2871b90d",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-DrawerLeftClose_Outlined_16px",
+      "name": "DrawerLeftClose_Outlined_16px",
+      "fileName": "drawer-left-close-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "6c484578ffa159dc1197a82b0a50ec6f409da267695ab3bd0d9cf9709d6c916d",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-DrawerLeftClose_Outlined_20px",
+      "name": "DrawerLeftClose_Outlined_20px",
+      "fileName": "drawer-left-close-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "6b4f67c0d2352e2c55aefabb7292657b32d6d13c0d35f7d161a8bd436c72ae0c",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-DrawerLeftOpen_Outlined_12px",
+      "name": "DrawerLeftOpen_Outlined_12px",
+      "fileName": "drawer-left-open-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "82a4fee0d68a4eb4bfa50ef47c85cea216910005d65337a8ffecd9b211a560ab",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-DrawerLeftOpen_Outlined_16px",
+      "name": "DrawerLeftOpen_Outlined_16px",
+      "fileName": "drawer-left-open-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "b1d4d3a23ec690c046df267ee13887482412fdc8dd56dddcb1fe0c1f60cdc0d0",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-DrawerLeftOpen_Outlined_20px",
+      "name": "DrawerLeftOpen_Outlined_20px",
+      "fileName": "drawer-left-open-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "6418e26406d6541345cbdd7e12538f21a635c42563ad4778a5cb47e726889d1f",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-EchargeableAcidBattery_Outlined_12px",
@@ -1520,6 +1655,15 @@
       "hash": "9a9ffa5abf69e748170f3ec4cb2e54eac912a18602e4140107974928a81880e3"
     },
     {
+      "id": "local-FullScreen_Outlined_12px-1",
+      "name": "FullScreen_Outlined_12px-1",
+      "fileName": "full-screen-outlined-12px-1.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "d8aead120769880cfee5424379dcbc85dc9b79582f1a41d1865b927bc8eb2492",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
       "id": "local-FullScreen_Outlined_16px",
       "name": "FullScreen_Outlined_16px",
       "fileName": "full-screen-outlined-16px.svg",
@@ -1529,6 +1673,15 @@
       "hash": "3679d0dddce696adc4c4de5e2e48e5e27c1f2c0a595523576afe9419ab02e513"
     },
     {
+      "id": "local-FullScreen_Outlined_16px-1",
+      "name": "FullScreen_Outlined_16px-1",
+      "fileName": "full-screen-outlined-16px-1.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "e9e88183931f339908a79b2f40e3be0a70e7df6c9b850472ba293f2e0864267d",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
       "id": "local-FullScreen_Outlined_20px",
       "name": "FullScreen_Outlined_20px",
       "fileName": "full-screen-outlined-20px.svg",
@@ -1536,6 +1689,42 @@
       "height": 20,
       "lastModified": "2026-01-29T15:51:06.361Z",
       "hash": "9c5d5623b33f1e3019e39b05b6192696f3804a2d16db6b655a88dcad113f32da"
+    },
+    {
+      "id": "local-FullScreen_Outlined_20px-1",
+      "name": "FullScreen_Outlined_20px-1",
+      "fileName": "full-screen-outlined-20px-1.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "aec2195b81e4d6c2eb34adcdff2264a63d586d0f6eb56d16bf2bd9f1e610aebc",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-HamburgerMenu_Outlined_12px",
+      "name": "HamburgerMenu_Outlined_12px",
+      "fileName": "hamburger-menu-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "796a33042a9e260622402ae05615416a13e5682849c4d86b3cf7034d06d155d9",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-HamburgerMenu_Outlined_16px",
+      "name": "HamburgerMenu_Outlined_16px",
+      "fileName": "hamburger-menu-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "1ca52117e65f2cdfe61c9134773ece78c54c322d57c4a8d7c21c77797e184bc2",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-HamburgerMenu_Outlined_20px",
+      "name": "HamburgerMenu_Outlined_20px",
+      "fileName": "hamburger-menu-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "52c743d29b4d088ce4fa1f066cf5787d2a794413fd481befb3b037e9db39a620",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-History_Outlined_12px",
@@ -1652,7 +1841,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "f738b41d776f23a6995b846c4cd82f02bd87863314ddd07033a12709e4a72cff",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop1_Outlined_16px",
@@ -1661,7 +1850,7 @@
       "width": 16,
       "height": 16,
       "lastModified": "9d9198a19d520f558c0032209779623785837e9b120b755fc9877509dc17032f",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop1_Outlined_20px",
@@ -1670,7 +1859,7 @@
       "width": 20,
       "height": 20,
       "lastModified": "f4bd155b362d7b4f5012c12b7887d370322eb0e5a395dfed000228de35e54d35",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop2_Outlined_12px",
@@ -1679,7 +1868,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "de959f1feaec34ac53282e4c5cd7b881309bb4c8bf0b7d0f45a6bd2f14156972",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop2_Outlined_16px",
@@ -1688,7 +1877,7 @@
       "width": 16,
       "height": 16,
       "lastModified": "b10d82bf07910c1bedd119f1f226eaa175f1df0d92565afc85a4ce2a275156e4",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop2_Outlined_20px",
@@ -1697,7 +1886,7 @@
       "width": 20,
       "height": 20,
       "lastModified": "eeed743e000890d2c47debc8127d43b8886f18e4f469d88cfa95b980fb0c048e",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop3_Outlined_12px",
@@ -1706,7 +1895,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "efd2e7cea24da7aee62e56364a8b6d8404f19fa3852ee1f76a3661c51aad9f01",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop3_Outlined_16px",
@@ -1715,7 +1904,7 @@
       "width": 16,
       "height": 16,
       "lastModified": "fcb3fb194e452845618b516b327f20c4bd797a3dfbd8da4b17a926e878a686cf",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Laptop3_Outlined_20px",
@@ -1724,7 +1913,34 @@
       "width": 20,
       "height": 20,
       "lastModified": "53ea748cc235f8fb4c84857c2842bb8930df615c9ca9a93286e676baa6c215c7",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Layers_Outlined_12px",
+      "name": "Layers_Outlined_12px",
+      "fileName": "layers-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "bd8c923c4e0fda78c021fb29119f30cd57cf761e10e605ce7d43cf4a7e745b8c",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Layers_Outlined_16px",
+      "name": "Layers_Outlined_16px",
+      "fileName": "layers-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "4ba3111b98686c7de7e5fd3bdcb82f545c739f84b39cc3e5734b700aa157d283",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Layers_Outlined_20px",
+      "name": "Layers_Outlined_20px",
+      "fileName": "layers-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "01ddaa8328305a102a76227689ef66de7245ac152f12ce85d8a403d36efe4dac",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Legend_Outlined_12px",
@@ -1889,6 +2105,33 @@
       "hash": "c9fafca1fd83762522ac834e08fef90bb62a9d521287e1c6fd3da512b82553f6"
     },
     {
+      "id": "local-Moon_Outlined_12px",
+      "name": "Moon_Outlined_12px",
+      "fileName": "moon-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "fd0b7b4b0b84ad8ef26b4c3b25cce8454ab0bae509b70f631fa4cba578add537",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Moon_Outlined_16px",
+      "name": "Moon_Outlined_16px",
+      "fileName": "moon-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "10b29af41412e0a7aa3d8482e630197e66fe14385b49a2c528854f1220491cb9",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Moon_Outlined_20px",
+      "name": "Moon_Outlined_20px",
+      "fileName": "moon-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "48bb675063ae9d882ca1a549ecd0e5a088a6452c4419cfc45082c8117b3ac96d",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
       "id": "4178:21889",
       "name": "Notebook_Outlined_12px",
       "fileName": "notebook-outlined-12px.svg",
@@ -1944,6 +2187,60 @@
       "height": 20,
       "lastModified": "2026-01-29T15:51:06.361Z",
       "hash": "46e50b9278ed17dff7966c6c809daec885cc6a2f0508b274fe81bd09b9e65278"
+    },
+    {
+      "id": "local-Objects_Filled_12px",
+      "name": "Objects_Filled_12px",
+      "fileName": "objects-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "4b01961e22d1e0c393eab3b8f5f4d12ca286d7eaa0ebeaadc3a7530bc74510e7",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Objects_Filled_16px",
+      "name": "Objects_Filled_16px",
+      "fileName": "objects-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "d3bb866e914fcdfdf8df5bdb64d49aef62d2236bf1b5993f8fc9147a08ce4f02",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Objects_Filled_20px",
+      "name": "Objects_Filled_20px",
+      "fileName": "objects-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "ccad5d3badfd726227932980168cc98d57e377775a90bae1e7f799730186b9ef",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Off_Outlined_12px",
+      "name": "Off_Outlined_12px",
+      "fileName": "off-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "5b3b590601a007f8740e40d051439de3c994b9f497388cd56c87aa2716189314",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Off_Outlined_16px",
+      "name": "Off_Outlined_16px",
+      "fileName": "off-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "ec49b4f75e53b5388f58b357a818588ceeb92938586b1c5ab02d53dfecbd1626",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Off_Outlined_20px",
+      "name": "Off_Outlined_20px",
+      "fileName": "off-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "24c94a2c2944fbaeca1b023ac58bc04aa784e33e69bbe51ffc672edb0e08ff41",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Output_Outlined_12px",
@@ -2288,6 +2585,33 @@
       "height": 20,
       "lastModified": "2026-01-29T15:51:06.361Z",
       "hash": "679766879db5a9192c9e073210e7f9d00fac6033f37d07972e66e01e93c54773"
+    },
+    {
+      "id": "local-Ruler_Outlined_12px",
+      "name": "Ruler_Outlined_12px",
+      "fileName": "ruler-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "e03780eb042e43db7480569690d72c058700f20cc17fc167a3533dd62f7e75ad",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Ruler_Outlined_16px",
+      "name": "Ruler_Outlined_16px",
+      "fileName": "ruler-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "3582eca5cec279532bf3ac3c2dff6bde9e07dad37e42a5a11b91086f80670e7e",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Ruler_Outlined_20px",
+      "name": "Ruler_Outlined_20px",
+      "fileName": "ruler-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "5b03795aa2c12cd61d15d8ead2619d4284330156401e4fdbf0a506ec959f25dc",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Scanner_Outlined_12px",
@@ -2701,6 +3025,87 @@
       "hash": "5683336af5d356f73d05fa619e3f5bae6797491875169d8f4d9d016bc3dbb167"
     },
     {
+      "id": "local-Star_Filled_12px",
+      "name": "Star_Filled_12px",
+      "fileName": "star-filled-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "59852ba97324adc34b7037525fbf523e64ef30f8f5d4bd4407ad8388ae7439e5",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Star_Filled_16px",
+      "name": "Star_Filled_16px",
+      "fileName": "star-filled-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "dcfa87f39c5d75dce9fe93d9d741dff5d2436a0c7735859f91e6be0441586a12",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Star_Filled_20px",
+      "name": "Star_Filled_20px",
+      "fileName": "star-filled-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "65520df2ac38f6f2dba11006547eb9c860517d3f53e8292188357a152ee3c7a7",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Star_Outlined_12px",
+      "name": "Star_Outlined_12px",
+      "fileName": "star-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "8c534f41225df1f18cabff3fd7d4342ce8ff60315fb954b562f9c9ea5da13fc8",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Star_Outlined_16px",
+      "name": "Star_Outlined_16px",
+      "fileName": "star-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "27d04d53cdceeb555110d773ab5a99f0daf21b416b5f3f0af398d2b4a0ab11a9",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Star_Outlined_20px",
+      "name": "Star_Outlined_20px",
+      "fileName": "star-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "de606cb1f2079155f64f7dbb6d9d2ecc592bf00e127095e2fe69cb03fb6f60a8",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Statistics_Outlined_12px",
+      "name": "Statistics_Outlined_12px",
+      "fileName": "statistics-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "f2b6af0316d29005e6908eb5f484b9389658e6f6a5466866849557f9e0aab8ca",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Statistics_Outlined_16px",
+      "name": "Statistics_Outlined_16px",
+      "fileName": "statistics-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "13d1dd54ff1839277ad3184ea8d008f311a51b11ac0e9f20371b974deb940030",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Statistics_Outlined_20px",
+      "name": "Statistics_Outlined_20px",
+      "fileName": "statistics-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "2502c9c8d17c9cd40d158eed802bf47d40e37c91fb7fdd9277e0633afee2ea12",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
       "id": "local-Stopwatch_Outlined_12px",
       "name": "Stopwatch_Outlined_12px",
       "fileName": "stopwatch-outlined-12px.svg",
@@ -2753,6 +3158,33 @@
       "height": 20,
       "lastModified": "2026-01-29T15:51:06.362Z",
       "hash": "ea444fdb4aa0444f1a5808e3f4ce17d1c667d4e2fe291f49ae7288957bdeb283"
+    },
+    {
+      "id": "local-Sun_Outlined_12px",
+      "name": "Sun_Outlined_12px",
+      "fileName": "sun-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "40054674610321ba0a2d8ce994a606820576f84132770bdf743a1bc6210553a1",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Sun_Outlined_16px",
+      "name": "Sun_Outlined_16px",
+      "fileName": "sun-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "2ad26f723a229b4df5d6afbc2dd0b79a17b2d618f8351465ab5f5f7a10a069c6",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-Sun_Outlined_20px",
+      "name": "Sun_Outlined_20px",
+      "fileName": "sun-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "bd39704ad3df1c1a94200e616d85a4481835a8d865c382b685c5b697651513a7",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Table_Outlined_12px",
@@ -2950,7 +3382,7 @@
       "width": 12,
       "height": 12,
       "lastModified": "032a8287652225ad5c6a93c78d785763e4b896f3f8963f4403a68a6aace470b0",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-TickCircle_Оutlined_16px",
@@ -2959,7 +3391,7 @@
       "width": 16,
       "height": 16,
       "lastModified": "c47b17dfeb2d9bd91a10e3384dda5731a08bea2a3350ee433fd2e8a90ed9e432",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-TickCircle_Оutlined_20px",
@@ -2968,7 +3400,7 @@
       "width": 20,
       "height": 20,
       "lastModified": "cefd4e1e2de19ec406bbf4bf09387196dd9eb6e49dc25897f20bd3de5531cb10",
-      "hash": "2026-02-04T15:18:40.000Z"
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-Tree_Outlined_12px",
@@ -2996,6 +3428,33 @@
       "height": 20,
       "lastModified": "2026-01-29T15:51:06.362Z",
       "hash": "92ff82a0aa7609b31161ca9cb9ac2b58bfd3218425fdbfdab4bcdc6f76df81e0"
+    },
+    {
+      "id": "local-TreeAdd_Outlined_12px",
+      "name": "TreeAdd_Outlined_12px",
+      "fileName": "tree-add-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "bb5a5d76b566f6edc7af1068e3b490a3cfd259dab13039fa07dfd633a2bad345",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-TreeAdd_Outlined_16px",
+      "name": "TreeAdd_Outlined_16px",
+      "fileName": "tree-add-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "e56801dc620edb4a61fc7c58991465876bde17227a90b894443b764f9c56378f",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-TreeAdd_Outlined_20px",
+      "name": "TreeAdd_Outlined_20px",
+      "fileName": "tree-add-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "df1f55a7717847b5495ce54882f7eaf238b048f3631779f2c9b149b2c814d02f",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "4178:22198",
@@ -3168,6 +3627,87 @@
       "height": 20,
       "lastModified": "2026-01-29T15:51:06.362Z",
       "hash": "82471675e22b1ad73443dff630b3fcc6cddbbbdd1efc5c19a780a7f10311a6c1"
+    },
+    {
+      "id": "local-VirtualizationAdd_Outlined_12px",
+      "name": "VirtualizationAdd_Outlined_12px",
+      "fileName": "virtualization-add-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "0aa67f63045df9de0b60db6a85d4d933cecc234c11e9d4906af01b90594f134b",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-VirtualizationAdd_Outlined_16px",
+      "name": "VirtualizationAdd_Outlined_16px",
+      "fileName": "virtualization-add-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "5a1eb39c82fa315659afe71416b42e4d619ce45ce1773f601dcd7c6d6a4c311b",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-VirtualizationAdd_Outlined_20px",
+      "name": "VirtualizationAdd_Outlined_20px",
+      "fileName": "virtualization-add-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "4db4d5a862028fb377a63f5072b122dd09dcd3610f8dad5903d4083f4e561e9a",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-ZoomIn_Outlined_12px",
+      "name": "ZoomIn_Outlined_12px",
+      "fileName": "zoom-in-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "345745197f8a72f761e8987207f04dd782d0c04a1948d5bf16cd202725fae24b",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-ZoomIn_Outlined_16px",
+      "name": "ZoomIn_Outlined_16px",
+      "fileName": "zoom-in-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "a1dd9ee181a6afa7554a4d4a46abc92c55a26317e3a967b84cc0d96666680a9c",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-ZoomIn_Outlined_20px",
+      "name": "ZoomIn_Outlined_20px",
+      "fileName": "zoom-in-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "fdfa99e4d657d5d709808ad7cb0ab5a1b5da3d0b18944d8027667b003a0dd8dd",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-ZoomOut_Outlined_12px",
+      "name": "ZoomOut_Outlined_12px",
+      "fileName": "zoom-out-outlined-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "2c3ff99838137b9a182396dcf5dd706685779b447e0c4a1bd2d6fccc63ec1a02",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-ZoomOut_Outlined_16px",
+      "name": "ZoomOut_Outlined_16px",
+      "fileName": "zoom-out-outlined-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "8c69a5f63a2144a649685619f27fdd320c0df96e1625c759346921a93bddc56e",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-ZoomOut_Outlined_20px",
+      "name": "ZoomOut_Outlined_20px",
+      "fileName": "zoom-out-outlined-20px.svg",
+      "width": 20,
+      "height": 20,
+      "lastModified": "02e82b6d3f9e6f82e28cd5e70ae008bdf5910caa4db9fd55e9b870442b36f3f7",
+      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "4178:22228",
