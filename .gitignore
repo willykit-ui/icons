@@ -34,3 +34,9 @@ tasks
 *.tsbuildinfo
 /.eslintcache
 /coverage
+
+*storybook.log
+storybook-static
+.vercel
+
+.npmrc
