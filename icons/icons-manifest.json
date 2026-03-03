@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-02-10T16:01:18.574Z",
+  "generatedAt": "2026-02-10T16:37:07.410Z",
   "icons": [
     {
       "id": "local-Archive_Outlined_12px",
@@ -1655,15 +1655,6 @@
       "hash": "9a9ffa5abf69e748170f3ec4cb2e54eac912a18602e4140107974928a81880e3"
     },
     {
-      "id": "local-FullScreen_Outlined_12px-1",
-      "name": "FullScreen_Outlined_12px-1",
-      "fileName": "full-screen-outlined-12px-1.svg",
-      "width": 12,
-      "height": 12,
-      "lastModified": "d8aead120769880cfee5424379dcbc85dc9b79582f1a41d1865b927bc8eb2492",
-      "hash": "2026-02-10T16:00:16.000Z"
-    },
-    {
       "id": "local-FullScreen_Outlined_16px",
       "name": "FullScreen_Outlined_16px",
       "fileName": "full-screen-outlined-16px.svg",
@@ -1671,15 +1662,6 @@
       "height": 16,
       "lastModified": "2026-01-29T15:51:06.361Z",
       "hash": "3679d0dddce696adc4c4de5e2e48e5e27c1f2c0a595523576afe9419ab02e513"
-    },
-    {
-      "id": "local-FullScreen_Outlined_16px-1",
-      "name": "FullScreen_Outlined_16px-1",
-      "fileName": "full-screen-outlined-16px-1.svg",
-      "width": 16,
-      "height": 16,
-      "lastModified": "e9e88183931f339908a79b2f40e3be0a70e7df6c9b850472ba293f2e0864267d",
-      "hash": "2026-02-10T16:00:16.000Z"
     },
     {
       "id": "local-FullScreen_Outlined_20px",
@@ -1691,9 +1673,27 @@
       "hash": "9c5d5623b33f1e3019e39b05b6192696f3804a2d16db6b655a88dcad113f32da"
     },
     {
-      "id": "local-FullScreen_Outlined_20px-1",
-      "name": "FullScreen_Outlined_20px-1",
-      "fileName": "full-screen-outlined-20px-1.svg",
+      "id": "local-FullScreen_Outlined1_12px",
+      "name": "FullScreen_Outlined1_12px",
+      "fileName": "full-screen-outlined1-12px.svg",
+      "width": 12,
+      "height": 12,
+      "lastModified": "d8aead120769880cfee5424379dcbc85dc9b79582f1a41d1865b927bc8eb2492",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-FullScreen_Outlined1_16px",
+      "name": "FullScreen_Outlined1_16px",
+      "fileName": "full-screen-outlined1-16px.svg",
+      "width": 16,
+      "height": 16,
+      "lastModified": "e9e88183931f339908a79b2f40e3be0a70e7df6c9b850472ba293f2e0864267d",
+      "hash": "2026-02-10T16:00:16.000Z"
+    },
+    {
+      "id": "local-FullScreen_Outlined1_20px",
+      "name": "FullScreen_Outlined1_20px",
+      "fileName": "full-screen-outlined1-20px.svg",
       "width": 20,
       "height": 20,
       "lastModified": "aec2195b81e4d6c2eb34adcdff2264a63d586d0f6eb56d16bf2bd9f1e610aebc",

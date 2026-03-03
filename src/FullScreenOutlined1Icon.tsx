@@ -2,7 +2,7 @@ import * as React from "react";
 import type { IconProps } from "./types";
 
 /**
- * FullScreenOutlined16pxIcon icon component.
+ * FullScreenOutlined1Icon icon component.
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -12,7 +12,12 @@ import type { IconProps } from "./types";
  */
 
 const svgChildren = {
-  small: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  small: {
+    content: {
+      __html: `<path d="M7.182 7.183a.45.45 0 0 1 .636 0L9.8 9.164v-.833a.45.45 0 0 1 .9 0v1.92a.45.45 0 0 1-.45.45h-2a.45.45 0 0 1 0-.9h.913L7.182 7.819a.45.45 0 0 1 0-.636m-3-.003a.45.45 0 0 1 .636.637L2.837 9.8h.913a.45.45 0 0 1 0 .9h-2a.45.45 0 0 1-.45-.45v-2a.45.45 0 0 1 .9 0v.913zM3.75 1.299a.45.45 0 0 1 0 .9h-.913l1.981 1.982a.45.45 0 0 1-.636.636L2.2 2.836v.913a.45.45 0 0 1-.9 0v-2a.45.45 0 0 1 .45-.45zm6.5 0a.45.45 0 0 1 .45.45v2a.45.45 0 0 1-.9 0v-.913L7.818 4.817a.45.45 0 0 1-.636-.636l1.981-1.982H8.25a.45.45 0 0 1 0-.9z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 12 12",
+  },
 
   medium: {
     content: {
@@ -21,7 +26,12 @@ const svgChildren = {
     viewBox: "0 0 16 16",
   },
 
-  large: { content: { __html: "" }, viewBox: "0 0 16 16" },
+  large: {
+    content: {
+      __html: `<path d="M7.146 12.147a.5.5 0 0 1 .708.707l-3.73 3.729H6.25a.5.5 0 0 1 0 1H2.917a.5.5 0 0 1-.5-.5V13.75a.5.5 0 0 1 1 0v2.126zm5-.001a.5.5 0 0 1 .706 0l3.731 3.729v-1.992a.5.5 0 0 1 1 0v3.199a.5.5 0 0 1-.5.5h-3.334a.5.5 0 0 1 0-1h2.127l-3.73-3.73a.5.5 0 0 1 0-.707m4.937-9.728a.5.5 0 0 1 .5.5V6.25a.5.5 0 0 1-1 0V4.124l-3.73 3.73a.5.5 0 0 1-.707-.708l3.73-3.729H13.75a.5.5 0 0 1 0-1zM6.251 2.416a.5.5 0 0 1 0 1H4.124l3.73 3.73a.5.5 0 0 1-.707.707l-3.73-3.73V6.25a.5.5 0 1 1-1 0V2.916a.5.5 0 0 1 .5-.5z" fill="currentColor"/>`,
+    },
+    viewBox: "0 0 20 20",
+  },
 };
 
 const sizeToPixel = {
@@ -65,7 +75,7 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const FullScreenOutlined16pxIcon = React.forwardRef<SVGSVGElement, IconProps>(
+const FullScreenOutlined1Icon = React.forwardRef<SVGSVGElement, IconProps>(
   (props, ref) => {
     const {
       fontSize = "medium",
@@ -106,6 +116,6 @@ const FullScreenOutlined16pxIcon = React.forwardRef<SVGSVGElement, IconProps>(
   },
 );
 
-FullScreenOutlined16pxIcon.displayName = "FullScreenOutlined16pxIcon";
+FullScreenOutlined1Icon.displayName = "FullScreenOutlined1Icon";
 
-export default FullScreenOutlined16pxIcon;
+export default FullScreenOutlined1Icon;
