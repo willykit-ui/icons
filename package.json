@@ -37,7 +37,7 @@
   "scripts": {
     "prepare": "husky",
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
-    "lint": "eslint . --ext .ts,.tsx --fix",
+    "lint": "eslint --config eslint.config.js \"src/**/*.{ts,tsx}\" --fix",
     "test": "vitest run --passWithNoTests",
     "test-watch": "vitest",
     "generate-icons": "tsx ./scripts/generate-icons.cli.ts generate ./icons --out-dir src/ --typescript --verbose && npm run lint",
@@ -112,6 +112,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "npm run format",
+      "npm run lint",
       "npm run test"
     ]
   }
