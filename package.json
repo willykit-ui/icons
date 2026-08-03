@@ -101,7 +101,7 @@
     "svgo": "^3.3.2",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
-    "tsx": "^4.20.6",
+    "tsx": "^4.23.5",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.65.0",
     "vitest": "^3.2.7"
