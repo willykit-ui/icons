@@ -253,7 +253,14 @@ async function main() {
   console.log("🎉 Локальный импорт завершён.");
 }
 
-main().catch((err) => {
-  console.error("🚨 Критическая ошибка в скрипте локального импорта:", err);
-  process.exit(99);
-});
+const isDirectCliRun =
+  !process.env.VITEST &&
+  Boolean(process.argv[1]) &&
+  fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+
+if (isDirectCliRun) {
+  main().catch((err) => {
+    console.error("🚨 Критическая ошибка в скрипте локального импорта:", err);
+    process.exit(99);
+  });
+}
