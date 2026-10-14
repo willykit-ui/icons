@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * TextUnderlineOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M10 10.5a.5.5 0 0 1 0 1H2a.5.5 0 0 1 0-1zM1.5 5V1a.5.5 0 0 1 1 0v4c0 1.935 1.565 3.5 3.5 3.5S9.5 6.935 9.5 5V1a.5.5 0 0 1 1 0v4c0 2.488-2.012 4.5-4.5 4.5A4.497 4.497 0 0 1 1.5 5" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M10 10.5a.5.5 0 0 1 0 1H2a.5.5 0 0 1 0-1zM1.5 5V1a.5.5 0 0 1 1 0v4c0 1.935 1.565 3.5 3.5 3.5S9.5 6.935 9.5 5V1a.5.5 0 0 1 1 0v4c0 2.488-2.012 4.5-4.5 4.5A4.497 4.497 0 0 1 1.5 5"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M13.5 13.9a.6.6 0 1 1 0 1.2h-11a.6.6 0 1 1 0-1.2zM1.9 7V1.5a.6.6 0 1 1 1.2 0V7c0 2.71 2.19 4.9 4.9 4.9s4.9-2.19 4.9-4.9V1.5a.6.6 0 1 1 1.2 0V7c0 3.372-2.728 6.1-6.1 6.1A6.095 6.095 0 0 1 1.9 7" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M13.5 13.9a.6.6 0 1 1 0 1.2h-11a.6.6 0 1 1 0-1.2zM1.9 7V1.5a.6.6 0 1 1 1.2 0V7c0 2.71 2.19 4.9 4.9 4.9s4.9-2.19 4.9-4.9V1.5a.6.6 0 1 1 1.2 0V7c0 3.372-2.728 6.1-6.1 6.1A6.095 6.095 0 0 1 1.9 7"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M16.5 17.35a.65.65 0 0 1 0 1.3H3a.65.65 0 0 1 0-1.3zM2.6 8.75V2a.65.65 0 0 1 1.3 0v6.75c0 3.373 2.727 6.1 6.1 6.1s6.1-2.727 6.1-6.1V2a.65.65 0 0 1 1.3 0v6.75c0 4.09-3.31 7.4-7.4 7.4s-7.4-3.31-7.4-7.4" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M16.5 17.35a.65.65 0 0 1 0 1.3H3a.65.65 0 0 1 0-1.3zM2.6 8.75V2a.65.65 0 0 1 1.3 0v6.75c0 3.373 2.727 6.1 6.1 6.1s6.1-2.727 6.1-6.1V2a.65.65 0 0 1 1.3 0v6.75c0 4.09-3.31 7.4-7.4 7.4s-7.4-3.31-7.4-7.4"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const TextUnderlineOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const TextUnderlineOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 TextUnderlineOutlinedIcon.displayName = "TextUnderlineOutlinedIcon";
 

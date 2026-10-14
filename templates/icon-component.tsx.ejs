@@ -1,5 +1,5 @@
 <%- typesImport %>
-<% if (typescript) { %>import type { IconProps } from "./types";<% } %>
+<% if (typescript) { %>import type { IconProps, IconComponent } from "./types";<% } %>
 
 <%- jsDoc %>
 
@@ -48,7 +48,7 @@ function pickClosestSvg(fontSize<% if (typescript) { %>: 'small' | 'medium' | 'l
   return medium ? medium[1] : available[0][1];
 }
 
-const <%= componentName %> = <% if (ref) { %>React.forwardRef<% if (typescript) { %><SVGSVGElement, IconProps><% } %>(<% } %><% if (!ref) { %><% if (typescript) { %>(props: IconProps) => {<% } else { %>(props) => {<% } %><% } else { %>(props, ref) => {<% } %>
+const <%= componentName %><% if (typescript) { %>: IconComponent<% } %> = <% if (ref) { %>React.forwardRef<% if (typescript) { %><SVGSVGElement, IconProps><% } %>(<% } %><% if (!ref) { %><% if (typescript) { %>(props: IconProps) => {<% } else { %>(props) => {<% } %><% } else { %>(props, ref) => {<% } %>
   const { fontSize = 'medium', color = 'currentColor', style, ...other } = props;
   
   const selected = pickClosestSvg(fontSize);
@@ -61,9 +61,11 @@ const <%= componentName %> = <% if (ref) { %>React.forwardRef<% if (typescript) 
   const finalStyle = <% if (typescript) { %>({
     ...style,
     color,
+    flexShrink: 0,
   } as React.CSSProperties)<% } else { %>{
     ...style,
     color,
+    flexShrink: 0,
   }<% } %>;
 
   return (
@@ -85,6 +87,9 @@ const <%= componentName %> = <% if (ref) { %>React.forwardRef<% if (typescript) 
 }<% if (ref) { %>)<% } %>;
 
 <%- displayName %>
+<% if (deprecated) { %>
+<%= componentName %>.deprecated = true;
+<% } %>
 
 <% if (memo) { %>
 export default React.memo(<%= componentName %>);

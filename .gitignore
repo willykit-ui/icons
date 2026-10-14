@@ -39,4 +39,4 @@ tasks
 storybook-static
 .vercel
 
-.npmrc
+.npmrc*

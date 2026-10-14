@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * NotebookOutlinedIcon icon component.
@@ -71,47 +71,51 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const NotebookOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const NotebookOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 NotebookOutlinedIcon.displayName = "NotebookOutlinedIcon";
+
+NotebookOutlinedIcon.deprecated = true;
 
 export default NotebookOutlinedIcon;

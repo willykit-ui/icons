@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * EmptyCircleOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g clipPath="url(#a)"><path d="M10.6 6A4.6 4.6 0 1 0 6 10.6v.9a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11v-.9A4.6 4.6 0 0 0 10.6 6" fill="currentColor"/></g><defs><clipPath id="a"><rect width="12" height="12" rx="2" fill="currentColor"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M10.6 6A4.6 4.6 0 1 0 6 10.6v.9a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11v-.9A4.6 4.6 0 0 0 10.6 6"/></g><defs><clipPath id="a"><rect width="12" height="12" fill="currentColor" rx="2"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M14 8a6 6 0 1 0-6 6v1A7 7 0 1 1 8 1a7 7 0 0 1 0 14v-1a6 6 0 0 0 6-6" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M14 8a6 6 0 1 0-6 6v1A7 7 0 1 1 8 1a7 7 0 0 1 0 14v-1a6 6 0 0 0 6-6"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M17.45 9.999a7.45 7.45 0 1 0-14.9 0 7.45 7.45 0 0 0 14.9 0m1.1 0a8.55 8.55 0 0 1-8.55 8.55 8.55 8.55 0 1 1 8.55-8.55" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M17.45 9.999a7.45 7.45 0 1 0-14.9 0 7.45 7.45 0 0 0 14.9 0m1.1 0a8.55 8.55 0 0 1-8.55 8.55 8.55 8.55 0 1 1 8.55-8.55"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const EmptyCircleOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const EmptyCircleOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 EmptyCircleOutlinedIcon.displayName = "EmptyCircleOutlinedIcon";
 

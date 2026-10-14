@@ -8,6 +8,8 @@ export interface IconManifestItem {
   baseName: string;
   size: "small" | "medium" | "large";
   deprecated?: boolean;
+  tags?: string[];
+  category?: string;
 }
 
 export interface IconManifest {
@@ -22,6 +24,8 @@ export interface IconManifest {
 export interface GroupedIcon {
   baseName: string;
   deprecated?: boolean;
+  tags?: string[];
+  category?: string;
   sizes: Record<string, IconManifestItem>;
 }
 

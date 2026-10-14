@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * HamburgerMenuOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M2 3.951a.45.45 0 0 1 0-.9h8a.45.45 0 0 1 0 .9zm0 2.5a.45.45 0 0 1 0-.9h8a.45.45 0 0 1 0 .9zm0 2.5a.45.45 0 0 1 0-.9h8a.45.45 0 0 1 0 .9z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M2 3.951a.45.45 0 0 1 0-.9h8a.45.45 0 0 1 0 .9zm0 2.5a.45.45 0 0 1 0-.9h8a.45.45 0 0 1 0 .9zm0 2.5a.45.45 0 0 1 0-.9h8a.45.45 0 0 1 0 .9z"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M2.667 5.166a.5.5 0 0 1 0-1h10.667a.5.5 0 0 1 0 1zm0 3.334a.5.5 0 0 1 0-1h10.667a.5.5 0 0 1 0 1zm0 3.334a.5.5 0 0 1 0-1h10.667a.5.5 0 1 1 0 1z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M2.667 5.166a.5.5 0 0 1 0-1h10.667a.5.5 0 0 1 0 1zm0 3.334a.5.5 0 0 1 0-1h10.667a.5.5 0 0 1 0 1zm0 3.334a.5.5 0 0 1 0-1h10.667a.5.5 0 1 1 0 1z"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M16.668 13.617a.55.55 0 0 1 0 1.1H3.335a.55.55 0 0 1-.552-.55c0-.304.248-.55.552-.55zm0-4.167a.55.55 0 0 1 0 1.099H3.335a.55.55 0 1 1 0-1.1zm0-4.169a.55.55 0 0 1 0 1.1H3.335a.55.55 0 0 1-.552-.55c0-.304.248-.55.552-.55z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M16.668 13.617a.55.55 0 0 1 0 1.1H3.335a.55.55 0 0 1-.552-.55c0-.304.248-.55.552-.55zm0-4.167a.55.55 0 0 1 0 1.099H3.335a.55.55 0 1 1 0-1.1zm0-4.169a.55.55 0 0 1 0 1.1H3.335a.55.55 0 0 1-.552-.55c0-.304.248-.55.552-.55z"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const HamburgerMenuOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const HamburgerMenuOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 HamburgerMenuOutlinedIcon.displayName = "HamburgerMenuOutlinedIcon";
 

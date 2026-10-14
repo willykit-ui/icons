@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * SearchOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g clipPath="url(#a)"><path d="M9.88 5.467a4.216 4.216 0 1 0-8.432-.001 4.216 4.216 0 0 0 8.433 0m.901 0a5.1 5.1 0 0 1-1.227 3.323l1.756 1.685a.45.45 0 0 1-.623.649L8.912 9.421a5.117 5.117 0 1 1 1.87-3.954" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h12v12H0z" fill="currentColor"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M9.88 5.467a4.216 4.216 0 1 0-8.432-.001 4.216 4.216 0 0 0 8.433 0m.901 0a5.1 5.1 0 0 1-1.227 3.323l1.756 1.685a.45.45 0 0 1-.623.649L8.912 9.421a5.117 5.117 0 1 1 1.87-3.954"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h12v12H0z"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M13.255 7.253a5.704 5.704 0 1 0-11.407 0 5.704 5.704 0 0 0 11.407 0m1.101 0a6.78 6.78 0 0 1-1.728 4.526l2.44 2.212a.55.55 0 0 1-.738.816l-2.5-2.267a6.803 6.803 0 1 1 2.525-5.287" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M13.255 7.253a5.704 5.704 0 1 0-11.407 0 5.704 5.704 0 0 0 11.407 0m1.101 0a6.78 6.78 0 0 1-1.728 4.526l2.44 2.212a.55.55 0 0 1-.738.816l-2.5-2.267a6.803 6.803 0 1 1 2.525-5.287"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M16.242 9.222a6.822 6.822 0 1 0-13.643 0 6.822 6.822 0 0 0 13.643 0m1.2 0a8 8 0 0 1-2.038 5.339l3.005 2.8a.6.6 0 1 1-.817.878l-3.052-2.843a8.021 8.021 0 1 1 2.902-6.175" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M16.242 9.222a6.822 6.822 0 1 0-13.643 0 6.822 6.822 0 0 0 13.643 0m1.2 0a8 8 0 0 1-2.038 5.339l3.005 2.8a.6.6 0 1 1-.817.878l-3.052-2.843a8.021 8.021 0 1 1 2.902-6.175"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const SearchOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const SearchOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 SearchOutlinedIcon.displayName = "SearchOutlinedIcon";
 

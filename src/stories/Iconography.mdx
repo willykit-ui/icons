@@ -1,15 +1,8 @@
-import { Meta, IconGallery, IconItem } from '@storybook/addon-docs/blocks';
-import { icons } from './icon';
-import { IconExample } from './IconExample';
+import { Meta } from '@storybook/addon-docs/blocks';
+import { IconsGallery } from './IconsGallery';
 
-# Iconography
+# Витрина иконок (Iconography)
 
 <Meta title="Iconography" />
 
-<IconGallery>
-  {Object.keys(icons).map((icon) => (
-    <IconItem key={icon} name={icon}>
-      <IconExample icon={icon} />
-    </IconItem>
-  ))}
-</IconGallery>
+<IconsGallery />

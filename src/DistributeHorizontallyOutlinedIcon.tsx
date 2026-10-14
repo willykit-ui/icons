@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * DistributeHorizontallyOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fillRule="evenodd" d="M7.5 1a.5.5 0 0 1 .5.5v4.05h1V3.5a.5.5 0 0 1 .5-.5h2l.1.01a.5.5 0 0 1 .4.49v5a.5.5 0 0 1-.4.49l-.1.01h-2a.5.5 0 0 1-.49-.4L9 8.5V6.45H8v4.05l-.01.1a.5.5 0 0 1-.49.4h-3a.5.5 0 0 1-.49-.4L4 10.5V6.45H3V7.5a.5.5 0 0 1-.4.49L2.5 8h-2a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 4h2l.1.01a.5.5 0 0 1 .4.49v1.05h1V1.5a.5.5 0 0 1 .5-.5zM4.9 5.798q.048.091.05.202-.002.11-.05.201V10.1h2.2V6.2a.45.45 0 0 1-.05-.2q.002-.11.05-.202V1.9H4.9zm5 0q.048.091.05.202-.002.11-.05.201V8.1h1.2V3.9H9.9zM.9 7.1h1.2v-.9a.45.45 0 0 1-.05-.2q.002-.11.05-.202V4.9H.9z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M7.5 1a.5.5 0 0 1 .5.5v4.05h1V3.5a.5.5 0 0 1 .5-.5h2l.1.01a.5.5 0 0 1 .4.49v5a.5.5 0 0 1-.4.49l-.1.01h-2a.5.5 0 0 1-.49-.4L9 8.5V6.45H8v4.05l-.01.1a.5.5 0 0 1-.49.4h-3a.5.5 0 0 1-.49-.4L4 10.5V6.45H3V7.5a.5.5 0 0 1-.4.49L2.5 8h-2a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 4h2l.1.01a.5.5 0 0 1 .4.49v1.05h1V1.5a.5.5 0 0 1 .5-.5zM4.9 5.798q.048.091.05.202-.002.11-.05.201V10.1h2.2V6.2a.45.45 0 0 1-.05-.2q.002-.11.05-.202V1.9H4.9zm5 0q.048.091.05.202-.002.11-.05.201V8.1h1.2V3.9H9.9zM.9 7.1h1.2v-.9a.45.45 0 0 1-.05-.2q.002-.11.05-.202V4.9H.9z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fillRule="evenodd" d="M9.5 2a.5.5 0 0 1 .5.5v5h1v-3a.5.5 0 0 1 .5-.5h2l.1.01a.5.5 0 0 1 .4.49v7a.5.5 0 0 1-.4.49l-.1.01h-2a.5.5 0 0 1-.5-.5v-3h-1v5l-.01.1a.5.5 0 0 1-.49.4h-3a.5.5 0 0 1-.49-.4L6 13.5v-5H5v2a.5.5 0 0 1-.4.49l-.1.01h-2a.5.5 0 0 1-.49-.4L2 10.5v-5a.5.5 0 0 1 .5-.5h2l.1.01a.5.5 0 0 1 .4.49v2h1v-5a.5.5 0 0 1 .5-.5zM7 13h2V3H7zm5-2h1V5h-1zm-9-1h1V6H3z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M9.5 2a.5.5 0 0 1 .5.5v5h1v-3a.5.5 0 0 1 .5-.5h2l.1.01a.5.5 0 0 1 .4.49v7a.5.5 0 0 1-.4.49l-.1.01h-2a.5.5 0 0 1-.5-.5v-3h-1v5l-.01.1a.5.5 0 0 1-.49.4h-3a.5.5 0 0 1-.49-.4L6 13.5v-5H5v2a.5.5 0 0 1-.4.49l-.1.01h-2a.5.5 0 0 1-.49-.4L2 10.5v-5a.5.5 0 0 1 .5-.5h2l.1.01a.5.5 0 0 1 .4.49v2h1v-5a.5.5 0 0 1 .5-.5zM7 13h2V3H7zm5-2h1V5h-1zm-9-1h1V6H3z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path fillRule="evenodd" d="M12.5 2a.5.5 0 0 1 .5.5v6.95h1V5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v9l-.01.1a.5.5 0 0 1-.49.4h-3a.5.5 0 0 1-.49-.4l-.01-.1v-3.95h-1v6.95a.5.5 0 0 1-.4.49l-.1.01h-5l-.1-.01a.5.5 0 0 1-.39-.39L7 17.5v-6.95H6v2.95a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v2.95h1V2.5a.5.5 0 0 1 .5-.5zM8.1 16.9h3.8V3.1H8.1zm7-3h1.8V6.1h-1.8zm-12-1h1.8V7.1H3.1z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M12.5 2a.5.5 0 0 1 .5.5v6.95h1V5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v9l-.01.1a.5.5 0 0 1-.49.4h-3a.5.5 0 0 1-.49-.4l-.01-.1v-3.95h-1v6.95a.5.5 0 0 1-.4.49l-.1.01h-5l-.1-.01a.5.5 0 0 1-.39-.39L7 17.5v-6.95H6v2.95a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v2.95h1V2.5a.5.5 0 0 1 .5-.5zM8.1 16.9h3.8V3.1H8.1zm7-3h1.8V6.1h-1.8zm-12-1h1.8V7.1H3.1z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,7 +75,7 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const DistributeHorizontallyOutlinedIcon = React.forwardRef<
+const DistributeHorizontallyOutlinedIcon: IconComponent = React.forwardRef<
   SVGSVGElement,
   IconProps
 >((props, ref) => {
@@ -97,6 +97,7 @@ const DistributeHorizontallyOutlinedIcon = React.forwardRef<
   const finalStyle = {
     ...style,
     color,
+    flexShrink: 0,
   } as React.CSSProperties;
 
   return (

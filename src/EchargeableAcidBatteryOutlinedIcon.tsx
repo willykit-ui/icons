@@ -1,8 +1,9 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * EchargeableAcidBatteryOutlinedIcon icon component.
+ * @deprecated This icon is deprecated and will be removed in a future version.
  * @description Supports sizes: small (12px), medium (16px, default), large (20px).
  * Automatically falls back to the closest available size if exact one is missing.
  *
@@ -75,7 +76,7 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const EchargeableAcidBatteryOutlinedIcon = React.forwardRef<
+const EchargeableAcidBatteryOutlinedIcon: IconComponent = React.forwardRef<
   SVGSVGElement,
   IconProps
 >((props, ref) => {
@@ -97,6 +98,7 @@ const EchargeableAcidBatteryOutlinedIcon = React.forwardRef<
   const finalStyle = {
     ...style,
     color,
+    flexShrink: 0,
   } as React.CSSProperties;
 
   return (
@@ -119,5 +121,7 @@ const EchargeableAcidBatteryOutlinedIcon = React.forwardRef<
 
 EchargeableAcidBatteryOutlinedIcon.displayName =
   "EchargeableAcidBatteryOutlinedIcon";
+
+EchargeableAcidBatteryOutlinedIcon.deprecated = true;
 
 export default EchargeableAcidBatteryOutlinedIcon;

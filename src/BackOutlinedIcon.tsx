@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * BackOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 6 3.332-3.1M1 6l3.332 3.1M1 6h10" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M4.698 2.56a.5.5 0 0 0-.706-.026L.66 5.634a.5.5 0 0 0 0 .732l3.333 3.1a.5.5 0 0 0 .68-.732L2.272 6.5H11a.5.5 0 0 0 0-1H2.272l2.4-2.233a.5.5 0 0 0 .026-.707"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.1" d="m2 8 3.999-3.6M2 8l3.999 3.6M2 8h12" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M6.408 4.032a.55.55 0 0 0-.777-.041l-4 3.6a.55.55 0 0 0 0 .818l4 3.6a.55.55 0 1 0 .736-.818L3.434 8.55H14a.55.55 0 0 0 0-1.101H3.434l2.933-2.641a.55.55 0 0 0 .041-.777"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.2" d="m3 10 4.665-4.7M3 10l4.665 4.7M3 10h14" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M8.088 4.875a.6.6 0 0 0-.849.003l-4.665 4.7a.6.6 0 0 0 0 .846l4.665 4.7a.6.6 0 0 0 .852-.845L4.44 10.6H17a.6.6 0 1 0 0-1.2H4.441l3.65-3.677a.6.6 0 0 0-.003-.849"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const BackOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const BackOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 BackOutlinedIcon.displayName = "BackOutlinedIcon";
 

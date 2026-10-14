@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * ClockOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g clipPath="url(#a)"><path d="M10.55 6.001a4.55 4.55 0 1 0-9.1 0 4.55 4.55 0 0 0 9.1 0m-5-1.998a.45.45 0 0 1 .9 0v1.759l1.3.867a.45.45 0 0 1-.5.748l-1.5-1-.2-.133zM11.45 6A5.45 5.45 0 1 1 .55 6a5.45 5.45 0 0 1 10.9 0" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h12v12H0z" fill="currentColor"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M10.55 6.001a4.55 4.55 0 1 0-9.1 0 4.55 4.55 0 0 0 9.1 0m-5-1.998a.45.45 0 0 1 .9 0v1.759l1.3.867a.45.45 0 0 1-.5.748l-1.5-1-.2-.133zM11.45 6A5.45 5.45 0 1 1 .55 6a5.45 5.45 0 0 1 10.9 0"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h12v12H0z"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<g clipPath="url(#a)"><path d="M14.5 8a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0m-7-3a.5.5 0 0 1 1 0v3.161l2.185.875a.5.5 0 1 1-.37.928l-2.5-1A.5.5 0 0 1 7.5 8.5zm8 3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0" fill="currentColor"/></g><defs><clipPath id="a"><path d="M0 0h16v16H0z" fill="currentColor"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M14.5 8a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0m-7-3a.5.5 0 0 1 1 0v3.161l2.185.875a.5.5 0 1 1-.37.928l-2.5-1A.5.5 0 0 1 7.5 8.5zm8 3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0"/></g><defs><clipPath id="a"><path fill="currentColor" d="M0 0h16v16H0z"/></clipPath></defs>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M17.45 9.999a7.45 7.45 0 1 0-14.9 0 7.45 7.45 0 0 0 14.9 0m-8-3.429a.55.55 0 1 1 1.1 0v3.627l2.512 1.005a.551.551 0 0 1-.409 1.022L9.796 11.08l-.346-.139zm9.1 3.43A8.55 8.55 0 0 1 10 18.55 8.55 8.55 0 1 1 18.55 10" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M17.45 9.999a7.45 7.45 0 1 0-14.9 0 7.45 7.45 0 0 0 14.9 0m-8-3.429a.55.55 0 1 1 1.1 0v3.627l2.512 1.005a.551.551 0 0 1-.409 1.022L9.796 11.08l-.346-.139zm9.1 3.43A8.55 8.55 0 0 1 10 18.55 8.55 8.55 0 1 1 18.55 10"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const ClockOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const ClockOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 ClockOutlinedIcon.displayName = "ClockOutlinedIcon";
 

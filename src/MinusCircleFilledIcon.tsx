@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * MinusCircleFilledIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g clipPath="url(#a)"><path d="M6 .5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11m-2 5v1h4v-1z" fill="currentColor"/></g><defs><clipPath id="a"><rect width="12" height="12" rx="2" fill="currentColor"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M6 .5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11m-2 5v1h4v-1z"/></g><defs><clipPath id="a"><rect width="12" height="12" fill="currentColor" rx="2"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1M5.5 7.5v1h5v-1z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1M5.5 7.5v1h5v-1z"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M10 1.45a8.55 8.55 0 1 1 0 17.099 8.55 8.55 0 1 1 0-17.1M7 9.498v1h6v-1z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M10 1.45a8.55 8.55 0 1 1 0 17.099 8.55 8.55 0 1 1 0-17.1M7 9.498v1h6v-1z"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const MinusCircleFilledIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const MinusCircleFilledIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 MinusCircleFilledIcon.displayName = "MinusCircleFilledIcon";
 

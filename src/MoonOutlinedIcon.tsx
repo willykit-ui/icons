@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * MoonOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fillRule="evenodd" d="M6.139 1.065c.302.064.455.333.484.545a.7.7 0 0 1-.326.696A2.474 2.474 0 0 0 7.575 6.9c.899 0 1.686-.479 2.12-1.197l.068-.094a.71.71 0 0 1 .628-.232c.242.033.56.228.56.623A4.95 4.95 0 1 1 6 1.051zm-.94.965A4.051 4.051 0 0 0 6 10.05 4.05 4.05 0 0 0 9.97 6.8 3.375 3.375 0 1 1 5.2 2.03" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M6.139 1.065c.302.064.455.333.484.545a.7.7 0 0 1-.326.696A2.474 2.474 0 0 0 7.575 6.9c.899 0 1.686-.479 2.12-1.197l.068-.094a.71.71 0 0 1 .628-.232c.242.033.56.228.56.623A4.95 4.95 0 1 1 6 1.051zm-.94.965A4.051 4.051 0 0 0 6 10.05 4.05 4.05 0 0 0 9.97 6.8 3.375 3.375 0 1 1 5.2 2.03" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fillRule="evenodd" d="M8 1.5c.462 0 .692.37.731.66a.84.84 0 0 1-.386.827 3.4 3.4 0 1 0 4.668 4.668l.08-.11a.85.85 0 0 1 .748-.276c.29.039.659.269.659.731A6.5 6.5 0 1 1 8 1.5m-.753 1.052a5.5 5.5 0 1 0 6.2 6.2 4.4 4.4 0 1 1-6.2-6.2" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M8 1.5c.462 0 .692.37.731.66a.84.84 0 0 1-.386.827 3.4 3.4 0 1 0 4.668 4.668l.08-.11a.85.85 0 0 1 .748-.276c.29.039.659.269.659.731A6.5 6.5 0 1 1 8 1.5m-.753 1.052a5.5 5.5 0 1 0 6.2 6.2 4.4 4.4 0 1 1-6.2-6.2" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M7.2 7.374c0-1.747.826-3.3 2.107-4.291A6.951 6.951 0 0 0 10 16.949a6.95 6.95 0 0 0 6.915-6.258A5.425 5.425 0 0 1 7.2 7.374m1.1 0a4.325 4.325 0 0 0 8.03 2.233l.092-.128a.98.98 0 0 1 .869-.32c.337.046.759.31.759.84A8.05 8.05 0 1 1 10 1.949c.53 0 .794.422.84.759a.97.97 0 0 1-.448.961A4.32 4.32 0 0 0 8.3 7.374" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M7.2 7.374c0-1.747.826-3.3 2.107-4.291A6.951 6.951 0 0 0 10 16.949a6.95 6.95 0 0 0 6.915-6.258A5.425 5.425 0 0 1 7.2 7.374m1.1 0a4.325 4.325 0 0 0 8.03 2.233l.092-.128a.98.98 0 0 1 .869-.32c.337.046.759.31.759.84A8.05 8.05 0 1 1 10 1.949c.53 0 .794.422.84.759a.97.97 0 0 1-.448.961A4.32 4.32 0 0 0 8.3 7.374"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const MoonOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const MoonOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 MoonOutlinedIcon.displayName = "MoonOutlinedIcon";
 

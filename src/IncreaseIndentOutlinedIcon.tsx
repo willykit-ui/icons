@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * IncreaseIndentOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M2 2h8v1H2zm4 3.5h4v1H6zM2 9h8v1H2zm3-5L2 6l3 2" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M2 2h8v1H2zm4 3.5h4v1H6zM2 9h8v1H2zm3-5L2 6l3 2"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M2 3h12v1H2zm5 3h7v1H7zm0 3h7v1H7zm-5 3h12v1H2zm3-6L2 8l3 2" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M2 3h12v1H2zm5 3h7v1H7zm0 3h7v1H7zm-5 3h12v1H2zm3-6L2 8l3 2"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M3 3h14v1H3zm7 3.25h7v1h-7zm0 3.25h7v1h-7zm0 3.25h7v1h-7zM3 16h14v1H3zm3-9-3 3 3 3" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M3 3h14v1H3zm7 3.25h7v1h-7zm0 3.25h7v1h-7zm0 3.25h7v1h-7zM3 16h14v1H3zm3-9-3 3 3 3"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const IncreaseIndentOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const IncreaseIndentOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 IncreaseIndentOutlinedIcon.displayName = "IncreaseIndentOutlinedIcon";
 

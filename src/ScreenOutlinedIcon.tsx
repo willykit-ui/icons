@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * ScreenOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M10.55 3.3a.85.85 0 0 0-.85-.849H2.3a.85.85 0 0 0-.85.85v5.4c0 .47.38.85.85.85h7.4c.47 0 .85-.38.85-.85zM7.5 8.05a.45.45 0 0 1 0 .901h-3a.45.45 0 0 1 0-.9zm3.95.651a1.75 1.75 0 0 1-1.75 1.75H2.3a1.75 1.75 0 0 1-1.75-1.75v-5.4c0-.967.783-1.75 1.75-1.75h7.4c.966 0 1.75.783 1.75 1.75z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M10.55 3.3a.85.85 0 0 0-.85-.849H2.3a.85.85 0 0 0-.85.85v5.4c0 .47.38.85.85.85h7.4c.47 0 .85-.38.85-.85zM7.5 8.05a.45.45 0 0 1 0 .901h-3a.45.45 0 0 1 0-.9zm3.95.651a1.75 1.75 0 0 1-1.75 1.75H2.3a1.75 1.75 0 0 1-1.75-1.75v-5.4c0-.967.783-1.75 1.75-1.75h7.4c.966 0 1.75.783 1.75 1.75z"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M14 4.5A1.5 1.5 0 0 0 12.5 3h-9A1.5 1.5 0 0 0 2 4.5v7A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5zM10 11a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1zm5 .5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 11.5v-7A2.5 2.5 0 0 1 3.5 2h9A2.5 2.5 0 0 1 15 4.5z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M14 4.5A1.5 1.5 0 0 0 12.5 3h-9A1.5 1.5 0 0 0 2 4.5v7A1.5 1.5 0 0 0 3.5 13h9a1.5 1.5 0 0 0 1.5-1.5zM10 11a.5.5 0 0 1 0 1H6a.5.5 0 0 1 0-1zm5 .5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 11.5v-7A2.5 2.5 0 0 1 3.5 2h9A2.5 2.5 0 0 1 15 4.5z"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M17.45 5.299a1.75 1.75 0 0 0-1.75-1.75H4.3a1.75 1.75 0 0 0-1.75 1.75v9.4c0 .967.783 1.75 1.75 1.75h11.4a1.75 1.75 0 0 0 1.75-1.75zm-4.95 8.65a.55.55 0 1 1 0 1.1h-5a.55.55 0 1 1 0-1.1zm6.05.75a2.85 2.85 0 0 1-2.85 2.85H4.3a2.85 2.85 0 0 1-2.85-2.85V5.3A2.85 2.85 0 0 1 4.3 2.45h11.4a2.85 2.85 0 0 1 2.85 2.85z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M17.45 5.299a1.75 1.75 0 0 0-1.75-1.75H4.3a1.75 1.75 0 0 0-1.75 1.75v9.4c0 .967.783 1.75 1.75 1.75h11.4a1.75 1.75 0 0 0 1.75-1.75zm-4.95 8.65a.55.55 0 1 1 0 1.1h-5a.55.55 0 1 1 0-1.1zm6.05.75a2.85 2.85 0 0 1-2.85 2.85H4.3a2.85 2.85 0 0 1-2.85-2.85V5.3A2.85 2.85 0 0 1 4.3 2.45h11.4a2.85 2.85 0 0 1 2.85 2.85z"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const ScreenOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const ScreenOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 ScreenOutlinedIcon.displayName = "ScreenOutlinedIcon";
 

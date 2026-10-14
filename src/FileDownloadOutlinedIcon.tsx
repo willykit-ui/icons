@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * FileDownloadOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M1.05 9.701v-7.4c0-.967.783-1.75 1.75-1.75h3.162c.464 0 .91.184 1.237.512l3.239 3.239c.328.328.512.773.512 1.237v4.162a1.75 1.75 0 0 1-1.75 1.75H2.8a1.75 1.75 0 0 1-1.75-1.75m2.803-3.13a.45.45 0 0 1 .899 0v1.463l.056-.065a.45.45 0 0 1 .69.578l-.85 1.013a.45.45 0 0 1-.69 0l-.85-1.013a.45.45 0 0 1 .689-.578l.056.065zm3.043-2.02h2.507L6.896 2.077zM1.95 9.7c0 .47.38.85.85.85h6.4c.47 0 .85-.38.85-.85V5.54q0-.045-.005-.09l-.032.002H6.646a.65.65 0 0 1-.65-.65V1.479l.001-.027H2.8a.85.85 0 0 0-.85.849z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M1.05 9.701v-7.4c0-.967.783-1.75 1.75-1.75h3.162c.464 0 .91.184 1.237.512l3.239 3.239c.328.328.512.773.512 1.237v4.162a1.75 1.75 0 0 1-1.75 1.75H2.8a1.75 1.75 0 0 1-1.75-1.75m2.803-3.13a.45.45 0 0 1 .899 0v1.463l.056-.065a.45.45 0 0 1 .69.578l-.85 1.013a.45.45 0 0 1-.69 0l-.85-1.013a.45.45 0 0 1 .689-.578l.056.065zm3.043-2.02h2.507L6.896 2.077zM1.95 9.7c0 .47.38.85.85.85h6.4c.47 0 .85-.38.85-.85V5.54q0-.045-.005-.09l-.032.002H6.646a.65.65 0 0 1-.65-.65V1.479l.001-.027H2.8a.85.85 0 0 0-.85.849z"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M1.5 12.5v-9A2.5 2.5 0 0 1 4 1h3.799c.528 0 1.033.169 1.454.464q.147.054.273.175l2.159 2.104.01.009a48 48 0 0 1 2.117 2.027c.45.46.688 1.079.688 1.711v5.01A2.5 2.5 0 0 1 12 15H4a2.5 2.5 0 0 1-2.5-2.5m3.65-3.86a.5.5 0 0 1 1 0v2.311l.265-.318a.5.5 0 0 1 .77.639l-1.15 1.387a.5.5 0 0 1-.77 0l-1.15-1.388a.5.5 0 0 1 .77-.638l.265.32zM9.168 6.2h3.605l-1.754-1.71a53 53 0 0 1-1.851-1.755zM2.5 12.5A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V7.49q-.001-.162-.035-.317a.8.8 0 0 1-.201.027H8.969a.8.8 0 0 1-.801-.8V2.212a1 1 0 0 1 .016-.16A1.5 1.5 0 0 0 7.799 2H4a1.5 1.5 0 0 0-1.5 1.5z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M1.5 12.5v-9A2.5 2.5 0 0 1 4 1h3.799c.528 0 1.033.169 1.454.464q.147.054.273.175l2.159 2.104.01.009a48 48 0 0 1 2.117 2.027c.45.46.688 1.079.688 1.711v5.01A2.5 2.5 0 0 1 12 15H4a2.5 2.5 0 0 1-2.5-2.5m3.65-3.86a.5.5 0 0 1 1 0v2.311l.265-.318a.5.5 0 0 1 .77.639l-1.15 1.387a.5.5 0 0 1-.77 0l-1.15-1.388a.5.5 0 0 1 .77-.638l.265.32zM9.168 6.2h3.605l-1.754-1.71a53 53 0 0 1-1.851-1.755zM2.5 12.5A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V7.49q-.001-.162-.035-.317a.8.8 0 0 1-.201.027H8.969a.8.8 0 0 1-.801-.8V2.212a1 1 0 0 1 .016-.16A1.5 1.5 0 0 0 7.799 2H4a1.5 1.5 0 0 0-1.5 1.5z"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M2.45 15.7V4.298a2.85 2.85 0 0 1 2.85-2.85h4.506c.643 0 1.262.22 1.762.614q.034.02.067.042l.107.096 5.001 5.145.008.008.097.1a1 1 0 0 1 .117.153 2.85 2.85 0 0 1 .585 1.726v6.366a2.85 2.85 0 0 1-2.85 2.85H5.3a2.85 2.85 0 0 1-2.85-2.85m4.25-4.701a.55.55 0 1 1 1.1 0v2.833l.258-.348a.55.55 0 0 1 .884.655l-1.25 1.687a.55.55 0 0 1-.884 0l-1.25-1.687a.55.55 0 0 1 .884-.655l.258.348zm4.63-3.15h4.367L11.33 3.354zm-7.78 7.85c0 .967.783 1.75 1.75 1.75h9.4a1.75 1.75 0 0 0 1.75-1.75V9.333c0-.138-.02-.273-.05-.405a1 1 0 0 1-.185.021H11.11a.88.88 0 0 1-.882-.88V2.813q.001-.107.025-.205a1.8 1.8 0 0 0-.448-.06H5.3a1.75 1.75 0 0 0-1.75 1.75z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M2.45 15.7V4.298a2.85 2.85 0 0 1 2.85-2.85h4.506c.643 0 1.262.22 1.762.614q.034.02.067.042l.107.096 5.001 5.145.008.008.097.1a1 1 0 0 1 .117.153 2.85 2.85 0 0 1 .585 1.726v6.366a2.85 2.85 0 0 1-2.85 2.85H5.3a2.85 2.85 0 0 1-2.85-2.85m4.25-4.701a.55.55 0 1 1 1.1 0v2.833l.258-.348a.55.55 0 0 1 .884.655l-1.25 1.687a.55.55 0 0 1-.884 0l-1.25-1.687a.55.55 0 0 1 .884-.655l.258.348zm4.63-3.15h4.367L11.33 3.354zm-7.78 7.85c0 .967.783 1.75 1.75 1.75h9.4a1.75 1.75 0 0 0 1.75-1.75V9.333c0-.138-.02-.273-.05-.405a1 1 0 0 1-.185.021H11.11a.88.88 0 0 1-.882-.88V2.813q.001-.107.025-.205a1.8 1.8 0 0 0-.448-.06H5.3a1.75 1.75 0 0 0-1.75 1.75z"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const FileDownloadOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const FileDownloadOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 FileDownloadOutlinedIcon.displayName = "FileDownloadOutlinedIcon";
 
