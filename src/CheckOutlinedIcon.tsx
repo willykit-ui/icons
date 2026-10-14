@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * CheckOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M8.592 3.211a.5.5 0 0 1 .816.578l-3.546 5a.5.5 0 0 1-.743.082L2.664 6.65a.5.5 0 0 1 .672-.742l2.036 1.844z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M8.592 3.211a.5.5 0 0 1 .816.578l-3.546 5a.5.5 0 0 1-.743.082L2.664 6.65a.5.5 0 0 1 .672-.742l2.036 1.844z"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M12.54 3.198a.55.55 0 0 1 .92.603l-5.91 9a.55.55 0 0 1-.844.092l-4.09-4a.55.55 0 0 1 .769-.787l3.612 3.532z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M12.54 3.198a.55.55 0 0 1 .92.603l-5.91 9a.55.55 0 0 1-.844.092l-4.09-4a.55.55 0 0 1 .769-.787l3.612 3.532z"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M16.508 4.157a.6.6 0 0 1 .984.687l-7.681 11a.6.6 0 0 1-.899.098l-5.318-4.889a.6.6 0 0 1 .812-.883l4.813 4.424z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M16.508 4.157a.6.6 0 0 1 .984.687l-7.681 11a.6.6 0 0 1-.899.098l-5.318-4.889a.6.6 0 0 1 .812-.883l4.813 4.424z"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const CheckOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const CheckOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 CheckOutlinedIcon.displayName = "CheckOutlinedIcon";
 

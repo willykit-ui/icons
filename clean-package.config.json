@@ -1,0 +1,7 @@
+{
+  "remove": [
+    "devDependencies",
+    "scripts",
+    "lint-staged"
+  ]
+}

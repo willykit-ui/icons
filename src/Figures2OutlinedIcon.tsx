@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * Figures2OutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fillRule="evenodd" d="M7.95 4.03a3.5 3.5 0 1 1-3.92 3.921H1.05v-6.9h6.9zm-.45.871a2.6 2.6 0 1 0 0 5.199 2.6 2.6 0 0 0 0-5.199m-5.55 2.15h2.08a3.5 3.5 0 0 1 3.02-3.02V1.95h-5.1z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M7.95 4.03a3.5 3.5 0 1 1-3.92 3.921H1.05v-6.9h6.9zm-.45.871a2.6 2.6 0 1 0 0 5.199 2.6 2.6 0 0 0 0-5.199m-5.55 2.15h2.08a3.5 3.5 0 0 1 3.02-3.02V1.95h-5.1z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fillRule="evenodd" d="M11 6.028A4.5 4.5 0 1 1 6.028 11H2V2h9zM10.5 7a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7M3 10h3.028A4.5 4.5 0 0 1 10 6.028V3H3z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M11 6.028A4.5 4.5 0 1 1 6.028 11H2V2h9zM10.5 7a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7M3 10h3.028A4.5 4.5 0 0 1 10 6.028V3H3z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path fillRule="evenodd" d="M14.05 8.026a5.5 5.5 0 1 1-6.023 6.023H1.95v-12.1h12.1zM13.5 9.1a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8M3.05 12.95h4.977a5.5 5.5 0 0 1 4.923-4.923V3.05h-9.9z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M14.05 8.026a5.5 5.5 0 1 1-6.023 6.023H1.95v-12.1h12.1zM13.5 9.1a4.4 4.4 0 1 0 0 8.8 4.4 4.4 0 0 0 0-8.8M3.05 12.95h4.977a5.5 5.5 0 0 1 4.923-4.923V3.05h-9.9z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const Figures2OutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const Figures2OutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 Figures2OutlinedIcon.displayName = "Figures2OutlinedIcon";
 

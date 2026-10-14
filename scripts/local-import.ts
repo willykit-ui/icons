@@ -35,11 +35,49 @@ try {
   );
 }
 
-function safeName(name: string): string {
+// Замена кириллических "двойников" на латиницу
+const CYRILLIC_HOMOGLYPHS: Record<string, string> = {
+  // Заглавные
+  А: "A",
+  В: "B",
+  Е: "E",
+  К: "K",
+  М: "M",
+  Н: "H",
+  О: "O",
+  Р: "P",
+  С: "C",
+  Т: "T",
+  У: "Y",
+  Х: "X",
+  // Строчные
+  а: "a",
+  е: "e",
+  к: "k",
+  о: "o",
+  р: "p",
+  с: "c",
+  у: "y",
+  х: "x",
+};
+
+export function safeName(name: string): string {
   let n = name.trim();
-  // Замена кириллических "двойников" на латиницу
-  n = n.replace(/С/g, "C").replace(/с/g, "c");
-  n = n.replace(/О/g, "O").replace(/о/g, "o");
+
+  // Проверка на наличие кириллицы и логирование предупреждения
+  const cyrillicMatches = n.match(/[\u0400-\u04FF]/g);
+  if (cyrillicMatches) {
+    const chars = Array.from(new Set(cyrillicMatches)).join(", ");
+    console.warn(
+      `⚠️ [Кириллица обнаружена] В исходном имени "${name}" найдены русские символы: [${chars}]. Выполняется автосанация. Сообщите дизайнерам для исправления в Figma!`,
+    );
+  }
+
+  // Замена кириллических омоглифов
+  for (const [cyr, lat] of Object.entries(CYRILLIC_HOMOGLYPHS)) {
+    n = n.replaceAll(cyr, lat);
+  }
+
   n = n.replace(/([a-z])([A-Z])/g, "$1-$2");
   n = n.replace(/[\s_]+/g, "-");
   // eslint-disable-next-line no-useless-escape
@@ -103,7 +141,28 @@ async function main() {
 
   const finalIcons: IconManifestEntry[] = [];
   const processedSafeNames = new Set<string>();
-  const svgoOptions = { multipass: true };
+  const svgoOptions = {
+    multipass: true,
+    plugins: [
+      {
+        name: "preset-default",
+        params: {
+          overrides: {
+            removeViewBox: false,
+            removeUselessDefs: true,
+            cleanupIds: true,
+          },
+        },
+      },
+      {
+        name: "cleanupNumericValues",
+        params: {
+          floatPrecision: 3,
+        },
+      },
+      "sortAttrs",
+    ],
+  };
 
   for (const fileName of localFileNames) {
     const basename = path.basename(fileName, ".svg");
@@ -122,7 +181,15 @@ async function main() {
         const result = await optimizeFn(svgText, svgoOptions);
         if (result?.data) svgText = result.data;
       }
-      svgText = svgText.replace(/fill="[^"]+"/g, 'fill="currentColor"');
+      // Заменяем любые hex/rgb цвета заливки на currentColor (кроме none)
+      svgText = svgText.replace(
+        /fill="(#[0-9a-fA-F]{3,8}|rgb\([^)]+\))"/g,
+        'fill="currentColor"',
+      );
+      svgText = svgText.replace(
+        /stroke="(#[0-9a-fA-F]{3,8}|rgb\([^)]+\))"/g,
+        'stroke="currentColor"',
+      );
       const newHash = crypto.createHash("sha256").update(svgText).digest("hex");
 
       if (
@@ -147,6 +214,10 @@ async function main() {
         fileStats.mtime.toISOString(),
         newHash,
       );
+
+      if (oldEntry?.tags) newEntry.tags = oldEntry.tags;
+      if (oldEntry?.category) newEntry.category = oldEntry.category;
+      if (oldEntry?.useCases) newEntry.useCases = oldEntry.useCases;
 
       finalIcons.push(newEntry);
 
@@ -182,7 +253,14 @@ async function main() {
   console.log("🎉 Локальный импорт завершён.");
 }
 
-main().catch((err) => {
-  console.error("🚨 Критическая ошибка в скрипте локального импорта:", err);
-  process.exit(99);
-});
+const isDirectCliRun =
+  !process.env.VITEST &&
+  Boolean(process.argv[1]) &&
+  fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+
+if (isDirectCliRun) {
+  main().catch((err) => {
+    console.error("🚨 Критическая ошибка в скрипте локального импорта:", err);
+    process.exit(99);
+  });
+}

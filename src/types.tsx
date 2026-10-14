@@ -14,3 +14,9 @@ export interface IconProps extends React.SVGAttributes<SVGElement> {
    */
   color?: string;
 }
+
+export interface IconComponent extends React.ForwardRefExoticComponent<
+  IconProps & React.RefAttributes<SVGSVGElement>
+> {
+  deprecated?: boolean;
+}

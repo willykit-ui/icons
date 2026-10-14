@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * DangerCircleFilledIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<g clipPath="url(#a)"><path d="M6 .5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11m0 7a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1m.001-4.25a.45.45 0 0 0-.45.45v2.7a.45.45 0 0 0 .9 0V3.7a.45.45 0 0 0-.45-.45" fill="currentColor"/></g><defs><clipPath id="a"><rect width="12" height="12" rx="2" fill="currentColor"/></clipPath></defs>`,
+      __html: `<g clipPath="url(#a)"><path fill="currentColor" d="M6 .5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11m0 7a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1m.001-4.25a.45.45 0 0 0-.45.45v2.7a.45.45 0 0 0 .9 0V3.7a.45.45 0 0 0-.45-.45"/></g><defs><clipPath id="a"><rect width="12" height="12" fill="currentColor" rx="2"/></clipPath></defs>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1m.003 9a.667.667 0 0 0-.654.793l.01.04.025.078.02.043a.66.66 0 0 0 .198.242l.044.033.056.03q.023.013.048.024a1 1 0 0 0 .118.036l.135.014a1 1 0 0 0 .126-.014l.036-.009.084-.026.038-.017a.65.65 0 0 0 .245-.2q.017-.022.032-.046l.037-.065.018-.038a1 1 0 0 0 .036-.117l.014-.134A.667.667 0 0 0 8.003 10M8 4.1a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 1 0v-4a.5.5 0 0 0-.5-.5" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1m.003 9a.667.667 0 0 0-.654.793l.01.04.025.078.02.043a.66.66 0 0 0 .198.242l.044.033.056.03q.023.013.048.024a1 1 0 0 0 .118.036l.135.014a1 1 0 0 0 .126-.014l.036-.009.084-.026.038-.017a.65.65 0 0 0 .245-.2q.017-.022.032-.046l.037-.065.018-.038a1 1 0 0 0 .036-.117l.014-.134A.667.667 0 0 0 8.003 10M8 4.1a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 1 0v-4a.5.5 0 0 0-.5-.5"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M10 1.45a8.55 8.55 0 1 1 0 17.099 8.55 8.55 0 1 1 0-17.1m0 10.849a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5m-.001-6.75a.55.55 0 0 0-.55.55v4.6a.55.55 0 0 0 1.1 0V6.1a.55.55 0 0 0-.55-.55" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M10 1.45a8.55 8.55 0 1 1 0 17.099 8.55 8.55 0 1 1 0-17.1m0 10.849a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5m-.001-6.75a.55.55 0 0 0-.55.55v4.6a.55.55 0 0 0 1.1 0V6.1a.55.55 0 0 0-.55-.55"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const DangerCircleFilledIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const DangerCircleFilledIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 DangerCircleFilledIcon.displayName = "DangerCircleFilledIcon";
 

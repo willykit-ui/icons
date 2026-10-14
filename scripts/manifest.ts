@@ -11,6 +11,9 @@ export interface IconManifestEntry {
   lastModified: string;
   hash: string;
   deprecated?: boolean;
+  tags?: string[];
+  category?: string;
+  useCases?: string[];
 }
 
 export interface IconManifest {

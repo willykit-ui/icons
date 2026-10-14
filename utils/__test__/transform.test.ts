@@ -85,7 +85,9 @@ describe("buildComponentCode", () => {
       memo: false,
       ref: false,
     });
-    expect(result).toContain("const TestIcon = (props: IconProps) => {");
+    expect(result).toContain(
+      "const TestIcon: IconComponent = (props: IconProps) => {",
+    );
     expect(result).not.toContain("React.forwardRef");
     expect(result).toContain("strokeWidth");
   });

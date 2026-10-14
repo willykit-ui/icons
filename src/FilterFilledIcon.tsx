@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * FilterFilledIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M10.5 1.95h-9v.526a.9.9 0 0 0 .264.637l3.072 3.073a.9.9 0 0 1 .264.636v3.227l1.8-.9V6.822a.9.9 0 0 1 .264-.636l3.072-3.073a.9.9 0 0 0 .264-.637z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M10.5 1.95h-9v.526a.9.9 0 0 0 .264.637l3.072 3.073a.9.9 0 0 1 .264.636v3.227l1.8-.9V6.822a.9.9 0 0 1 .264-.636l3.072-3.073a.9.9 0 0 0 .264-.637z"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M14.5 2h-13v.804c0 .34.132.665.37.908l4.46 4.576a1.3 1.3 0 0 1 .37.908V14l2.6-1.333V9.196c0-.34.132-.665.37-.908l4.46-4.576a1.3 1.3 0 0 0 .37-.908z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M14.5 2h-13v.804c0 .34.132.665.37.908l4.46 4.576a1.3 1.3 0 0 1 .37.908V14l2.6-1.333V9.196c0-.34.132-.665.37-.908l4.46-4.576a1.3 1.3 0 0 0 .37-.908z"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path stroke="currentColor" d="M18 3.5v.415c0 .273-.112.534-.309.723l-5.574 5.336a2 2 0 0 0-.617 1.444v3.723l-2 1.036v-4.759a2 2 0 0 0-.617-1.444L3.309 4.638A1 1 0 0 1 3 3.915V3.5z" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" stroke="currentColor" d="M18 3.5v.415c0 .273-.112.534-.309.723l-5.574 5.336a2 2 0 0 0-.617 1.444v3.723l-2 1.036v-4.759a2 2 0 0 0-.617-1.444L3.309 4.638A1 1 0 0 1 3 3.915V3.5z"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const FilterFilledIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const FilterFilledIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 FilterFilledIcon.displayName = "FilterFilledIcon";
 

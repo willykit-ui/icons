@@ -31,6 +31,12 @@ const svgoConfig: SVGOConfig = {
         },
       },
     },
+    {
+      name: "cleanupNumericValues",
+      params: {
+        floatPrecision: 3,
+      },
+    },
     "removeDimensions",
     "sortAttrs",
   ],
@@ -55,6 +61,10 @@ export interface IconProps extends React.SVGAttributes<SVGElement> {
    * @default 'currentColor'
    */
   color?: string;
+}
+
+export interface IconComponent extends React.ForwardRefExoticComponent<IconProps & React.RefAttributes<SVGSVGElement>> {
+  deprecated?: boolean;
 }
 `;
 

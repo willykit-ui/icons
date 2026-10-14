@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * CornerOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path fillRule="evenodd" d="M1.5 1a.5.5 0 0 1 .5.5v3.022a6 6 0 0 1 3.742 1.736A6 6 0 0 1 7.478 10H10.5a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5m.5 9h4.475A5 5 0 0 0 2 5.525z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M1.5 1a.5.5 0 0 1 .5.5v3.022a6 6 0 0 1 3.742 1.736A6 6 0 0 1 7.478 10H10.5a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5m.5 9h4.475A5 5 0 0 0 2 5.525z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path fillRule="evenodd" d="M2.5 2a.5.5 0 0 1 .5.5v3.018a8 8 0 0 1 5.157 2.325A8 8 0 0 1 10.482 13H13.5a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5M3 13h6.48a7 7 0 0 0-2.03-4.45A7 7 0 0 0 3 6.52z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M2.5 2a.5.5 0 0 1 .5.5v3.018a8 8 0 0 1 5.157 2.325A8 8 0 0 1 10.482 13H13.5a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5M3 13h6.48a7 7 0 0 0-2.03-4.45A7 7 0 0 0 3 6.52z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path fillRule="evenodd" d="M2.5 2a.5.5 0 0 1 .5.5v6.015a9 9 0 0 1 7.815 5.54c.388.938.614 1.934.67 2.945H17.5a.5.5 0 0 1 0 1h-15a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5M3 17h7.482a8 8 0 0 0-2.325-5.157A8 8 0 0 0 3 9.518z" clipRule="evenodd" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" fillRule="evenodd" d="M2.5 2a.5.5 0 0 1 .5.5v6.015a9 9 0 0 1 7.815 5.54c.388.938.614 1.934.67 2.945H17.5a.5.5 0 0 1 0 1h-15a.5.5 0 0 1-.5-.5v-15a.5.5 0 0 1 .5-.5M3 17h7.482a8 8 0 0 0-2.325-5.157A8 8 0 0 0 3 9.518z" clipRule="evenodd"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const CornerOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const CornerOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 CornerOutlinedIcon.displayName = "CornerOutlinedIcon";
 

@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { IconProps } from "./types";
+import type { IconProps, IconComponent } from "./types";
 
 /**
  * OffOutlinedIcon icon component.
@@ -14,21 +14,21 @@ import type { IconProps } from "./types";
 const svgChildren = {
   small: {
     content: {
-      __html: `<path d="M7.745 2.754a.45.45 0 0 1 .623-.129 4.4 4.4 0 0 1 1.982 3.682c0 2.42-1.943 4.39-4.35 4.39s-4.35-1.97-4.35-4.39c0-1.542.789-2.9 1.981-3.682a.45.45 0 0 1 .494.752 3.5 3.5 0 0 0-1.575 2.93c0 1.93 1.55 3.489 3.45 3.489s3.45-1.558 3.45-3.49a3.5 3.5 0 0 0-1.575-2.929.45.45 0 0 1-.13-.623" fill="currentColor"/><path d="M6 1.8a.45.45 0 0 1 .45.451v3.3a.45.45 0 1 1-.9 0v-3.3a.45.45 0 0 1 .45-.45" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M7.745 2.754a.45.45 0 0 1 .623-.129 4.4 4.4 0 0 1 1.982 3.682c0 2.42-1.943 4.39-4.35 4.39s-4.35-1.97-4.35-4.39c0-1.542.789-2.9 1.981-3.682a.45.45 0 0 1 .494.752 3.5 3.5 0 0 0-1.575 2.93c0 1.93 1.55 3.489 3.45 3.489s3.45-1.558 3.45-3.49a3.5 3.5 0 0 0-1.575-2.929.45.45 0 0 1-.13-.623"/><path fill="currentColor" d="M6 1.8a.45.45 0 0 1 .45.451v3.3a.45.45 0 1 1-.9 0v-3.3a.45.45 0 0 1 .45-.45"/>`,
     },
     viewBox: "0 0 12 12",
   },
 
   medium: {
     content: {
-      __html: `<path d="M10.411 3.726a.5.5 0 0 1 .693-.144A5.76 5.76 0 0 1 13.7 8.408c0 3.172-2.547 5.752-5.7 5.752s-5.7-2.58-5.7-5.752c0-2.02 1.033-3.8 2.596-4.826a.5.5 0 0 1 .55.836A4.76 4.76 0 0 0 3.3 8.408c0 2.63 2.11 4.752 4.7 4.752s4.7-2.123 4.7-4.752a4.76 4.76 0 0 0-2.145-3.99.5.5 0 0 1-.144-.692" fill="currentColor"/><path d="M8 2.4c.22 0 .4.18.4.4v4.8a.4.4 0 0 1-.8 0V2.8c0-.22.18-.4.4-.4" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M10.411 3.726a.5.5 0 0 1 .693-.144A5.76 5.76 0 0 1 13.7 8.408c0 3.172-2.547 5.752-5.7 5.752s-5.7-2.58-5.7-5.752c0-2.02 1.033-3.8 2.596-4.826a.5.5 0 0 1 .55.836A4.76 4.76 0 0 0 3.3 8.408c0 2.63 2.11 4.752 4.7 4.752s4.7-2.123 4.7-4.752a4.76 4.76 0 0 0-2.145-3.99.5.5 0 0 1-.144-.692"/><path fill="currentColor" d="M8 2.4c.22 0 .4.18.4.4v4.8a.4.4 0 0 1-.8 0V2.8c0-.22.18-.4.4-.4"/>`,
     },
     viewBox: "0 0 16 16",
   },
 
   large: {
     content: {
-      __html: `<path d="M13.077 4.698a.55.55 0 0 1 .76-.158 7.13 7.13 0 0 1 3.213 5.97c0 3.924-3.151 7.115-7.05 7.115s-7.05-3.19-7.05-7.115a7.13 7.13 0 0 1 3.212-5.97.55.55 0 0 1 .604.92 6.03 6.03 0 0 0-2.716 5.05c0 3.327 2.67 6.015 5.95 6.015s5.95-2.688 5.95-6.015a6.03 6.03 0 0 0-2.716-5.05.55.55 0 0 1-.157-.762" fill="currentColor"/><path d="M10 3a.55.55 0 0 1 .55.55v5.9a.55.55 0 0 1-1.1 0v-5.9A.55.55 0 0 1 10 3" fill="currentColor"/>`,
+      __html: `<path fill="currentColor" d="M13.077 4.698a.55.55 0 0 1 .76-.158 7.13 7.13 0 0 1 3.213 5.97c0 3.924-3.151 7.115-7.05 7.115s-7.05-3.19-7.05-7.115a7.13 7.13 0 0 1 3.212-5.97.55.55 0 0 1 .604.92 6.03 6.03 0 0 0-2.716 5.05c0 3.327 2.67 6.015 5.95 6.015s5.95-2.688 5.95-6.015a6.03 6.03 0 0 0-2.716-5.05.55.55 0 0 1-.157-.762"/><path fill="currentColor" d="M10 3a.55.55 0 0 1 .55.55v5.9a.55.55 0 0 1-1.1 0v-5.9A.55.55 0 0 1 10 3"/>`,
     },
     viewBox: "0 0 20 20",
   },
@@ -75,46 +75,48 @@ function pickClosestSvg(fontSize: "small" | "medium" | "large" | number) {
   return medium ? medium[1] : available[0][1];
 }
 
-const OffOutlinedIcon = React.forwardRef<SVGSVGElement, IconProps>(
-  (props, ref) => {
-    const {
-      fontSize = "medium",
-      color = "currentColor",
-      style,
-      ...other
-    } = props;
+const OffOutlinedIcon: IconComponent = React.forwardRef<
+  SVGSVGElement,
+  IconProps
+>((props, ref) => {
+  const {
+    fontSize = "medium",
+    color = "currentColor",
+    style,
+    ...other
+  } = props;
 
-    const selected = pickClosestSvg(fontSize);
-    const viewBox = selected.viewBox;
+  const selected = pickClosestSvg(fontSize);
+  const viewBox = selected.viewBox;
 
-    const sizeValue =
-      typeof fontSize === "number"
-        ? fontSize
-        : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
+  const sizeValue =
+    typeof fontSize === "number"
+      ? fontSize
+      : sizeToPixel[fontSize as keyof typeof sizeToPixel] || 16;
 
-    const finalStyle = {
-      ...style,
-      color,
-    } as React.CSSProperties;
+  const finalStyle = {
+    ...style,
+    color,
+    flexShrink: 0,
+  } as React.CSSProperties;
 
-    return (
-      <svg
-        ref={ref}
-        width={sizeValue}
-        height={sizeValue}
-        viewBox={viewBox}
-        fill="none"
-        style={finalStyle}
-        xmlns="http://www.w3.org/2000/svg"
-        {...other}
-      >
-        {selected.content.__html && (
-          <g dangerouslySetInnerHTML={selected.content} />
-        )}
-      </svg>
-    );
-  },
-);
+  return (
+    <svg
+      ref={ref}
+      width={sizeValue}
+      height={sizeValue}
+      viewBox={viewBox}
+      fill="none"
+      style={finalStyle}
+      xmlns="http://www.w3.org/2000/svg"
+      {...other}
+    >
+      {selected.content.__html && (
+        <g dangerouslySetInnerHTML={selected.content} />
+      )}
+    </svg>
+  );
+});
 
 OffOutlinedIcon.displayName = "OffOutlinedIcon";
 
